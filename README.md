@@ -29,12 +29,17 @@ cd .../arachne-oai-pmh-data/harvesting
 perl .../arachne-oai-pmh-scripts/harvesting/01_connections-tabelle-verkuerzen.pl raw/SemanticConnection.csv
 ```
 
-
-erzeugt SemanticConnection-kurz.txt:
+erzeugt für jede Kategorie eine Liste aller Datensätze mit ihren Verknüpfungen.
 * seriennummer nur wenn es keine ArachneEntityID gibt (also nur bei Datierung?); Markierung mit "fk" vor der Zahl (in Schritt 3 wird daraus eine URI)
-* Übergangsverben werden auf ihre Nummer verkürzt (der volle Name wird später wieder ergänzt)
+* Die Cidoc-Verben, die die Semantik der Verknüpfung beschreiben, werden auf ihre Nummer verkürzt (der volle Name wird später wieder ergänzt)
 
-Beispiel-Zeile: Verküpfungen von Datensatz 5384:
+Beispiel-Zeile aus bauwerk.txt:
 ```
 5384 P53 1213534 or # P62i 41319 mb # P62i 41320 mb # P62i 41321 mb
 ```
+
+
+#### 1.2 Datensätze
+
+* solr aktualisieren
+

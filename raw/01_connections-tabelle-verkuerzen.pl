@@ -19,7 +19,6 @@ use open qw(:std :utf8);
 # AdditionalInfosJSON (optional)
 
 
-# my $trenn = "₮"; # U+20AE
 my $trenn = " "; 
 my $trenn2 = " # ";
 
@@ -82,8 +81,6 @@ while(<>) {
 	
 	my $eintrag = $cidocKurz.$trenn.$target.$trenn.$typetarget;
 	if ($additional) {
-#		die "Trennzeichen $trenn kommt vor in $_\n" if index($additional , $trenn) != -1;
-#		die "Trennzeichen $trenn2 kommt vor in $_\n" if index($additional , $trenn2) != -1;
 		$eintrag .= $trenn.$additional;
 	}
 
@@ -112,13 +109,6 @@ sub nachZahl {
 	}
 }
 
-# foreach my $key (sort nachZahl keys %liste) {
-# 	print $key." ".$liste{$key}."\n"; 
-# }
-
-# foreach my $ts (sort keys %liste) {
-# 	print $ts."\n";
-# }
 
 print "\nDateien erstellen:\n";
 
