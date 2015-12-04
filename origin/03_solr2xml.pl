@@ -1,4 +1,5 @@
 #!/usr/bin/perl -w
+use File::Find;
 use strict;
 use warnings;
 use utf8;
@@ -79,9 +80,18 @@ close(VERBEN);
 
 my $weiteresDir = $dirname."/".$katname;
 print "Verzeichnis ".$weiteresDir." einlesen\n";
-opendir(DIR, $weiteresDir) or die "Could not open dir $weiteresDir\n";
-my @allfiles = readdir DIR;
-closedir(DIR);
+# opendir(DIR, $weiteresDir) or die "Could not open dir $weiteresDir\n";
+# my @allfiles = readdir DIR;
+# closedir(DIR);
+
+my @allfiles = ();
+sub wanted {
+  if ($_ =~ /txt/) {
+    push(@allfiles, $File::Find::dir."/".$_);
+  }
+}
+
+find(\&wanted, $weiteresDir);
 
 foreach my $filename (@allfiles) {
 
@@ -89,7 +99,7 @@ foreach my $filename (@allfiles) {
 	my $newFilename = $1."-origin.xml";
 	print $filename." --> ".$newFilename."\n";
 	
-	open (ALT, "$weiteresDir/$filename");
+	open (ALT, "$filename");
 	my @lines = <ALT>;
 	close(ALT);
 
@@ -262,7 +272,7 @@ foreach my $filename (@allfiles) {
 		
 	$neu .= "</records>\n";
 	
-	open (NEU, ">$weiteresDir/$newFilename");
+	open (NEU, ">$newFilename");
 	print NEU $neu;
 	close(NEU);
 }
