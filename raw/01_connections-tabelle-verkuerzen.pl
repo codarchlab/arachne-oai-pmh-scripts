@@ -22,7 +22,7 @@ use open qw(:std :utf8);
 my $trenn = " "; 
 my $trenn2 = " # ";
 
-my $dir = "verknuepfungen";
+my $dir = "by_category";
 
 my %kurz = (
 	bauwerk => "bw",

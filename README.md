@@ -9,7 +9,7 @@
 in der Arachne-DB:
 
 ```
-SELECT * INTO OUTFILE '/usr/local/arachne-oai-pmh-data/raw/verknuepfungen/SemanticConnection.csv'
+SELECT * INTO OUTFILE '/usr/local/arachne-oai-pmh-data/raw/connections/SemanticConnection.csv'
 FROM `SemanticConnection`
 ```
 
@@ -20,13 +20,13 @@ Beispiel-Zeilen:
 ```
 
 lokal speichern als
-`arachne-oai-pmh-data/raw/verknuepfungen/SemanticConnection.csv`
+`arachne-oai-pmh-data/raw/connections/SemanticConnection.csv`
 
 ##### 1.1.2 nach Datensätzen sortieren
 
 ```
-cd .../arachne-oai-pmh-data/harvesting
-perl .../arachne-oai-pmh-scripts/harvesting/01_connections-tabelle-verkuerzen.pl raw/SemanticConnection.csv
+cd .../arachne-oai-pmh-data/raw
+perl .../arachne-oai-pmh-scripts/raw/01_connections-tabelle-verkuerzen.pl connections/SemanticConnection.csv
 ```
 
 erzeugt für jede Kategorie eine Liste aller Datensätze mit ihren Verknüpfungen.
@@ -41,5 +41,12 @@ Beispiel-Zeile aus bauwerk.txt:
 
 #### 1.2 Datensätze
 
-* solr aktualisieren
+Vorher solr-Index aktualisieren!
+
+mit SET z.B. = "objekt":
+```
+cd .../arachne-oai-pmh-data/raw/categories
+mkdir SET
+perl .../arachne-oai-pmh-scripts/raw/02_harvesting-von-solr.pl SET
+```
 
