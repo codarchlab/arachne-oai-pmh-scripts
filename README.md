@@ -1,4 +1,8 @@
+A collection of scripts for exporting Arachne datasets in a variety of data formats. The datasets can then be exported via an OAI PMH interface and via Arachne itself. 
+
 ## Workflow
+
+First one needs to harvest the raw Arachne data and create the "origin" XML format. From this format all other formats can be derived. 
 
 ### 1. Arachne-DB harvesten
 
@@ -11,20 +15,15 @@ Siehe [origin.md](docs/origin.md)
 
 ### 3. weitere Formate erstellen
 
-#### Ariadne
+* Ariadne
 
-#### Carare
+* Carare
 
-#### Cidoc CRM
+* Cidoc CRM
 
-#### DC
+* DC
 
-#### EAGLE
-Voraussetzung: Cidoc-CRM-Format
+* [EAGLE](docs/other_formats/eagle.md)
 
-#### METS 
-für Bücher
-
-##### Propylaeum
-
+* [METS](docs/other_formats/mets.md)
 
