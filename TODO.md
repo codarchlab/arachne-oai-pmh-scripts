@@ -27,5 +27,11 @@
 * Auf einen Datensatz pro Datei umstellen 
   * die Version mit 1000 Datensätzen pro Datei behalten oder nicht?
 
+
+#### Cidoc CRM
+
+* Datierung kommt in das Produktions-Event. Man muss irgendwann klären, wo die korrekte Angabe steht (in der sem_connections-Tabelle??), und wie sie in das XML kommt
+
+
 ### Beschreibung
 * Workflow zusätzlich zu deutsch auch auf englisch
