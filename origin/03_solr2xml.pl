@@ -11,10 +11,10 @@ use Unicode::Normalize;
 # Vorbereitung: lies die Verknüpfungstabelle "SemanticConnection-kurz.txt" ein, die
 # von "connections-tabelle-verkuerzen.pl" erzeugt wurde
 
-my $verknuepfDir = "verknuepfungen";
+my $verknuepfDir = "../connections/by_category";
 
 my $dirname = $ARGV[0]; 
-my $katname =$ARGV[1];
+my $katname = $ARGV[1];
 
 #
 
@@ -65,9 +65,9 @@ close(VERKNUEPF);
 
 #
 
-print "Liste der Cidoc-Verben einlesen\n";
+print "Liste der Cidoc-Properties einlesen\n";
 my %langform;
-open (VERBEN, "cidoc-verben.txt") or die "Could not open cidoc-verben.txt\n";
+open (VERBEN, "cidoc-properties.txt") or die "Could not open cidoc-properties.txt\n";
 while (<VERBEN>) {
 	chomp;
 	# Beispiel-Eintrag: P4I.is_time-span_of

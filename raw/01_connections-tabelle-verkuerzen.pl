@@ -20,7 +20,7 @@ use open qw(:std :utf8);
 
 
 my $trenn = " "; 
-my $trenn2 = " # ";
+my $trenn2 = " ### ";
 
 my $dir = "by_category";
 

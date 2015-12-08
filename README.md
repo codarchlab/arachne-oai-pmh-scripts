@@ -50,3 +50,23 @@ mkdir SET
 perl .../arachne-oai-pmh-scripts/raw/02_harvesting-von-solr.pl SET
 ```
 
+### 2. origin-Format erstellen
+
+Voraussetzung: Schritt 1
+
+```
+cd .../arachne-oai-pmh-scripts/origin/
+perl 03_solr2xml.pl .../arachne-oai-pmh-data/raw/categories SET
+```
+
+
+braucht:
+* "cidoc-properties.txt", Einträge der Form "P1I.identifies"; aus dem Cidoc-RDFS erzeugt
+* SET.txt (z.B. bauwerk.txt) in `arachne-oai-pmh-data/raw/connections/by_category`
+
+Dinge, die das Skript implizit voraussetzt:
+* es gibt nur den "Namespace" fk (wenn es mal mehrere gibt, zum Beispiel datProd, datFund, etc., muss man das anpassen)
+* fk steht für Datierungen, insbesondere: alle anderen Kategorien haben ArachneEntityIDs
+
+* das ist diesem Skript egal, aber weitere These, die zurzeit noch gilt: Datierung kommt in das Produktions-Event. Man muss irgendwann klären, wo die korrekte Angabe steht (in der sem_connections-Tabelle??), und wie sie in das XML kommt
+
