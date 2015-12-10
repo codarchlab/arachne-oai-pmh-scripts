@@ -119,6 +119,20 @@
 			<!--<field column="KurzbeschreibungGruppierung" name="label"/>-->
 		</entity>
 
+		<entity name="inschrift" pk="PS_InschriftID"
+			query="SELECT * FROM inschrift LEFT JOIN `arachneentityidentification` ON  `PS_InschriftID` = `ForeignKey` WHERE DatensatzGruppeInschrift LIKE 'Arachne' AND  `TableName` LIKE  'inschrift'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="inschrift-${inschrift.PS_InschriftID}"/>
+			<field column="kategorie" template="inschrift"/>
+			<field column="PS_InschriftID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetInschrift" name="set"/>
+			<!--<field column="KurzbeschreibungInschrift" name="label"/>-->
+		</entity>
+
 		<entity name="marbilder" pk="PS_MARBilderID"
 			query="SELECT * FROM marbilder LEFT JOIN `arachneentityidentification` ON `PS_MARBilderID` = `ForeignKey` WHERE DatensatzGruppeMARBilder LIKE 'Arachne' AND visible LIKE 'Arachne' AND `TableName` LIKE 'marbilder' ORDER BY Scannummer REGEXP ',[0-9]{3}', Scannummer REGEXP ',[0-9]{2}', Scannummer"
 			transformer="TemplateTransformer">
