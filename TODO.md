@@ -8,6 +8,7 @@
 * Skripte sollen von einem beliebigen Verzeichnis aus gestartet werden können
 * Lizenz?
 * sich ändernde Dinge in config-Dateien auslagern
+* Workflow automatisieren
 
 #### raw
 01_connections-tabelle-verkuerzen.pl
@@ -31,13 +32,20 @@
 #### Cidoc CRM
 
 * Skript aufteilen in 1. Kategorien-Blaupausen erstellen, 2. Blaupause anwenden für einzelne Datensätze. Das war ja ein Hack, der für das Ad-hoc-Erstellen von Datensätzen in der alten Schnittstelle gedacht war.
+* umstellen auf das 3M-Mapping-Format
 
+altes todo:
 * Datierung kommt in das Produktions-Event. Man muss irgendwann klären, wo die korrekte Angabe steht (in der sem_connections-Tabelle??), und wie sie in das XML kommt
 
 
 #### EAGLE
 
 * Francesco: weitere Skripte, die er verwendet, und eagle.md ergänzen
+
+
+#### Pelagios
+
+* Harvesting-Skript (https://github.com/codarchlab/gazetteer/blob/master/src/main/scripts/harvest-gazetteer-json.pl) hierhin verschieben?
 
 
 ### Daten

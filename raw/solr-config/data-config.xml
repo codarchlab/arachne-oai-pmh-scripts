@@ -416,18 +416,6 @@
 			<!--<field column="KurzbeschreibungTypus" name="label"/>-->
 		</entity>
 
-		<entity name="sammler" pk="PS_SammlerID" query="SELECT * FROM `sammler` LEFT JOIN `arachneentityidentification` ON `PS_SammlerID` = `ForeignKey` WHERE `TableName` LIKE 'sammler'"
-			transformer="TemplateTransformer">
-
-			<field column="id" template="sammler-${sammler.PS_SammlerID}"/>
-			<field column="kategorie" template="sammler"/>
-			<field column="PS_SammlerID" name="seriennummer"/>
-			<field column="lastModified" name="last_modified"/>
-			<field column="metadataformats"
-				template="oai_dc;cidoc_crm;origin;carare"/>
-			<field column="oaipmhsetSammler" name="set"/>
-		</entity>
-
 		<entity name="buchEnrich" pk="PS_BuchEnrichID" query="SELECT * FROM `buchEnrich` WHERE 1"
 			transformer="TemplateTransformer">
 
