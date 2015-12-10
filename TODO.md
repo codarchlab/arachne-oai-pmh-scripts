@@ -1,6 +1,6 @@
 ## TODO
 
-### Skripte 
+### 1. Skripte 
 
 #### allgemein
 * auf englisch: Name, Variablen, ausgegebene Texte
@@ -19,6 +19,9 @@
 * verschiedene Schrittweiten für verschiedene Kategorien? Fest eingestellt oder als option?
 * Wrapper, um alle Kategorien zu harvesten
 * klären: ist `use open qw(:std :utf8);` absichtlich auskommentiert? (in 04_objektkategorien-aufteilen.pl ist es absichtlich auskommentiert "wegen File::Slurp")
+
+##### solr
+* eigene data-config.xml für den neuen Workflow? Muss nicht mehr mit der alten Schnittstelle zusammen funktionieren. Für die Zwischenzeit, bis die alte Schnittstelle abgeschaltet ist, eine eigene solr-Instanz?
 
 
 #### origin
@@ -50,7 +53,8 @@ altes todo:
 * Harvesting-Skript (https://github.com/codarchlab/gazetteer/blob/master/src/main/scripts/harvest-gazetteer-json.pl) hierhin verschieben?
 
 
-### Daten
+### 2. Daten
+* Übersicht Gesamtstruktur von arachne-oai-pmh-data in einem kleinen Diagramm
 * Verzeichnis mit sample data
 * Kategorien durchgehen: alte Übersicht:
 
@@ -82,5 +86,14 @@ altes todo:
 ```
 
 
-### Beschreibung
+### 3. Dokumentation
 * Workflow zusätzlich zu deutsch auch auf englisch
+
+
+### 4. OAI-PMH-Interface
+* jOAI auf GitHub clonen? Lizenz-Problem oder nicht?
+* So bearbeiten, dass das unnötige und zeitaufwändige Indexieren mit Lucene wegfällt? Also einfach ein Wrapper zum Ausliefern der Dateien mit dem OAI-PMH-Protokoll, inkl. diff.
+* So bearbeiten, dass nicht der Zeitstempel ausschlaggebend ist, sondern ob sich die Datei tatsächlich geändert hat.
+* Ist es einfacher, das Interface komplett neu zu schreiben?
+
+

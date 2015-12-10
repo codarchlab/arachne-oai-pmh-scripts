@@ -19,7 +19,9 @@ Beispiel-Zeilen:
 ```
 
 lokal speichern als
-`arachne-oai-pmh-data/raw/connections/SemanticConnection.csv`
+```
+.../arachne-oai-pmh-data/raw/connections/SemanticConnection.csv
+```
 
 ##### 1.2 nach Datensätzen sortieren
 
