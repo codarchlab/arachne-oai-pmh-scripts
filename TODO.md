@@ -31,12 +31,12 @@
 
 03_solr2xml.pl
 * Hack mit den Skript- und Daten-Verzeichnissen entfernen, und Daten an die richtige Stelle schreiben
-* Auf einen Datensatz pro Datei umstellen: siehe [#1](/codarchlab/arachne-oai-pmh-scripts/issues/1)
+* Auf einen Datensatz pro Datei umstellen: siehe [#1](../../issues/1)
 
 #### Cidoc CRM
 * Skript aufteilen in 1. Kategorien-Blaupausen erstellen, 2. Blaupause anwenden für einzelne Datensätze. Das war ja ein Hack, der für das Ad-hoc-Erstellen von Datensätzen in der alten Schnittstelle gedacht war.
 * umstellen auf das 3M-Mapping-Format
-* Klären: wie ist das mit der "industrial strength"-Version, die viele Datensätze auf einmal verarbeiten kann und `<records>` statt `<record>` verwendet? Ist das bei Umstellung auf einen Datensatz pro Datei ebenfalls überflüssig? (siehe [#1](/codarchlab/arachne-oai-pmh-scripts/issues/1))
+* Klären: wie ist das mit der "industrial strength"-Version, die viele Datensätze auf einmal verarbeiten kann und `<records>` statt `<record>` verwendet? Ist das bei Umstellung auf einen Datensatz pro Datei ebenfalls überflüssig? (siehe [#1](../../issues/1))
 
 altes todo:
 * Datierung kommt in das Produktions-Event. Man muss irgendwann klären, wo die korrekte Angabe steht (in der sem_connections-Tabelle??), und wie sie in das XML kommt
