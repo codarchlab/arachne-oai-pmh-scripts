@@ -30,7 +30,46 @@
 
 #### Cidoc CRM
 
+* Skript aufteilen in 1. Kategorien-Blaupausen erstellen, 2. Blaupause anwenden für einzelne Datensätze. Das war ja ein Hack, der für das Ad-hoc-Erstellen von Datensätzen in der alten Schnittstelle gedacht war.
+
 * Datierung kommt in das Produktions-Event. Man muss irgendwann klären, wo die korrekte Angabe steht (in der sem_connections-Tabelle??), und wie sie in das XML kommt
+
+
+#### EAGLE
+
+* Francesco: weitere Skripte, die er verwendet, und eagle.md ergänzen
+
+
+### Daten
+* Verzeichnis mit sample data
+* Kategorien durchgehen: alte Übersicht:
+
+```
+ X=XML
+ R=RDF
+ ?=Problem
+ O=Ongoing
+
+ bauwerk XR
+ bauwerksteil XR
+ datierung XR?, viele leere Datierungen
+ gruppen XR
+ literatur ?, solr liefert keine Daten
+ literaturzitat ?, solr liefert keine Daten
+ marbilder XR
+ objekt XR
+ ort XR
+ ortsbezug O?,Could not open ../Daten/verknuepfungen/ortsbezug.txt
+ realien XR
+ relief XR?, erzeugt kein RDF für letzte Datei
+ reproduktion, XR
+ rezeption, XR
+ sammler, O?, Could not open ../Daten/verknuepfungen/sammler.txt
+ sammlungen, XR
+ sarkophag, ?, liefert keine Daten
+ topographie, XR
+ typus, XR
+```
 
 
 ### Beschreibung
