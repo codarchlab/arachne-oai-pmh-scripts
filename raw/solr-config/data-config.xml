@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<dataConfig>
+	<!--url="jdbc:mysql://localhost/arachne?netTimeoutForStreamingResults=10000" -->
+	<dataSource driver="com.mysql.jdbc.Driver"
+		url="..." user="..."
+		password="..." batchSize="-1"/>
+
+	<document name="item">
+
+		<!--
+		<entity name="geonamesAlternatename" pk="alternatenameId"
+			query="SELECT * FROM geonamesAlternatename" transformer="TemplateTransformer">
+
+			<field column="id" template="geonamesAlternatename-${geonamesAlternatename.alternatenameId}"/>
+			<field column="kategorie" template="geonamesAlternatename"/>
+			<field column="alternatenameId" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetGeonamesAlterantename" name="set"/>
+		</entity>
+		-->
+
+		<entity name="bauwerk" pk="PS_BauwerkID"
+			query="SELECT * FROM bauwerk LEFT JOIN `arachneentityidentification` ON  `PS_BauwerkID` = `ForeignKey` WHERE DatensatzGruppeBauwerk LIKE 'Arachne' AND  `TableName` LIKE  'bauwerk'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="bauwerk-${bauwerk.PS_BauwerkID}"/>
+			<field column="kategorie" template="bauwerk"/>
+			<field column="PS_BauwerkID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetBauwerk" name="set"/>
+			<!--<field column="KurzbeschreibungBauwerk" name="label"/>-->
+		</entity>
+
+		<entity name="bauwerksteil" pk="PS_BauwerksteilID"
+			query="SELECT * FROM bauwerksteil LEFT JOIN `arachneentityidentification` ON  `PS_BauwerksteilID` =  `ForeignKey` WHERE DatensatzGruppeBauwerksteil LIKE 'Arachne' AND `TableName` LIKE  'bauwerksteil'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="bauwerksteil-${bauwerksteil.PS_BauwerksteilID}"/>
+			<field column="kategorie" template="bauwerksteil"/>
+			<field column="PS_BauwerksteilID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetBauwerksteil" name="set"/>
+			<!--<field column="KurzbeschreibungBauwerksteil" name="label"/>-->
+		</entity>
+
+		<entity name="buch" pk="PS_BuchID"
+			query="SELECT `buch`.*, `arachneentityidentification`.ArachneEntityID FROM `buch` LEFT JOIN  `arachneentityidentification` ON `PS_BuchID` = `ForeignKey` LEFT JOIN `zenon` ON `buch`.`bibid` = `zenon`.`001` WHERE `TableName` LIKE 'buch' AND `DatensatzGruppeBuch` LIKE 'Arachne' AND `buch`.`bibid` IS NOT NULL AND `buch`.`bibid` NOT LIKE '' AND `zenon`.`zenonid` IS NOT NULL"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="buch-${buch.PS_BuchID}"/>
+			<field column="kategorie" template="buch"/>
+			<field column="PS_BuchID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;mets;origin;cidoc_crm"/>
+			<field column="oaipmhsetBuch" name="set"/>
+			<!--<field column="KurzbeschreibungBuch" name="label"/>-->
+		</entity>
+
+		<entity name="buchseite" pk="PS_BuchseiteID"
+			query="SELECT * FROM `buchseite` WHERE `DatensatzGruppeBuchseite` LIKE 'Arachne'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="buchseite-${buchseite.PS_BuchseiteID}"/>
+			<field column="kategorie" template="buchseite"/>
+			<field column="PS_BuchseiteID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;origin;cidoc_crm"/>
+			<field column="oaipmhsetBuchseite" name="set"/>
+			<!--<field column="KurzbeschreibungBuchseite" name="label"/>-->
+		</entity>
+
+		<entity name="datierung" pk="PS_DatierungID" query="SELECT * FROM datierung"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="datierung-${datierung.PS_DatierungID}"/>
+			<field column="kategorie" template="datierung"/>
+			<field column="PS_DatierungID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;prometheus;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetDatierung" name="set"/>
+			<!--<field column="AnfEpoche" name="label"/>-->
+		</entity>
+
+		<entity name="gruppen" pk="PS_GruppenID"
+			query="SELECT * FROM `gruppen` LEFT JOIN `arachneentityidentification` ON `PS_GruppenID` = `ForeignKey` WHERE (`DatensatzGruppeGruppen` LIKE 'Arachne' OR `DatensatzGruppeGruppen` LIKE 'Berlin') AND `TableName` LIKE 'gruppen'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="gruppen-${gruppen.PS_GruppenID}"/>
+			<field column="kategorie" template="gruppen"/>
+			<field column="PS_GruppenID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare"/>
+			<field column="oaipmhsetGruppen" name="set"/>
+			<!--<field column="KurzbeschreibungGruppen" name="label"/>-->
+		</entity>
+
+		<entity name="gruppierung" pk="PS_GruppierungID"
+			query="SELECT * FROM gruppierung LEFT JOIN `arachneentityidentification` ON  `PS_GruppierungID` = `ForeignKey` WHERE DatensatzGruppeGruppierung LIKE 'Arachne' AND  `TableName` LIKE  'gruppierung'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="gruppierung-${gruppierung.PS_GruppierungID}"/>
+			<field column="kategorie" template="gruppierung"/>
+			<field column="PS_GruppierungID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetGruppierung" name="set"/>
+			<!--<field column="KurzbeschreibungGruppierung" name="label"/>-->
+		</entity>
+
+		<entity name="marbilder" pk="PS_MARBilderID"
+			query="SELECT * FROM marbilder LEFT JOIN `arachneentityidentification` ON `PS_MARBilderID` = `ForeignKey` WHERE DatensatzGruppeMARBilder LIKE 'Arachne' AND visible LIKE 'Arachne' AND `TableName` LIKE 'marbilder' ORDER BY Scannummer REGEXP ',[0-9]{3}', Scannummer REGEXP ',[0-9]{2}', Scannummer"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="marbilder-${marbilder.PS_MARBilderID}"/>
+			<field column="kategorie" template="marbilder"/>
+			<field column="PS_MARBilderID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;prometheus;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetMarbilder" name="set"/>
+			<!--<field column="Pfad" name="label"/>-->
+		</entity>
+
+		<entity name="objekt" pk="PS_ObjektID"
+			query="SELECT * FROM objekt LEFT JOIN `arachneentityidentification` ON `PS_ObjektID` = `ForeignKey` WHERE (DatensatzGruppeObjekt LIKE 'Arachne' OR DatensatzGruppeObjekt LIKE 'Berlin') AND `TableName` LIKE 'objekt'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="objekt-${objekt.PS_ObjektID}"/>
+			<field column="kategorie" template="objekt"/>
+			<field column="PS_ObjektID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;prometheus;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetObjekt" name="set"/>
+			<!--<field column="KurzbeschreibungObjekt" name="label"/>-->
+
+			<entity name="objektbauornamentik" pk="PS_ObjektbauornamentikID"
+				query="SELECT * FROM objektbauornamentik 
+	WHERE objektbauornamentik.PS_ObjektbauornamentikID IS NOT NULL AND '${objekt.PS_ObjektID}' = objektbauornamentik.PS_ObjektbauornamentikID"
+				transformer="TemplateTransformer">
+				<field column="unterkategorie" template="objektbauornamentik"/>
+				<field column="unterkategorieMetadataformats"
+					template="oai_dc;cidoc_crm;origin"/>
+				<field column="oaipmhsetObjektbauornamentik" name="set"/>
+			</entity>
+
+			<entity name="objektgemaelde" pk="PS_ObjektgemaeldeID"
+				query="SELECT * FROM objektgemaelde 
+	WHERE objektgemaelde.PS_ObjektgemaeldeID IS NOT NULL AND '${objekt.PS_ObjektID}' = objektgemaelde.PS_ObjektgemaeldeID"
+				transformer="TemplateTransformer">
+				<field column="unterkategorie" template="objektgemaelde"/>
+				<field column="unterkategorieMetadataformats"
+					template="oai_dc;prometheus;cidoc_crm;origin"/>
+				<field column="oaipmhsetObjektgemaelde" name="set"/>
+			</entity>
+
+			<entity name="objektkeramik" pk="PS_ObjektkeramikID"
+				query="SELECT * FROM objektkeramik 
+	WHERE objektkeramik.PS_ObjektkeramikID IS NOT NULL AND '${objekt.PS_ObjektID}' = objektkeramik.PS_ObjektkeramikID"
+				transformer="TemplateTransformer">
+				<field column="unterkategorie" template="objektkeramik"/>
+				<field column="unterkategorieMetadataformats"
+					template="oai_dc;prometheus;cidoc_crm;origin;claros"/>
+				<field column="oaipmhsetObjektkeramik" name="set"/>
+			</entity>
+
+			<entity name="objektlebewesen" pk="PS_ObjektlebewesenID"
+				query="SELECT * FROM objektlebewesen 
+	WHERE objektlebewesen.PS_ObjektlebewesenID IS NOT NULL AND '${objekt.PS_ObjektID}' = objektlebewesen.PS_ObjektlebewesenID"
+				transformer="TemplateTransformer">
+				<field column="unterkategorie" template="objektlebewesen"/>
+				<field column="unterkategorieMetadataformats"
+					template="oai_dc;cidoc_crm;origin"/>
+				<field column="oaipmhsetObjektlebewesen" name="set"/>
+			</entity>
+
+			<entity name="objektmosaik" pk="PS_ObjektmosaikID"
+				query="SELECT * FROM objektmosaik 
+	WHERE objektmosaik.PS_ObjektmosaikID IS NOT NULL AND '${objekt.PS_ObjektID}' = objektmosaik.PS_ObjektmosaikID"
+				transformer="TemplateTransformer">
+				<field column="unterkategorie" template="objektmosaik"/>
+				<field column="unterkategorieMetadataformats"
+					template="oai_dc;prometheus;cidoc_crm;origin"/>
+				<field column="oaipmhsetObjektmosaik" name="set"/>
+			</entity>
+
+			<entity name="objektplastik" pk="PS_ObjektplastikID"
+				query="SELECT * FROM objektplastik 
+	WHERE objektplastik.PS_ObjektplastikID IS NOT NULL AND '${objekt.PS_ObjektID}' = objektplastik.PS_ObjektplastikID"
+				transformer="TemplateTransformer">
+				<field column="unterkategorie" template="objektplastik"/>
+				<field column="unterkategorieMetadataformats"
+					template="oai_dc;prometheus;cidoc_crm;origin"/>
+				<field column="oaipmhsetObjektplastik" name="set"/>
+			</entity>
+
+			<entity name="objektplomben" pk="PS_ObjektplombenID"
+				query="SELECT * FROM objektplomben 
+	WHERE objektplomben.PS_ObjektplombenID IS NOT NULL AND '${objekt.PS_ObjektID}' = objektplomben.PS_ObjektplombenID"
+				transformer="TemplateTransformer">
+				<field column="unterkategorie" template="objektplomben"/>
+				<field column="unterkategorieMetadataformats"
+					template="oai_dc;cidoc_crm;origin"/>
+				<field column="oaipmhsetObjektplomben" name="set"/>
+			</entity>
+
+			<entity name="objektsiegel" pk="PS_ObjektsiegelID"
+				query="SELECT * FROM objektsiegel 
+	WHERE objektsiegel.PS_ObjektsiegelID IS NOT NULL AND '${objekt.PS_ObjektID}' = objektsiegel.PS_ObjektsiegelID"
+				transformer="TemplateTransformer">
+				<field column="unterkategorie" template="objektsiegel"/>
+				<field column="unterkategorieMetadataformats"
+					template="oai_dc;cidoc_crm;origin"/>
+				<field column="oaipmhsetObjektsiegel" name="set"/>
+			</entity>
+
+			<entity name="objektterrakotten" pk="PS_ObjektterrakottenID"
+				query="SELECT * FROM objektterrakotten
+	WHERE objektterrakotten.PS_ObjektterrakottenID IS NOT NULL AND '${objekt.PS_ObjektID}' = objektterrakotten.PS_ObjektterrakottenID"
+				transformer="TemplateTransformer">
+				<field column="unterkategorie" template="objektterrakotten"/>
+				<field column="unterkategorieMetadataformats"
+					template="oai_dc;cidoc_crm;origin"/>
+				<field column="oaipmhsetObjektterrakotten" name="set"/>
+			</entity>
+
+		</entity>
+
+		<entity name="ort" pk="PS_OrtID" query="SELECT * FROM `ort` LEFT JOIN  `arachneentityidentification` ON `PS_OrtID` = `ForeignKey` WHERE `TableName` LIKE 'ort'" transformer="TemplateTransformer">
+
+			<field column="id" template="ort-${ort.PS_OrtID}"/>
+			<field column="kategorie" template="ort"/>
+			<field column="PS_OrtID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;prometheus;cidoc_crm;origin;geo;carare"/>
+			<field column="oaipmhsetOrt" name="set"/>
+		</entity>
+
+		<entity name="ortsbezug" pk="PS_OrtsbezugID"
+			query="SELECT * FROM `ortsbezug` LEFT JOIN `ort` ON `ortsbezug`.`FS_OrtID` = `ort`.`PS_OrtID` LEFT JOIN `arachneentityidentification` ON `PS_OrtID` = `ForeignKey` WHERE `verborgen` IS NULL AND `TableName` LIKE 'ort'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="ortsbezug-${ortsbezug.PS_OrtsbezugID}"/>
+			<field column="kategorie" template="ortsbezug"/>
+			<field column="PS_OrtsbezugID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros"/>
+			<field column="oaipmhsetOrtsbezug" name="set"/>
+		</entity>
+
+	        <entity name="literaturzitat" pk="PS_LiteraturzitatID"
+			query="SELECT * FROM `literaturzitat` LEFT JOIN `literatur` ON `literaturzitat`.`FS_LiteraturID` = `literatur`.`PS_LiteraturID` LEFT JOIN `arachneentityidentification` ON `PS_LiteraturID` = `ForeignKey` WHERE `TableName` LIKE 'literatur'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="literaturzitat-${literaturzitat.PS_LiteraturzitatID}"/>
+                        <field column="kategorie" template="literaturzitat"/>
+                        <field column="PS_LiteraturzitatID" name="seriennummer"/>
+                        <field column="lastModified" name="last_modified"/>
+                        <field column="metadataformats"
+                                template="origin;carare;claros"/>
+                        <field column="oaipmhsetLiteraturzitat" template="literaturzitat"/>
+
+		</entity>
+
+		<entity name="literatur" pk="PS_LitraturID"
+			query="SELECT * FROM `literatur` LEFT JOIN `arachneentityidentification` ON `PS_LiteraturID` = `ForeignKey` WHERE `TableName` LIKE 'literatur'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="literatur-${literatur.PS_LiteraturID}"/>
+                        <field column="kategorie" template="literatur"/>
+                        <field column="PS_LiteraturID" name="seriennummer"/>
+                        <field column="lastModified" name="last_modified"/>
+                        <field column="metadataformats"
+                                template="origin;carare"/>
+                        <field column="oaipmhsetLiteratur" template="literatur"/>
+
+		</entity>
+
+		<entity name="person" pk="PS_PersonID"
+			query="SELECT * FROM person LEFT JOIN `arachneentityidentification` ON  `PS_PersonID` = `ForeignKey` WHERE DatensatzGruppePerson LIKE 'Arachne' AND  `TableName` LIKE  'person'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="person-${person.PS_PersonID}"/>
+			<field column="kategorie" template="person"/>
+			<field column="PS_PersonID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetPerson" name="set"/>
+			<!--<field column="KurzbeschreibungPerson" name="label"/>-->
+		</entity>
+
+		<entity name="realien" pk="PS_RealienID"
+			query="SELECT * FROM `realien` LEFT JOIN `arachneentityidentification` ON `PS_RealienID` = `ForeignKey` WHERE `DatensatzGruppeRealien` LIKE 'Arachne' AND `TableName` LIKE 'realien'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="realien-${realien.PS_RealienID}"/>
+			<field column="kategorie" template="realien"/>
+			<field column="PS_RealienID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetRealien" name="set"/>
+			<!--<field column="KurzbeschreibungRealien" name="label"/>-->
+		</entity>
+
+		<entity name="relief" pk="PS_ReliefID"
+			query="SELECT * FROM `relief` LEFT JOIN `arachneentityidentification` ON `PS_ReliefID` = `ForeignKey` WHERE `DatensatzGruppeRelief` LIKE 'Arachne' AND `TableName` LIKE 'relief'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="relief-${relief.PS_ReliefID}"/>
+			<field column="kategorie" template="relief"/>
+			<field column="PS_ReliefID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetRelief" name="set"/>
+			<!--<field column="KurzbeschreibungRelief" name="label"/>-->
+		</entity>
+
+		<entity name="reproduktion" pk="PS_ReproduktionID"
+			query="SELECT * FROM `reproduktion` LEFT JOIN  `arachneentityidentification` ON  `PS_ReproduktionID` =  `ForeignKey` WHERE (`DatensatzGruppeReproduktion` LIKE 'Arachne' OR `DatensatzGruppeReproduktion` LIKE 'Berlin') AND `TableName` LIKE 'reproduktion'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="reproduktion-${reproduktion.PS_ReproduktionID}"/>
+			<field column="kategorie" template="reproduktion"/>
+			<field column="PS_ReproduktionID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetReproduktion" name="set"/>
+			<!--<field column="KurzbeschreibungReproduktion" name="label"/>-->
+		</entity>
+
+		<entity name="rezeption" pk="PS_RezeptionID"
+			query="SELECT * FROM `rezeption` LEFT JOIN `arachneentityidentification` ON `PS_RezeptionID` = `ForeignKey` WHERE `DatensatzGruppeRezeption` LIKE 'Arachne' AND `TableName` LIKE 'rezeption'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="rezeption-${rezeption.PS_RezeptionID}"/>
+			<field column="kategorie" template="rezeption"/>
+			<field column="PS_RezeptionID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin"/>
+			<field column="oaipmhsetRezeption" name="set"/>
+			<!--<field column="KurzbeschreibungRezeption" name="label"/>-->
+		</entity>
+
+		<entity name="sammlungen" pk="PS_SammlungenID"
+			query="SELECT * FROM `sammlungen` LEFT JOIN `arachneentityidentification` ON `PS_SammlungenID` = `ForeignKey` WHERE `DatensatzGruppeSammlungen` LIKE 'Arachne' AND `TableName` LIKE 'sammlungen'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="sammlungen-${sammlungen.PS_SammlungenID}"/>
+			<field column="kategorie" template="sammlungen"/>
+			<field column="PS_SammlungenID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetSammlungen" name="set"/>
+			<!--<field column="KurzbeschreibungSammlungen" name="label"/>-->
+		</entity>
+
+		<entity name="topographie" pk="PS_TopographieID"
+			query="SELECT * FROM `topographie` LEFT JOIN `arachneentityidentification` ON `PS_TopographieID` = `ForeignKey` WHERE `DatensatzGruppeTopographie` LIKE 'Arachne' AND `TableName` LIKE 'topographie'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="topographie-${topographie.PS_TopographieID}"/>
+			<field column="kategorie" template="topographie"/>
+			<field column="PS_TopographieID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare;claros"/>
+			<field column="oaipmhsetTopographie" name="set"/>
+			<!--<field column="KurzbeschreibungTopographie" name="label"/>-->
+		</entity>
+
+		<entity name="typus" pk="PS_TypusID"
+			query="SELECT * FROM `typus` LEFT JOIN `arachneentityidentification` ON `PS_TypusID` = `ForeignKey` WHERE `DatensatzGruppeTypus` LIKE 'Arachne' AND `TableName` LIKE 'typus'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="typus-${typus.PS_TypusID}"/>
+			<field column="kategorie" template="typus"/>
+			<field column="PS_TypusID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin"/>
+			<field column="oaipmhsetTypus" name="set"/>
+			<!--<field column="KurzbeschreibungTypus" name="label"/>-->
+		</entity>
+
+		<entity name="sammler" pk="PS_SammlerID" query="SELECT * FROM `sammler` LEFT JOIN `arachneentityidentification` ON `PS_SammlerID` = `ForeignKey` WHERE `TableName` LIKE 'sammler'"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="sammler-${sammler.PS_SammlerID}"/>
+			<field column="kategorie" template="sammler"/>
+			<field column="PS_SammlerID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;carare"/>
+			<field column="oaipmhsetSammler" name="set"/>
+		</entity>
+
+		<entity name="buchEnrich" pk="PS_BuchEnrichID" query="SELECT * FROM `buchEnrich` WHERE 1"
+			transformer="TemplateTransformer">
+
+			<field column="id" template="buchEnrich-${buchEnrich.PS_BuchEnrichID}"/>
+			<field column="kategorie" template="buchEnrich"/>
+			<field column="PS_BuchEnrichID" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats" template="enrich"/>
+			<field column="oaipmhsetBuchEnrich" name="set"/>
+		</entity>
+
+
+		<entity name="deleted_records" pk="PS_DeletedRecordsID"
+			query="SELECT * FROM `deleted_records` WHERE 1" transformer="TemplateTransformer">
+
+			<field column="id" template="${deleted_records.Kategorie}-${deleted_records.Key}"/>
+			<field column="kategorie" template="${deleted_records.Kategorie}"/>
+			<field column="unterkategorie" template="deleted"/>
+			<field column="Key" name="seriennummer"/>
+			<field column="lastModified" name="last_modified"/>
+			<field column="metadataformats"
+				template="oai_dc;cidoc_crm;origin;mets;carare"/>
+			<field column="oaipmhsetDeletedRecords" name="set"/>
+		</entity>
+
+	</document>
+</dataConfig>
