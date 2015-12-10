@@ -4,6 +4,7 @@ Voraussetzung: raw-Format bereits erstellt
 
 
 #### Version mit vielen Datensätzen pro Datei
+Einmal pro Kategorie:
 ```
 cd .../arachne-oai-pmh-scripts/origin/
 perl 03_solr2xml.pl .../arachne-oai-pmh-data/raw/categories SET

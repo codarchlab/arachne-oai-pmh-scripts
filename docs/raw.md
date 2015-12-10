@@ -3,6 +3,8 @@
 
 #### 1. Verknüpfungen
 
+Dieser Schritt muss nur einmal gemacht werden.
+
 ##### 1.1 semantic connections einlesen
 
 in der Arachne-DB:
@@ -42,12 +44,13 @@ Beispiel-Zeile aus bauwerk.txt:
 
 #### 2. Datensätze
 
-Vorher solr-Index aktualisieren!
+Beachte: das Skript produziert schwer zu deutende Fehlermeldungen "cannot write to closed filehandle", wenn es das Verzeichnis nicht gibt. Siehe TODO-Liste: Wenn ein Verzeichnis noch nicht existiert, soll das Skript es anlegen.
 
-mit SET z.B. = "objekt":
+Voraussetzung: Vorher solr-Index aktualisieren!
+
+Einmal pro Kategorie. Mit SET z.B. = "objekt":
 ```
 cd .../arachne-oai-pmh-data/raw/categories
 mkdir SET
 perl .../arachne-oai-pmh-scripts/raw/02_harvesting-von-solr.pl SET
 ```
-
