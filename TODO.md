@@ -32,7 +32,9 @@
 03_solr2xml.pl
 * Hack mit den Skript- und Daten-Verzeichnissen entfernen, und Daten an die richtige Stelle schreiben
 * Auf einen Datensatz pro Datei umstellen 
-  * die Version mit 1000 Datensätzen pro Datei behalten oder nicht?
+* die Version mit 1000 Datensätzen pro Datei behalten oder nicht? 
+  * Ein Argument wäre, dass das XSLT inbesondere für Cidoc CRM vermutlich schneller laufen würde. Aber belegt ist das nicht, und das XSLT könnte auch bei 1 Datensatz pro Datei leicht am Ordner erkennen, welches Kategorien-Blueprint es einlesen muss. 
+  * Gibt es noch weitere Argumente?
 
 04_objektkategorien-aufteilen.pl
 * Entfällt, wenn es nur die Version "1 Datensatz pro Datei" gibt? Aber dann sollten die Datensätze der Kategorie "objekt" stattdessen in entsprechende Unterverzeichnisse verteilt werden.
@@ -40,6 +42,7 @@
 #### Cidoc CRM
 * Skript aufteilen in 1. Kategorien-Blaupausen erstellen, 2. Blaupause anwenden für einzelne Datensätze. Das war ja ein Hack, der für das Ad-hoc-Erstellen von Datensätzen in der alten Schnittstelle gedacht war.
 * umstellen auf das 3M-Mapping-Format
+* Klären: wie ist das mit der "industrial strength"-Version, die viele Datensätze auf einmal verarbeiten kann und `<records>` statt `<record>` verwendet? Ist das bei Umstellung auf einen Datensatz pro Datei ebenfalls überflüssig?  
 
 altes todo:
 * Datierung kommt in das Produktions-Event. Man muss irgendwann klären, wo die korrekte Angabe steht (in der sem_connections-Tabelle??), und wie sie in das XML kommt
