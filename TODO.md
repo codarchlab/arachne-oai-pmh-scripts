@@ -10,6 +10,7 @@
 * sich ändernde Dinge in config-Dateien auslagern
 * Workflow automatisieren
 
+
 #### raw
 01_connections-tabelle-verkuerzen.pl
 * klären: kann man solr dazu bringen, die Verknüpfungen selbst zu harvesten? Oder die Tabelle harvesten und per solr-Abfrage richtig einsortieren? Oder aus dem A4-Backend?
@@ -17,6 +18,8 @@
 02_harvesting-von-solr.pl
 * verschiedene Schrittweiten für verschiedene Kategorien? Fest eingestellt oder als option?
 * Wrapper, um alle Kategorien zu harvesten
+* klären: ist `use open qw(:std :utf8);` absichtlich auskommentiert? (in 04_objektkategorien-aufteilen.pl ist es absichtlich auskommentiert "wegen File::Slurp")
+
 
 #### origin
 * Liste der Cidoc-Properties auf aktuelle CRM-Version aktualisieren 
@@ -28,9 +31,10 @@
 * Auf einen Datensatz pro Datei umstellen 
   * die Version mit 1000 Datensätzen pro Datei behalten oder nicht?
 
+04_objektkategorien-aufteilen.pl
+* Entfällt, wenn es nur die Version "1 Datensatz pro Datei" gibt? Aber dann sollten die Datensätze der Kategorie "objekt" stattdessen in entsprechende Unterverzeichnisse verteilt werden.
 
 #### Cidoc CRM
-
 * Skript aufteilen in 1. Kategorien-Blaupausen erstellen, 2. Blaupause anwenden für einzelne Datensätze. Das war ja ein Hack, der für das Ad-hoc-Erstellen von Datensätzen in der alten Schnittstelle gedacht war.
 * umstellen auf das 3M-Mapping-Format
 
@@ -39,12 +43,10 @@ altes todo:
 
 
 #### EAGLE
-
 * Francesco: weitere Skripte, die er verwendet, und eagle.md ergänzen
 
 
 #### Pelagios
-
 * Harvesting-Skript (https://github.com/codarchlab/gazetteer/blob/master/src/main/scripts/harvest-gazetteer-json.pl) hierhin verschieben?
 
 
