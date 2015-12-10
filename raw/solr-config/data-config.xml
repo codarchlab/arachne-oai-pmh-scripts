@@ -65,7 +65,7 @@
 		</entity>
 
 		<entity name="buchseite" pk="PS_BuchseiteID"
-			query="SELECT * FROM `buchseite` WHERE `DatensatzGruppeBuchseite` LIKE 'Arachne'"
+			query="SELECT * FROM `buchseite` LEFT JOIN `arachneentityidentification` ON `PS_BuchseiteID` = `ForeignKey` WHERE `DatensatzGruppeBuchseite` LIKE 'Arachne' AND `TableName` LIKE 'buchseite'"
 			transformer="TemplateTransformer">
 
 			<field column="id" template="buchseite-${buchseite.PS_BuchseiteID}"/>
@@ -290,7 +290,7 @@
 
 		</entity>
 
-		<entity name="literatur" pk="PS_LitraturID"
+		<entity name="literatur" pk="PS_LiteraturID"
 			query="SELECT * FROM `literatur` LEFT JOIN `arachneentityidentification` ON `PS_LiteraturID` = `ForeignKey` WHERE `TableName` LIKE 'literatur'"
 			transformer="TemplateTransformer">
 
