@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <dataConfig>
-	<!--url="jdbc:mysql://localhost/arachne?netTimeoutForStreamingResults=10000" -->
 	<dataSource driver="com.mysql.jdbc.Driver"
 		url="..." user="..."
 		password="..." batchSize="-1"/>
 
 	<document name="item">
-
-		<!--
-		<entity name="geonamesAlternatename" pk="alternatenameId"
-			query="SELECT * FROM geonamesAlternatename" transformer="TemplateTransformer">
-
-			<field column="id" template="geonamesAlternatename-${geonamesAlternatename.alternatenameId}"/>
-			<field column="kategorie" template="geonamesAlternatename"/>
-			<field column="alternatenameId" name="seriennummer"/>
-			<field column="lastModified" name="last_modified"/>
-			<field column="metadataformats"
-				template="oai_dc;cidoc_crm;origin;carare;claros"/>
-			<field column="oaipmhsetGeonamesAlterantename" name="set"/>
-		</entity>
-		-->
 
 		<entity name="bauwerk" pk="PS_BauwerkID"
 			query="SELECT * FROM bauwerk LEFT JOIN `arachneentityidentification` ON  `PS_BauwerkID` = `ForeignKey` WHERE DatensatzGruppeBauwerk LIKE 'Arachne' AND  `TableName` LIKE  'bauwerk'"
@@ -33,7 +18,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetBauwerk" name="set"/>
-			<!--<field column="KurzbeschreibungBauwerk" name="label"/>-->
 		</entity>
 
 		<entity name="bauwerksteil" pk="PS_BauwerksteilID"
@@ -47,7 +31,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetBauwerksteil" name="set"/>
-			<!--<field column="KurzbeschreibungBauwerksteil" name="label"/>-->
 		</entity>
 
 		<entity name="buch" pk="PS_BuchID"
@@ -61,7 +44,6 @@
 			<field column="metadataformats"
 				template="oai_dc;mets;origin;cidoc_crm"/>
 			<field column="oaipmhsetBuch" name="set"/>
-			<!--<field column="KurzbeschreibungBuch" name="label"/>-->
 		</entity>
 
 		<entity name="buchseite" pk="PS_BuchseiteID"
@@ -75,7 +57,6 @@
 			<field column="metadataformats"
 				template="oai_dc;origin;cidoc_crm"/>
 			<field column="oaipmhsetBuchseite" name="set"/>
-			<!--<field column="KurzbeschreibungBuchseite" name="label"/>-->
 		</entity>
 
 		<entity name="datierung" pk="PS_DatierungID" query="SELECT * FROM datierung"
@@ -88,7 +69,6 @@
 			<field column="metadataformats"
 				template="oai_dc;prometheus;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetDatierung" name="set"/>
-			<!--<field column="AnfEpoche" name="label"/>-->
 		</entity>
 
 		<entity name="gruppen" pk="PS_GruppenID"
@@ -102,7 +82,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare"/>
 			<field column="oaipmhsetGruppen" name="set"/>
-			<!--<field column="KurzbeschreibungGruppen" name="label"/>-->
 		</entity>
 
 		<entity name="gruppierung" pk="PS_GruppierungID"
@@ -116,7 +95,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetGruppierung" name="set"/>
-			<!--<field column="KurzbeschreibungGruppierung" name="label"/>-->
 		</entity>
 
 		<entity name="inschrift" pk="PS_InschriftID"
@@ -130,7 +108,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetInschrift" name="set"/>
-			<!--<field column="KurzbeschreibungInschrift" name="label"/>-->
 		</entity>
 
 		<entity name="marbilder" pk="PS_MARBilderID"
@@ -144,7 +121,6 @@
 			<field column="metadataformats"
 				template="oai_dc;prometheus;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetMarbilder" name="set"/>
-			<!--<field column="Pfad" name="label"/>-->
 		</entity>
 
 		<entity name="objekt" pk="PS_ObjektID"
@@ -158,7 +134,6 @@
 			<field column="metadataformats"
 				template="oai_dc;prometheus;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetObjekt" name="set"/>
-			<!--<field column="KurzbeschreibungObjekt" name="label"/>-->
 
 			<entity name="objektbauornamentik" pk="PS_ObjektbauornamentikID"
 				query="SELECT * FROM objektbauornamentik 
@@ -315,7 +290,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetPerson" name="set"/>
-			<!--<field column="KurzbeschreibungPerson" name="label"/>-->
 		</entity>
 
 		<entity name="realien" pk="PS_RealienID"
@@ -329,7 +303,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetRealien" name="set"/>
-			<!--<field column="KurzbeschreibungRealien" name="label"/>-->
 		</entity>
 
 		<entity name="relief" pk="PS_ReliefID"
@@ -343,7 +316,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetRelief" name="set"/>
-			<!--<field column="KurzbeschreibungRelief" name="label"/>-->
 		</entity>
 
 		<entity name="reproduktion" pk="PS_ReproduktionID"
@@ -357,7 +329,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetReproduktion" name="set"/>
-			<!--<field column="KurzbeschreibungReproduktion" name="label"/>-->
 		</entity>
 
 		<entity name="rezeption" pk="PS_RezeptionID"
@@ -371,7 +342,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin"/>
 			<field column="oaipmhsetRezeption" name="set"/>
-			<!--<field column="KurzbeschreibungRezeption" name="label"/>-->
 		</entity>
 
 		<entity name="sammlungen" pk="PS_SammlungenID"
@@ -385,7 +355,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetSammlungen" name="set"/>
-			<!--<field column="KurzbeschreibungSammlungen" name="label"/>-->
 		</entity>
 
 		<entity name="topographie" pk="PS_TopographieID"
@@ -399,7 +368,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin;carare;claros"/>
 			<field column="oaipmhsetTopographie" name="set"/>
-			<!--<field column="KurzbeschreibungTopographie" name="label"/>-->
 		</entity>
 
 		<entity name="typus" pk="PS_TypusID"
@@ -413,7 +381,6 @@
 			<field column="metadataformats"
 				template="oai_dc;cidoc_crm;origin"/>
 			<field column="oaipmhsetTypus" name="set"/>
-			<!--<field column="KurzbeschreibungTypus" name="label"/>-->
 		</entity>
 
 		<entity name="buchEnrich" pk="PS_BuchEnrichID" query="SELECT * FROM `buchEnrich` WHERE 1"
