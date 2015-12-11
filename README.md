@@ -12,16 +12,15 @@ raw ⟶ origin
                 (everything else)
 ```
 
-### 1. Arachne-DB harvesten
+### Start
 
-Siehe [raw](docs/raw.md)
+1. [raw](docs/raw.md)
 
-### 2. origin-Format erstellen
+2. [origin](docs/origin.md)
 
-Siehe [origin](docs/origin.md)
+### Derived formats
 
-
-### 3. weitere Formate erstellen
+in alphabetical order:
 
 * [Ariadne](docs/ariadne.md)
 
