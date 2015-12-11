@@ -88,8 +88,8 @@ altes todo:
 
 ### 4. OAI-PMH-Interface
 * jOAI auf GitHub clonen? Lizenz-Problem oder nicht?
-* So bearbeiten, dass das unnötige und zeitaufwändige Indexieren mit Lucene wegfällt? Also einfach ein Wrapper zum Ausliefern der Dateien mit dem OAI-PMH-Protokoll, inkl. diff.
+* So bearbeiten, dass das unnötige und zeitaufwändige Indexieren mit Lucene wegfällt? Also einfach ein Wrapper zum Ausliefern der Dateien mit dem OAI-PMH-Protokoll, inkl. diff (neu, geändert, gelöscht).
 * So bearbeiten, dass nicht der Zeitstempel ausschlaggebend ist, sondern ob sich die Datei tatsächlich geändert hat.
 * Ist es einfacher, das Interface komplett neu zu schreiben?
-
+* Ziel: Man kann mit den aktuellen Daten einfach die vorhandenen Daten überschreiben, und das OAI-PMH-Interface macht den Rest. Und Arachne sollte die Daten dann ebenfalls automatisch finden und in die Einzelansicht einbinden.
 
