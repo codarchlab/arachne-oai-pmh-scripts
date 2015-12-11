@@ -9,7 +9,9 @@
 * Lizenz?
 * sich ändernde Dinge in config-Dateien auslagern
 * Workflow automatisieren
-* Ordner "other_formats" weg? Die URL `/arachne-oai-pmh-scripts/other_formats/cidoc_crm` sieht irgendwie doof aus. Idee war, dass dann klarer wird, dass man erst "origin" erzeugen muss. Auch so klar? (Wenn, dann auch in arachne-oai-pmh-data.)
+* Ordner "other_formats" weg? Die URL `/arachne-oai-pmh-scripts/other_formats/cidoc_crm` sieht irgendwie doof aus. Idee war, dass dann klarer wird, dass man erst "origin" erzeugen muss. Auch so klar? 
+  * Oder umbenennen in `derived_formats`? Oder `1_raw`, `2_origin`und dann alles andere, so dass die Abhängigkeiten durch die Sortierung klar werden? (Wenn, dann auch in arachne-oai-pmh-data.)
+  * Jedenfalls entscheiden, bevor Cidoc-Skript und -Daten ins Repo kommen.
 * raw und origin zusammenfassen? (Das dann doch nicht, oder?)
 
 #### raw
@@ -52,7 +54,6 @@ altes todo:
 
 
 ### 2. Daten
-* Übersicht Gesamtstruktur von arachne-oai-pmh-data in einem kleinen Diagramm
 * Verzeichnis mit sample data
 * Kategorien durchgehen: alte Übersicht:
 
@@ -86,6 +87,8 @@ altes todo:
 
 ### 3. Dokumentation
 * Workflow zusätzlich zu deutsch auch auf englisch
+* Übersicht Gesamtstruktur von arachne-oai-pmh-data in einem kleinen Diagramm
+* Diagramm: Abhängigkeitne der Datenformate
 
 
 ### 4. OAI-PMH-Interface
