@@ -93,3 +93,41 @@ altes todo:
 * Ist es einfacher, das Interface komplett neu zu schreiben?
 * Ziel: Man kann mit den aktuellen Daten einfach die vorhandenen Daten überschreiben, und das OAI-PMH-Interface macht den Rest. Und Arachne sollte die Daten dann ebenfalls automatisch finden und in die Einzelansicht einbinden.
 
+Fragen gestellt im jOAI user forum: https://sourceforge.net/p/dlsciences/discussion/1138932/
+
+#### Problems with Lucene
+There seems to be a problem with Lucene: If I try to define a set using some search term, I get a Lucen error message. Lucene says about "org.apache.lucene.analysis.Token": "Deprecated. This class is outdated and no longer used since Lucene 2.9. Nuke it finally!" 
+
+#### Reduce indexing time
+jOAI takes a long time indexing 2000 big documents. I guess the culprit is the Lucene indexing. Is there a way to switch Lucene indexing off?
+
+#### checking if a dataset has changed
+It seems that jOAI does not inspect a file to see whether it has change, but simply uses the file's timestamp. Is there a way to let jOAI mark only those files as changed that have actually changed?
+
+#### maigrate to modern versioning system
+Are there any plans to migrate from CVS to a more modern versioning system?
+
+#### Missing whitespace after preamble leads to invalid XML
+It seems that this bug hasn't been fixed in version 3.1.1.4:
+
+I ran into a problem with jOAI which may or may not be similar to the problem described above. We have datasets that start with
+<?xml version="1.0" encoding="UTF-8"?>\<mets:mets xmlns:mets="..." ...>
+(The \ is only there because the XML snippet get mangled without it.)
+
+When jOAI adds the OAI PMH wrapper, it removes the <?xml version="1.0" encoding="UTF-8"?> line, and with it the \<mets:mets>. The result is an invalid XML. This problem doesn’t occur if we insert a line break, i.e.
+<?xml version="1.0" encoding="UTF-8"?>
+\<mets:mets xmlns:mets="..." ...>
+
+But the behaviour shouldn’t depend on the presence or absence of whitespace in the XML.
+
+***
+You replied:
+
+Thanks for providing the specifics for the error you are seeing. I believe jOAI looks for the presence of the XML declaration <?xml version="1.0" encoding="UTF-8"?> and if found, removes the entire first line before inserting the metadata into the OAI-PMH container, as you describe. You are correct that it should only remove the XML declaration portion and not the rest of the line, if additional content appears there. We'll work to fix this for the next jOAI release.
+
+In the meantime a work-around is to ensure that the XML declaration in the metadata records appear alone by itself without other content on the same line.
+***
+
+#### less restrictive licence
+It seems that the sourcecode is licenced under the GPL v2 (excluding any libraries). Is there any chance that one could have an additional less restrictive license, such as Apache 2.0?
+
