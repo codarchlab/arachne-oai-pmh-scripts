@@ -4,6 +4,12 @@ A collection of scripts for exporting Arachne datasets in a variety of data form
 
 First one needs to harvest the raw Arachne data and create the "origin" XML format. From this format all other formats can be derived. 
 
+```
+               ⟶ cidoc_crm ⟶ eagle
+raw ⟶ origin
+               ⟶ everything else
+```
+
 ### 1. Arachne-DB harvesten
 
 Siehe [raw](docs/raw.md)
