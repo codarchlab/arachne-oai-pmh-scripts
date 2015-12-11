@@ -9,7 +9,8 @@
 * Lizenz?
 * sich ändernde Dinge in config-Dateien auslagern
 * Workflow automatisieren
-
+* Ordner "other_formats" weg? Die URL `/arachne-oai-pmh-scripts/other_formats/cidoc_crm` sieht irgendwie doof aus. Idee war, dass dann klarer wird, dass man erst "origin" erzeugen muss. Auch so klar? (Wenn, dann auch in arachne-oai-pmh-data.)
+* raw und origin zusammenfassen? (Das dann doch nicht, oder?)
 
 #### raw
 01_connections-tabelle-verkuerzen.pl
