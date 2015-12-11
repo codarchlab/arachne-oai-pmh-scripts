@@ -84,7 +84,6 @@ altes todo:
 ### 3. Dokumentation
 * Workflow zusätzlich zu deutsch auch auf englisch
 * Übersicht Gesamtstruktur von arachne-oai-pmh-data in einem kleinen Diagramm
-* Diagramm: Abhängigkeitne der Datenformate
 
 
 ### 4. OAI-PMH-Interface
