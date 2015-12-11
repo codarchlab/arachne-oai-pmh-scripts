@@ -4,7 +4,7 @@
 
 Einmal pro Kategorie:
 ```
-cd .../arachne-oai-pmh-scripts/other_formats/cidoc_crm
+cd .../arachne-oai-pmh-scripts/cidoc_crm
 perl 05_XSLT-anwenden.pl path/to/XSLT-engine xslt-Script .../arachne-oai-pmh-data/origin/SET
 ```
 

@@ -15,16 +15,16 @@ Siehe [origin](docs/origin.md)
 
 ### 3. weitere Formate erstellen
 
-* [Ariadne](docs/other_formats/ariadne.md)
+* [Ariadne](docs/ariadne.md)
 
-* [Carare](docs/other_formats/carare.md)
+* [Carare](docs/carare.md)
 
-* [Cidoc CRM](docs/other_formats/cidoc_crm.md)
+* [Cidoc CRM](docs/cidoc_crm.md)
 
-* [DC](docs/other_formats/dc.md)
+* [DC](docs/dc.md)
 
-* [EAGLE](docs/other_formats/eagle.md)
+* [EAGLE](docs/eagle.md)
 
-* [METS](docs/other_formats/mets.md)
+* [METS](docs/mets.md)
 
-* [Pelagios](docs/other_formats/pelagios.md)
+* [Pelagios](docs/pelagios.md)
