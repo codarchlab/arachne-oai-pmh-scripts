@@ -46,6 +46,10 @@ altes todo:
 * Francesco: weitere Skripte, die er verwendet, und eagle.md ergänzen
 
 
+#### METS
+* Workflow aus der alten Schnittstelle und dem zusätzlichen Skript extrahieren. Verändert das zusätzliche Skript überhaupt die Datensätze, oder ist es nur ein Tool zum Harvesten der alten Schnittstelle und zur  Fehlerkontrolle? Die Funktion muss es auch weiterhin geben, nachdem die alte Schnittstelle abgeschaltet wird.
+
+
 #### Pelagios
 * Harvesting-Skript (https://github.com/codarchlab/gazetteer/blob/master/src/main/scripts/harvest-gazetteer-json.pl) hierhin verschieben?
 
@@ -84,7 +88,6 @@ altes todo:
 
 ### 3. Dokumentation
 * Workflow zusätzlich zu deutsch auch auf englisch
-* Übersicht Gesamtstruktur von arachne-oai-pmh-data in einem kleinen Diagramm
 
 
 ### 4. OAI-PMH-Interface

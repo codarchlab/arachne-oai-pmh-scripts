@@ -52,21 +52,21 @@ arachne-oai-pmh-data/
 			by_category/
 				SET.txt
 	FORMAT/
+		vocab/
+			?
 		SET/
-			vocab/
-				?
 			00/
-				SET-FORMAT-1000100.xml
-				SET-FORMAT-1000200.xml
+				SET-1000100-FORMAT.xml
+				SET-1000200-FORMAT.xml
 				...
 			01/
-				SET-FORMAT-1000101.xml
-				SET-FORMAT-1000201.xml
+				SET-1000101-FORMAT.xml
+				SET-1000201-FORMAT.xml
 				...
 			...
 			99/
-				SET-FORMAT-1000199.xml
-				SET-FORMAT-1000299.xml
+				SET-1000199-FORMAT.xml
+				SET-1000299-FORMAT.xml
 				...
 ```
 
