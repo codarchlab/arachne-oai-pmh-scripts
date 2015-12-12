@@ -56,15 +56,18 @@ arachne-oai-pmh-data/
 			vocab/
 				?
 			00/
-				SET-FORMAT-1234500.xml
-				SET-FORMAT-1234600.xml
+				SET-FORMAT-1000100.xml
+				SET-FORMAT-1000200.xml
 				...
 			01/
-				SET-FORMAT-1234501.xml
-				SET-FORMAT-1234601.xml
+				SET-FORMAT-1000101.xml
+				SET-FORMAT-1000201.xml
 				...
 			...
-
+			99/
+				SET-FORMAT-1000199.xml
+				SET-FORMAT-1000299.xml
+				...
 ```
 
 FORMAT = origin, cidoc_crm, etc.
@@ -73,3 +76,4 @@ SET = bauwerk, objekt, etc.
 
 Not all combinations of FORMAT and SET are possible. For example, METS applies only to books.
 
+The numbers 1000199 etc. in the diagram stand for ArachneEntityIDs that end with 00, 01, ..., 99.
