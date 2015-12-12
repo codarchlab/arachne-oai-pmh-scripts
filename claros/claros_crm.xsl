@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet 
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#"
-  xmlns:crm="http://purl.org/NET/crm-owl#" xmlns:claros="http://purl.org/NET/Claros/vocab#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:crm="http://purl.org/NET/crm-owl#" 
+  xmlns:claros="http://purl.org/NET/Claros/vocab#"
   version="2.0">
+ 
   <xsl:output encoding="UTF-8" indent="yes"/>
+
   <xsl:function name="crm:fixURI">
     <xsl:param name="uri"/>
     <xsl:variable name="newUri" select="lower-case($uri)"/>
@@ -18,26 +23,38 @@
     <xsl:variable name="newUri" select="encode-for-uri($newUri)"/>
     <xsl:value-of select="$newUri"/>
   </xsl:function>
+  
+  <xsl:variable name="id" select="record/*/ArachneEntityID"/>
+  
+  <xsl:function name="crm:createURI">
+    <xsl:param name="type"/>
+    <xsl:value-of>
+      <xsl:text>http://arachne.uni-koeln.de/</xsl:text>
+      <xsl:value-of select="$type"/>
+      <xsl:text>/</xsl:text>
+      <xsl:value-of select="$id"/>
+    </xsl:value-of>
+  </xsl:function>
+
   <xsl:template match="/">
     <rdf:RDF>
       <xsl:apply-templates/>
     </rdf:RDF>
   </xsl:template>
+
   <xsl:template match="object">
     <crm:E22_Man-Made_Object>
-      <xsl:variable name="artifactID" select="concat(@id, '-' , crm:fixURI(title))"/>
-      <xsl:attribute name="rdf:about">
-        <xsl:text>http://arachne.uni-koeln.de/artifact/</xsl:text>
+      <xsl:variable name="artifactID" select="ArachneEntityID"/>
+      <xsl:variable name="link">
+        <xsl:text>http://arachne.uni-koeln.de/entity/</xsl:text>
         <xsl:value-of select="$artifactID"/>
-      </xsl:attribute>
+      </xsl:variable>
+      <xsl:attribute name="rdf:about" select="crm:createURI('artifact')"/>
       <crm:P70i_is_documented_in>
-        <xsl:attribute name="rdf:resource">
-          <xsl:text>http://arachne.uni-koeln.de/item/objekt/</xsl:text>
-          <xsl:value-of select="@id"/>
-        </xsl:attribute>
+        <xsl:attribute name="rdf:resource" select="$link"/>
       </crm:P70i_is_documented_in>
-      <xsl:apply-templates select="title"/>
-      <xsl:apply-templates select="preservation"/>
+      <xsl:apply-templates select="KurzbeschreibungObjekt"/>
+      <xsl:apply-templates select="Erhaltung"/>
       <xsl:apply-templates select="bibliography"/>
       <xsl:apply-templates select="scenes"/>
       <xsl:apply-templates select="function"/>
@@ -54,6 +71,43 @@
       <xsl:apply-templates select="generalCategory"/>
     </crm:E22_Man-Made_Object>
   </xsl:template>
+  
+  <xsl:template match="KurzbeschreibungObjekt">
+    <crm:P102_has_title>
+      <crm:E35_Title>
+        <rdf:value>
+          <xsl:value-of select="."/>
+        </rdf:value>
+      </crm:E35_Title>
+    </crm:P102_has_title>
+    <rdfs:label>
+      <xsl:value-of select="."/>
+    </rdfs:label>
+  </xsl:template>
+  
+  <xsl:template match="Erhaltung">
+    <crm:P44_has_condition>
+      <crm:E3_Condition_State>
+        <xsl:attribute name="rdf:about">
+          <xsl:text>http://arachne.uni-koeln.de/condition/</xsl:text>
+          <xsl:value-of select="concat(parent::node()/@id, '-', crm:fixURI(parent::node()/title))"
+          />
+        </xsl:attribute>
+        <crm:P2_has_type>
+          <crm:E55_Type>
+            <xsl:attribute name="rdf:about">
+              <xsl:text>http://arachne.uni-koeln.de/type/condition/</xsl:text>
+              <xsl:value-of select="crm:fixURI(.)"/>
+            </xsl:attribute>
+            <rdf:value>
+              <xsl:value-of select="."/>
+            </rdf:value>
+          </crm:E55_Type>
+        </crm:P2_has_type>
+      </crm:E3_Condition_State>
+    </crm:P44_has_condition>
+  </xsl:template>
+  
   <xsl:template match="material">
     <xsl:if test="string-length(.)">
       <crm:P45_consists_of>
@@ -80,6 +134,7 @@
       </crm:P45_consists_of>
     </xsl:if>
   </xsl:template>
+  
   <xsl:template match="generalCategory">
     <xsl:if test="string-length(.)">
       <xsl:for-each select="tokenize(., ' ')">
@@ -98,44 +153,7 @@
       </xsl:for-each>
     </xsl:if>
   </xsl:template>
-  <xsl:template match="title">
-    <xsl:if test="string-length(.)">
-      <crm:P102_has_title>
-        <crm:E35_Title>
-          <rdf:value>
-            <xsl:value-of select="."/>
-          </rdf:value>
-        </crm:E35_Title>
-      </crm:P102_has_title>
-      <rdfs:label>
-        <xsl:value-of select="."/>
-      </rdfs:label>
-    </xsl:if>
-  </xsl:template>
-  <xsl:template match="preservation">
-    <xsl:if test="string-length(.)">
-      <crm:P44_has_condition>
-        <crm:E3_Condition_State>
-          <xsl:attribute name="rdf:about">
-            <xsl:text>http://arachne.uni-koeln.de/condition/</xsl:text>
-            <xsl:value-of select="concat(parent::node()/@id, '-', crm:fixURI(parent::node()/title))"
-            />
-          </xsl:attribute>
-          <crm:P2_has_type>
-            <crm:E55_Type>
-              <xsl:attribute name="rdf:about">
-                <xsl:text>http://arachne.uni-koeln.de/type/condition/</xsl:text>
-                <xsl:value-of select="crm:fixURI(.)"/>
-              </xsl:attribute>
-              <rdf:value>
-                <xsl:value-of select="."/>
-              </rdf:value>
-            </crm:E55_Type>
-          </crm:P2_has_type>
-        </crm:E3_Condition_State>
-      </crm:P44_has_condition>
-    </xsl:if>
-  </xsl:template>
+  
   <xsl:template match="bibliography">
     <xsl:apply-templates select="bibItem"/>
   </xsl:template>
@@ -154,9 +172,11 @@
       </crm:P67i_is_referred_to_by>
     </xsl:if>
   </xsl:template>
+  
   <xsl:template match="scenes">
     <xsl:apply-templates select="scene"/>
   </xsl:template>
+  
   <xsl:template match="scene">
     <crm:P56_bears_feature>
       <crm:E25_Man-Made_Feature>
@@ -182,9 +202,11 @@
       </crm:E25_Man-Made_Feature>
     </crm:P56_bears_feature>
   </xsl:template>
+  
   <xsl:template match="images">
     <xsl:apply-templates select="image"/>
   </xsl:template>
+  
   <xsl:template match="image">
     <crm:P138i_has_representation>
       <crm:E38_Image>
@@ -211,6 +233,7 @@
       </crm:P138i_has_representation>
     </xsl:if>
   </xsl:template>
+  
   <xsl:template match="findspot">
     <xsl:if test="string-length(.)">
       <crm:P16i_was_used_for>
@@ -260,9 +283,11 @@
       </crm:P16i_was_used_for>
     </xsl:if>
   </xsl:template>
+  
   <xsl:template match="locations">
     <xsl:apply-templates select="location"/>
   </xsl:template>
+  
   <xsl:template match="location">
     <xsl:if test="string-length(depository)">
       <xsl:choose>
@@ -361,12 +386,14 @@
       </xsl:choose>
     </xsl:if>
   </xsl:template>
+  
   <xsl:template match="dating">
     <xsl:param name="artifactID"/>
     <xsl:apply-templates select="date">
       <xsl:with-param name="artifactID" select="$artifactID"/>
     </xsl:apply-templates>
   </xsl:template>
+  
   <xsl:template match="date">
     <xsl:param name="artifactID"/>
     <xsl:choose>
@@ -422,6 +449,7 @@
       </xsl:when>
     </xsl:choose>
   </xsl:template>
+  
   <xsl:template match="function">
     <xsl:if test="string-length(.)">
       <crm:P103_was_intended_for>
@@ -437,6 +465,7 @@
       </crm:P103_was_intended_for>
     </xsl:if>
   </xsl:template>
+  
   <xsl:template match="ceramic">
     <xsl:param name="artifactID"/>
     <xsl:if test="string-length(shape)">
@@ -512,4 +541,5 @@
       </crm:P41i_was_classified_by>
     </xsl:if>
   </xsl:template>
+  
 </xsl:stylesheet>
