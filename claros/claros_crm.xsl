@@ -27,6 +27,7 @@
   <!--  <xsl:variable name="id" select="record/*/ArachneEntityID"/> -->
   
   <xsl:function name="crm:createURL">
+    <!-- URLs, die tatsächlich ein Ergebnis liefern, wenn man sie anklickt -->
     <xsl:param name="context"/>
     <xsl:value-of>
       <xsl:text>http://arachne.uni-koeln.de/entity/</xsl:text>
@@ -35,6 +36,7 @@
   </xsl:function>
   
   <xsl:function name="crm:createSubURL">
+    <!-- Pseudo-URLs, die kein Ergebnis liefern, wenn man sie anklickt -->
     <xsl:param name="sub"/>
     <xsl:param name="context"/>
     <xsl:value-of>
@@ -46,6 +48,7 @@
   </xsl:function>
   
   <xsl:function name="crm:createContentURL">
+    <!-- Pseudo-URLs, die idealerweise ein Vokabular beschreiben -->
     <xsl:param name="sub"/>
     <xsl:param name="context"/>
     <xsl:value-of>
@@ -71,11 +74,6 @@
       <!-- Teil 1 -->
       <xsl:apply-templates select="KurzbeschreibungObjekt"/>
       <xsl:apply-templates select="Erhaltung"/>
-      <!--  <xsl:if test="Literatur">
-        <bibliography>
-          <xsl:apply-templates select="Literatur"/>
-        </bibliography>
-      </xsl:if> -->
       <!-- Teil 2 -->
       <xsl:apply-templates select="literaturzitat"/>
       <xsl:apply-templates select="scenes"/>
@@ -89,6 +87,8 @@
       <xsl:apply-templates select="generalCategory"/>
     </crm:E22_Man-Made_Object>
   </xsl:template>
+  
+  <!-- Teil 1 -->
   
   <xsl:template match="KurzbeschreibungObjekt">
     <crm:P102_has_title>
@@ -119,15 +119,37 @@
     </crm:P44_has_condition>
   </xsl:template>
   
+  <!-- Teil 2 -->
+  
   <xsl:template match="literaturzitat">
     <crm:P67i_is_referred_to_by>
       <crm:E31_Document>
         <xsl:attribute name="rdf:about" select="crm:createURL(.)"/>
         <rdfs:label>
-          <xsl:value-of select="normalize-space(.)"/>
+          <xsl:value-of select="normalize-space(DAIRichtlinien)"/>
         </rdfs:label>
       </crm:E31_Document>
     </crm:P67i_is_referred_to_by>
+  </xsl:template>
+  
+  <xsl:template match="relief">
+    <crm:P56_bears_feature>
+      <crm:E25_Man-Made_Feature>
+        <xsl:attribute name="rdf:about" select="crm:createURL(.)"/>
+        <rdfs:label>
+          <xsl:value-of select="KurzbeschreibungRelief"/>
+        </rdfs:label>
+        <crm:P102_has_title>
+          <crm:E35_Title>
+            <xsl:attribute name="rdf:about" select="crm:createSubURL('identifier/feature', .)"/>
+            <rdf:value>
+              <xsl:value-of select="KurzbeschreibungRelief"/>
+            </rdf:value>
+          </crm:E35_Title>
+        </crm:P102_has_title>
+        <xsl:apply-templates select="images"/> <!-- !!! -->
+      </crm:E25_Man-Made_Feature>
+    </crm:P56_bears_feature>
   </xsl:template>
   
   <xsl:template match="material">
@@ -174,36 +196,6 @@
         </crm:P2_has_type>
       </xsl:for-each>
     </xsl:if>
-  </xsl:template>
-  
-  <xsl:template match="scenes">
-    <xsl:apply-templates select="scene"/>
-  </xsl:template>
-  
-  <xsl:template match="scene">
-    <crm:P56_bears_feature>
-      <crm:E25_Man-Made_Feature>
-        <xsl:attribute name="rdf:about">
-          <xsl:text>http://arachne.uni-koeln.de/feature/</xsl:text>
-          <xsl:value-of select="concat(@id, '-', crm:fixURI(title))"/>
-        </xsl:attribute>
-        <rdfs:label>
-          <xsl:value-of select="title"/>
-        </rdfs:label>
-        <crm:P102_has_title>
-          <crm:E35_Title>
-            <xsl:attribute name="rdf:about">
-              <xsl:text>http://arachne.uni-koeln.de/identifier/feature/</xsl:text>
-              <xsl:value-of select="crm:fixURI(title)"/>
-            </xsl:attribute>
-            <rdf:value>
-              <xsl:value-of select="title"/>
-            </rdf:value>
-          </crm:E35_Title>
-        </crm:P102_has_title>
-        <xsl:apply-templates select="images"/>
-      </crm:E25_Man-Made_Feature>
-    </crm:P56_bears_feature>
   </xsl:template>
   
   <xsl:template match="images">
