@@ -27,7 +27,8 @@
   <!--  <xsl:variable name="id" select="record/*/ArachneEntityID"/> -->
   
   <xsl:function name="crm:createURL">
-    <!-- URLs, die tatsächlich ein Ergebnis liefern, wenn man sie anklickt -->
+    <!-- URLs für DB-Einträge, die tatsächlich ein Arachne-Ergebnis liefern, 
+      wenn man sie anklickt -->
     <xsl:param name="context"/>
     <xsl:value-of>
       <xsl:text>http://arachne.uni-koeln.de/entity/</xsl:text>
@@ -36,7 +37,8 @@
   </xsl:function>
   
   <xsl:function name="crm:createSubURL">
-    <!-- Pseudo-URLs, die kein Ergebnis liefern, wenn man sie anklickt -->
+    <!-- Pseudo-URLs für Eigenschaften einzelner Einträge wie "condition", 
+      die (noch) kein Ergebnis liefern, wenn man sie anklickt -->
     <xsl:param name="sub"/>
     <xsl:param name="context"/>
     <xsl:value-of>
@@ -47,8 +49,22 @@
     </xsl:value-of>
   </xsl:function>
   
+  <xsl:function name="crm:createVocabularyURL">
+    <!-- Pseudo-URLs für Eigenschaften-Werte wie "vollständig", die 
+      idealerweise ein begrenztes Vokabular verwenden -->
+    <xsl:param name="sub"/>
+    <xsl:param name="context"/>
+    <xsl:value-of>
+      <xsl:text>http://arachne.uni-koeln.de/</xsl:text>
+      <xsl:value-of select="$sub"/>
+      <xsl:text>/</xsl:text>
+      <xsl:value-of select="crm:fixURI($context)"/>
+    </xsl:value-of>
+  </xsl:function>
+  
   <xsl:function name="crm:createContentURL">
-    <!-- Pseudo-URLs, die idealerweise ein begrenztes Vokabular beschreiben -->
+    <!-- Pseudo-URLs, die mit Text aus einem Datenfeld eines Objekts 
+      erzeugt werden, aber kein begrenztes Vokabular verwenden -->
     <xsl:param name="sub"/>
     <xsl:param name="context"/>
     <xsl:value-of>
@@ -75,6 +91,8 @@
       <xsl:apply-templates select="KurzbeschreibungObjekt"/>
       <xsl:apply-templates select="Erhaltung"/>
       <xsl:apply-templates select="Funktion"/>
+      <xsl:apply-templates select="Fundort"/>
+      <xsl:apply-templates select="Material"/>
       <!-- Teil 2 -->
       <xsl:apply-templates select="literaturzitat"/>
       <xsl:apply-templates select="relief"/>
@@ -82,10 +100,8 @@
       
       <xsl:apply-templates select="ceramic"/>
 
-      <xsl:apply-templates select="findspot"/>
       <xsl:apply-templates select="locations"/>
       <xsl:apply-templates select="dating"/>
-      <xsl:apply-templates select="material"/>
       <xsl:apply-templates select="generalCategory"/>
     </crm:E22_Man-Made_Object>
   </xsl:template>
@@ -111,7 +127,7 @@
         <xsl:attribute name="rdf:about" select="crm:createSubURL('condition', ..)"/>
         <crm:P2_has_type>
           <crm:E55_Type>
-            <xsl:attribute name="rdf:about" select="crm:createContentURL('type/condition', .)"/>
+            <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('type/condition', .)"/>
             <rdf:value>
               <xsl:value-of select="."/>
             </rdf:value>
@@ -124,12 +140,75 @@
   <xsl:template match="Funktion">
     <crm:P103_was_intended_for>
       <crm:E55_Type>
-        <xsl:attribute name="rdf:about" select="crm:createContentURL('type/function', .)"/>
+        <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('type/function', .)"/>
         <rdfs:label>
           <xsl:value-of select="."/>
         </rdfs:label>
       </crm:E55_Type>
     </crm:P103_was_intended_for>
+  </xsl:template>
+  
+  <xsl:template match="Fundort">
+    <crm:P16i_was_used_for>
+      <crm:E7_Activity>
+        <crm:P2_has_type rdf:resource="http://purl.org/NET/Claros/vocab#Event_FindObject"/>
+        <crm:P7_took_place_at>
+          <crm:E53_Place>
+            <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('place', .)"/>
+            <crm:P87_is_identified_by>
+              <crm:E48_Place_Name>
+                <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('identifier/place', .)"/>
+                <rdf:value>
+                  <xsl:value-of select="."/>
+                </rdf:value>
+              </crm:E48_Place_Name>
+            </crm:P87_is_identified_by>
+            <xsl:if test="../Fundstaat">
+              <crm:P89_falls_within>
+                <crm:E53_Place>
+                  <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('state', ../Fundstaat)"/>
+                  <crm:P87_is_identified_by>
+                    <crm:E48_Place_Name>
+                      <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('identifier/state', ../Fundstaat)"/>
+                      <rdf:value>
+                        <xsl:value-of select="../Fundstaat"/>
+                      </rdf:value>
+                    </crm:E48_Place_Name>
+                  </crm:P87_is_identified_by>
+                </crm:E53_Place>
+              </crm:P89_falls_within>
+            </xsl:if>
+          </crm:E53_Place>
+        </crm:P7_took_place_at>
+      </crm:E7_Activity>
+    </crm:P16i_was_used_for>
+  </xsl:template>
+  
+  <xsl:template match="Material">
+    <xsl:if test="string-length(.)">
+      <crm:P45_consists_of>
+        <crm:E57_Material>
+          <xsl:attribute name="rdf:about">
+            <xsl:text>http://arachne.uni-koeln.de/material/</xsl:text>
+            <xsl:value-of select="crm:fixURI(.)"/>
+          </xsl:attribute>
+          <rdfs:label>
+            <xsl:value-of select="."/>
+          </rdfs:label>
+          <crm:P1_is_identified_by>
+            <crm:E41_Appellation>
+              <xsl:attribute name="rdf:about">
+                <xsl:text>http://arachne.uni-koeln.de/identifier/material/</xsl:text>
+                <xsl:value-of select="crm:fixURI(.)"/>
+              </xsl:attribute>
+              <rdf:value>
+                <xsl:value-of select="."/>
+              </rdf:value>
+            </crm:E41_Appellation>
+          </crm:P1_is_identified_by>
+        </crm:E57_Material>
+      </crm:P45_consists_of>
+    </xsl:if>
   </xsl:template>
   
   <!-- Teil 2 -->
@@ -174,33 +253,6 @@
   </xsl:template>
   
 
-  <xsl:template match="material">
-    <xsl:if test="string-length(.)">
-      <crm:P45_consists_of>
-        <crm:E57_Material>
-          <xsl:attribute name="rdf:about">
-            <xsl:text>http://arachne.uni-koeln.de/material/</xsl:text>
-            <xsl:value-of select="crm:fixURI(.)"/>
-          </xsl:attribute>
-          <rdfs:label>
-            <xsl:value-of select="."/>
-          </rdfs:label>
-          <crm:P1_is_identified_by>
-            <crm:E41_Appellation>
-              <xsl:attribute name="rdf:about">
-                <xsl:text>http://arachne.uni-koeln.de/identifier/material/</xsl:text>
-                <xsl:value-of select="crm:fixURI(.)"/>
-              </xsl:attribute>
-              <rdf:value>
-                <xsl:value-of select="."/>
-              </rdf:value>
-            </crm:E41_Appellation>
-          </crm:P1_is_identified_by>
-        </crm:E57_Material>
-      </crm:P45_consists_of>
-    </xsl:if>
-  </xsl:template>
-  
   <xsl:template match="generalCategory">
     <xsl:if test="string-length(.)">
       <xsl:for-each select="tokenize(., ' ')">
@@ -220,56 +272,6 @@
     </xsl:if>
   </xsl:template>
  
-  <xsl:template match="findspot">
-    <xsl:if test="string-length(.)">
-      <crm:P16i_was_used_for>
-        <crm:E7_Activity>
-          <crm:P2_has_type rdf:resource="http://purl.org/NET/Claros/vocab#Event_FindObject"/>
-          <crm:P7_took_place_at>
-            <crm:E53_Place>
-              <xsl:attribute name="rdf:about">
-                <xsl:text>http://arachne.uni-koeln.de/place/</xsl:text>
-                <xsl:value-of select="crm:fixURI(.)"/>
-              </xsl:attribute>
-              <crm:P87_is_identified_by>
-                <crm:E48_Place_Name>
-                  <xsl:attribute name="rdf:about">
-                    <xsl:text>http://arachne.uni-koeln.de/identifier/place/</xsl:text>
-                    <xsl:value-of select="crm:fixURI(.)"/>
-                  </xsl:attribute>
-                  <rdf:value>
-                    <xsl:value-of select="."/>
-                  </rdf:value>
-                </crm:E48_Place_Name>
-              </crm:P87_is_identified_by>
-              <xsl:if test="string-length(parent::node()/findstate)">
-                <crm:P89_falls_within>
-                  <crm:E53_Place>
-                    <xsl:attribute name="rdf:about">
-                      <xsl:text>http://arachne.uni-koeln.de/state/</xsl:text>
-                      <xsl:value-of select="crm:fixURI(parent::node()/findstate)"/>
-                    </xsl:attribute>
-                    <crm:P87_is_identified_by>
-                      <crm:E48_Place_Name>
-                        <xsl:attribute name="rdf:about">
-                          <xsl:text>http://arachne.uni-koeln.de/identifier/state/</xsl:text>
-                          <xsl:value-of select="crm:fixURI(parent::node()/findstate)"/>
-                        </xsl:attribute>
-                        <rdf:value>
-                          <xsl:value-of select="parent::node()/findstate"/>
-                        </rdf:value>
-                      </crm:E48_Place_Name>
-                    </crm:P87_is_identified_by>
-                  </crm:E53_Place>
-                </crm:P89_falls_within>
-              </xsl:if>
-            </crm:E53_Place>
-          </crm:P7_took_place_at>
-        </crm:E7_Activity>
-      </crm:P16i_was_used_for>
-    </xsl:if>
-  </xsl:template>
-  
   <xsl:template match="locations">
     <xsl:apply-templates select="location"/>
   </xsl:template>
