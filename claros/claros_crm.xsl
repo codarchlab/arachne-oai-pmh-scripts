@@ -48,7 +48,7 @@
   </xsl:function>
   
   <xsl:function name="crm:createContentURL">
-    <!-- Pseudo-URLs, die idealerweise ein Vokabular beschreiben -->
+    <!-- Pseudo-URLs, die idealerweise ein begrenztes Vokabular beschreiben -->
     <xsl:param name="sub"/>
     <xsl:param name="context"/>
     <xsl:value-of>
@@ -78,9 +78,10 @@
       <!-- Teil 2 -->
       <xsl:apply-templates select="literaturzitat"/>
       <xsl:apply-templates select="relief"/>
-
+      <xsl:apply-templates select="marbilder"/>
+      
       <xsl:apply-templates select="ceramic"/>
-      <xsl:apply-templates select="images"/>
+
       <xsl:apply-templates select="findspot"/>
       <xsl:apply-templates select="locations"/>
       <xsl:apply-templates select="dating"/>
@@ -120,13 +121,10 @@
     </crm:P44_has_condition>
   </xsl:template>
   
-  <xsl:template match="function">
+  <xsl:template match="Funktion">
     <crm:P103_was_intended_for>
       <crm:E55_Type>
-        <xsl:attribute name="rdf:about">
-          <xsl:text>http://arachne.uni-koeln.de/type/function/</xsl:text>
-          <xsl:value-of select="crm:fixURI(.)"/>
-        </xsl:attribute>
+        <xsl:attribute name="rdf:about" select="crm:createContentURL('type/function', .)"/>
         <rdfs:label>
           <xsl:value-of select="."/>
         </rdfs:label>
@@ -167,6 +165,15 @@
     </crm:P56_bears_feature>
   </xsl:template>
   
+  <xsl:template match="marbilder">
+    <crm:P138i_has_representation>
+      <crm:E38_Image>
+        <xsl:attribute name="rdf:about" select="crm:createURL(.)"/>
+      </crm:E38_Image>
+    </crm:P138i_has_representation>
+  </xsl:template>
+  
+
   <xsl:template match="material">
     <xsl:if test="string-length(.)">
       <crm:P45_consists_of>
@@ -212,38 +219,7 @@
       </xsl:for-each>
     </xsl:if>
   </xsl:template>
-  
-  <xsl:template match="images">
-    <xsl:apply-templates select="image"/>
-  </xsl:template>
-  
-  <xsl:template match="image">
-    <crm:P138i_has_representation>
-      <crm:E38_Image>
-        <xsl:attribute name="rdf:about">
-          <!-- Todo... This is a workaround that needs to be fixed in Arachne -->
-          <xsl:text>http://arachne.uni-koeln.de/arachne/images/image.php?key=</xsl:text>
-          <xsl:value-of select="@id"/>
-        </xsl:attribute>
-      </crm:E38_Image>
-    </crm:P138i_has_representation>
-    <xsl:if test="not(matches(., '.*,.*'))">
-      <crm:P138i_has_representation>
-        <crm:E38_Image>
-          <xsl:attribute name="rdf:about">
-            <!-- Todo... This is a workaround that needs to be fixed in Arachne -->
-            <xsl:text>http://arachne.uni-koeln.de/arachne/images/image.php?key=</xsl:text>
-            <xsl:value-of select="@id"/>
-            <xsl:variable name="imageURL"
-              select="'&amp;method=min&amp;width=141&amp;height=111'" />
-            <xsl:value-of select="$imageURL" disable-output-escaping="yes"/>
-          </xsl:attribute>
-          <crm:P2_has_type rdf:resource="http://purl.org/NET/Claros/vocab#Thumbnail"/>
-        </crm:E38_Image>
-      </crm:P138i_has_representation>
-    </xsl:if>
-  </xsl:template>
-  
+ 
   <xsl:template match="findspot">
     <xsl:if test="string-length(.)">
       <crm:P16i_was_used_for>
