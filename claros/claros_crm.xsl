@@ -74,10 +74,11 @@
       <!-- Teil 1 -->
       <xsl:apply-templates select="KurzbeschreibungObjekt"/>
       <xsl:apply-templates select="Erhaltung"/>
+      <xsl:apply-templates select="Funktion"/>
       <!-- Teil 2 -->
       <xsl:apply-templates select="literaturzitat"/>
-      <xsl:apply-templates select="scenes"/>
-      <xsl:apply-templates select="function"/>
+      <xsl:apply-templates select="relief"/>
+
       <xsl:apply-templates select="ceramic"/>
       <xsl:apply-templates select="images"/>
       <xsl:apply-templates select="findspot"/>
@@ -117,6 +118,20 @@
         </crm:P2_has_type>
       </crm:E3_Condition_State>
     </crm:P44_has_condition>
+  </xsl:template>
+  
+  <xsl:template match="function">
+    <crm:P103_was_intended_for>
+      <crm:E55_Type>
+        <xsl:attribute name="rdf:about">
+          <xsl:text>http://arachne.uni-koeln.de/type/function/</xsl:text>
+          <xsl:value-of select="crm:fixURI(.)"/>
+        </xsl:attribute>
+        <rdfs:label>
+          <xsl:value-of select="."/>
+        </rdfs:label>
+      </crm:E55_Type>
+    </crm:P103_was_intended_for>
   </xsl:template>
   
   <!-- Teil 2 -->
@@ -443,22 +458,6 @@
         </crm:P108i_was_produced_by>
       </xsl:when>
     </xsl:choose>
-  </xsl:template>
-  
-  <xsl:template match="function">
-    <xsl:if test="string-length(.)">
-      <crm:P103_was_intended_for>
-        <crm:E55_Type>
-          <xsl:attribute name="rdf:about">
-            <xsl:text>http://arachne.uni-koeln.de/type/function/</xsl:text>
-            <xsl:value-of select="crm:fixURI(.)"/>
-          </xsl:attribute>
-          <rdfs:label>
-            <xsl:value-of select="."/>
-          </rdfs:label>
-        </crm:E55_Type>
-      </crm:P103_was_intended_for>
-    </xsl:if>
   </xsl:template>
   
   <xsl:template match="ceramic">
