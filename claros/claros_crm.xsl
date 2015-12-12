@@ -44,29 +44,20 @@
 
   <xsl:template match="object">
     <crm:E22_Man-Made_Object>
-      <xsl:variable name="artifactID" select="ArachneEntityID"/>
-      <xsl:variable name="link">
-        <xsl:text>http://arachne.uni-koeln.de/entity/</xsl:text>
-        <xsl:value-of select="$artifactID"/>
-      </xsl:variable>
       <xsl:attribute name="rdf:about" select="crm:createURI('artifact')"/>
       <crm:P70i_is_documented_in>
-        <xsl:attribute name="rdf:resource" select="$link"/>
+        <xsl:attribute name="rdf:resource" select="crm:createURI('entity')"/>
       </crm:P70i_is_documented_in>
       <xsl:apply-templates select="KurzbeschreibungObjekt"/>
       <xsl:apply-templates select="Erhaltung"/>
       <xsl:apply-templates select="bibliography"/>
       <xsl:apply-templates select="scenes"/>
       <xsl:apply-templates select="function"/>
-      <xsl:apply-templates select="ceramic">
-        <xsl:with-param name="artifactID" select="$artifactID"/>
-      </xsl:apply-templates>
+      <xsl:apply-templates select="ceramic"/>
       <xsl:apply-templates select="images"/>
       <xsl:apply-templates select="findspot"/>
       <xsl:apply-templates select="locations"/>
-      <xsl:apply-templates select="dating">
-        <xsl:with-param name="artifactID" select="$artifactID"/>
-      </xsl:apply-templates>
+      <xsl:apply-templates select="dating"/>
       <xsl:apply-templates select="material"/>
       <xsl:apply-templates select="generalCategory"/>
     </crm:E22_Man-Made_Object>
@@ -157,6 +148,7 @@
   <xsl:template match="bibliography">
     <xsl:apply-templates select="bibItem"/>
   </xsl:template>
+  
   <xsl:template match="bibItem">
     <xsl:if test="string-length(.)">
       <crm:P67i_is_referred_to_by>
@@ -388,21 +380,21 @@
   </xsl:template>
   
   <xsl:template match="dating">
-    <xsl:param name="artifactID"/>
+    <xsl:param name="id"/>
     <xsl:apply-templates select="date">
-      <xsl:with-param name="artifactID" select="$artifactID"/>
+      <xsl:with-param name="id" select="$id"/>
     </xsl:apply-templates>
   </xsl:template>
   
   <xsl:template match="date">
-    <xsl:param name="artifactID"/>
+    <xsl:param name="id"/>
     <xsl:choose>
       <xsl:when test="string-length(epochEnd)">
         <crm:P108i_was_produced_by>
           <crm:E12_Production>
             <xsl:attribute name="rdf:about">
               <xsl:text>http://arachne.uni-koeln.de/event/production/</xsl:text>
-              <xsl:value-of select="$artifactID"/>
+              <xsl:value-of select="$id"/>
             </xsl:attribute>
             <crm:P4_has_time-span>
               <crm:E52_Time-Span>
@@ -434,7 +426,7 @@
           <crm:E12_Production>
             <xsl:attribute name="rdf:about">
               <xsl:text>http://arachne.uni-koeln.de/event/production/</xsl:text>
-              <xsl:value-of select="$artifactID"/>
+              <xsl:value-of select="$id"/>
             </xsl:attribute>
             <crm:P4_has_time-span>
               <crm:E52_Time-Span>
@@ -467,13 +459,13 @@
   </xsl:template>
   
   <xsl:template match="ceramic">
-    <xsl:param name="artifactID"/>
+    <xsl:param name="id"/>
     <xsl:if test="string-length(shape)">
       <crm:P41i_was_classified_by>
         <crm:E17_Type_Assignment>
           <xsl:attribute name="rdf:about">
             <xsl:text>http://arachne.uni-koeln.de/type_assignment/</xsl:text>
-            <xsl:value-of select="crm:fixURI($artifactID)"/>
+            <xsl:value-of select="crm:fixURI($id)"/>
           </xsl:attribute>
           <crm:P14_carried_out_by>
             <crm:E39_Actor>
