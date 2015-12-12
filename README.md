@@ -28,6 +28,8 @@ in alphabetical order:
 
 * [Cidoc CRM](docs/cidoc_crm.md)
 
+* [Claros](docs/claros.md)
+
 * [DC](docs/dc.md)
 
 * [EAGLE](docs/eagle.md)
