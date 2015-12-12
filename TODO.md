@@ -36,6 +36,7 @@
 * umstellen auf das 3M-Mapping-Format
 * Klären: wie ist das mit der "industrial strength"-Version, die viele Datensätze auf einmal verarbeiten kann und `<records>` statt `<record>` verwendet? Ist das bei Umstellung auf einen Datensatz pro Datei ebenfalls überflüssig? (siehe [#1](../../issues/1))
 * RDF: controlled vocabularies ergänzen
+* 06_xml2turtle.py einchecken. Von Matteo, evtl. von mir angepasst?
 
 altes todo:
 * Datierung kommt in das Produktions-Event. Man muss irgendwann klären, wo die korrekte Angabe steht (in der sem_connections-Tabelle??), und wie sie in das XML kommt
@@ -51,7 +52,7 @@ altes todo:
 
 #### Pelagios
 * Harvesting-Skript (https://github.com/codarchlab/gazetteer/blob/master/src/main/scripts/harvest-gazetteer-json.pl) hierhin verschieben?
-
+* und was Simon gemacht hat
 
 ### 2. Daten
 * Verzeichnis mit sample data
