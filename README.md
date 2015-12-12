@@ -77,3 +77,8 @@ SET = bauwerk, objekt, etc.
 Not all combinations of FORMAT and SET are possible. For example, METS applies only to books.
 
 The numbers 1000199 etc. in the diagram stand for ArachneEntityIDs that end with 00, 01, ..., 99.
+
+
+## Licence
+
+[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) for all Perl and XSLT scripts. [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/) for text. However, it seems unlikely that any of this can be reused anywhere else  :-)

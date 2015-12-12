@@ -6,7 +6,6 @@
 * auf englisch: Name, Variablen, ausgegebene Texte
 * wenn ein Verzeichnis noch nicht existiert, soll das Skript es anlegen
 * Skripte sollen von einem beliebigen Verzeichnis aus gestartet werden können. (Zurzeit: "Beachte, dass die Skripte immer vom richtigen Verzeichnis aus gestartet werden müssen.")
-* Lizenz?
 * sich ändernde Dinge in config-Dateien auslagern
 * Workflow automatisieren
 
