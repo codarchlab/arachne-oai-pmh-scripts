@@ -185,30 +185,22 @@
   </xsl:template>
   
   <xsl:template match="Material">
-    <xsl:if test="string-length(.)">
-      <crm:P45_consists_of>
-        <crm:E57_Material>
-          <xsl:attribute name="rdf:about">
-            <xsl:text>http://arachne.uni-koeln.de/material/</xsl:text>
-            <xsl:value-of select="crm:fixURI(.)"/>
-          </xsl:attribute>
-          <rdfs:label>
-            <xsl:value-of select="."/>
-          </rdfs:label>
-          <crm:P1_is_identified_by>
-            <crm:E41_Appellation>
-              <xsl:attribute name="rdf:about">
-                <xsl:text>http://arachne.uni-koeln.de/identifier/material/</xsl:text>
-                <xsl:value-of select="crm:fixURI(.)"/>
-              </xsl:attribute>
-              <rdf:value>
-                <xsl:value-of select="."/>
-              </rdf:value>
-            </crm:E41_Appellation>
-          </crm:P1_is_identified_by>
-        </crm:E57_Material>
-      </crm:P45_consists_of>
-    </xsl:if>
+    <crm:P45_consists_of>
+      <crm:E57_Material>
+        <xsl:attribute name="rdf:about" select="crm:createSubURL('material', ..)"/>
+        <rdfs:label>
+          <xsl:value-of select="."/>
+        </rdfs:label>
+        <crm:P1_is_identified_by>
+          <crm:E41_Appellation>
+            <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('identifier/material', .)"/>
+            <rdf:value>
+              <xsl:value-of select="."/>
+            </rdf:value>
+          </crm:E41_Appellation>
+        </crm:P1_is_identified_by>
+      </crm:E57_Material>
+    </crm:P45_consists_of>
   </xsl:template>
   
   <!-- Teil 2 -->
