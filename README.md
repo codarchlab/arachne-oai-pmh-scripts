@@ -14,29 +14,29 @@ raw ⟶ origin
 
 ### Start
 
-1. [raw](docs/raw.md)
+1. [raw](raw/raw.md)
 
-2. [origin](docs/origin.md)
+2. [origin](origin/origin.md)
 
 ### Derived formats
 
 in alphabetical order:
 
-* [Ariadne](docs/ariadne.md)
+* [Ariadne](ariadne/README_ariadne.md)
 
-* [Carare](docs/carare.md)
+* [Carare](carare/README_carare.md)
 
-* [Cidoc CRM](docs/cidoc_crm.md)
+* [Cidoc CRM](cidoc_crm/README_cidoc_crm.md)
 
-* [Claros](docs/claros.md)
+* [Claros](claros/README_claros.md)
 
-* [DC](docs/dc.md)
+* [DC](dc/README_dc.md)
 
-* [EAGLE](docs/eagle.md)
+* [EAGLE](eagle/README_eagle.md)
 
-* [METS](docs/mets.md)
+* [METS](mets/README_mets.md)
 
-* [Pelagios](docs/pelagios.md)
+* [Pelagios](pelagios/README_pelagios.md)
 
 ## Data structure
 
