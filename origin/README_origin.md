@@ -7,7 +7,7 @@ Voraussetzung: raw-Format bereits erstellt
 Einmal pro Kategorie:
 ```
 cd .../arachne-oai-pmh-scripts/origin/
-perl 03_solr2xml.pl .../arachne-oai-pmh-data/raw/categories CATEGORY
+perl 03_solr2xml.pl .../arachne-oai-pmh-data/raw CATEGORY
 ```
 
 braucht:
@@ -23,6 +23,6 @@ Dinge, die das Skript implizit voraussetzt:
 nur für die Kategorie "Objekt":
 ```
 cd .../arachne-oai-pmh-scripts/origin/
-perl 04_objektkategorien-aufteilen.pl ../arachne-oai-pmh-data/raw/categories/objekt
+perl 04_objektkategorien-aufteilen.pl ../arachne-oai-pmh-data/raw/objekt
 ```
 

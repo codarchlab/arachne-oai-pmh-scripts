@@ -49,11 +49,10 @@ The data structure tentatively looks like this:
 ```
 arachne-oai-pmh-data/
 	raw/
-		categories/
-			CATEGORY/
-				CATEGORY-0000000.txt
-				CATEGORY-0000001.txt
-				...
+		CATEGORY/
+			CATEGORY-0000000.txt
+			CATEGORY-0000001.txt
+			...
 		connections/
 			(SemanticConnection.zip)
 			SemanticConnection.csv

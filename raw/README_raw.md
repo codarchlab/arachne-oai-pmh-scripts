@@ -50,7 +50,7 @@ Voraussetzung: Vorher solr-Index aktualisieren!
 
 Einmal pro Kategorie. Mit CATEGORY z.B. = "objekt":
 ```
-cd .../arachne-oai-pmh-data/raw/categories
+cd .../arachne-oai-pmh-data/raw
 mkdir CATEGORY
 perl .../arachne-oai-pmh-scripts/raw/02_harvesting-von-solr.pl CATEGORY
 ```
