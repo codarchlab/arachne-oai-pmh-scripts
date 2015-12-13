@@ -34,18 +34,6 @@
     </xsl:value-of>
   </xsl:function>
   
-  <xsl:function name="crm:createURLwithOldID">
-    <!-- wenn es keine ArachneEntityID gibt; ansonsten wie createURL -->
-    <xsl:param name="sub"/>
-    <xsl:param name="id"/>
-    <xsl:value-of>
-      <xsl:text>http://arachne.uni-koeln.de/</xsl:text>
-      <xsl:value-of select="$sub"/>
-      <xsl:text>/</xsl:text>
-      <xsl:value-of select="$id"/>
-    </xsl:value-of>
-  </xsl:function>
-  
   <xsl:function name="crm:createSubURL">
     <!-- Pseudo-URLs für Eigenschaften einzelner Einträge wie "condition", 
       die (noch) kein Ergebnis liefern, wenn man sie anklickt -->
@@ -55,6 +43,18 @@
       <xsl:value-of select="crm:createURL($context)"/>
       <xsl:text>/</xsl:text>
       <xsl:value-of select="$sub"/>
+    </xsl:value-of>
+  </xsl:function>
+  
+  <xsl:function name="crm:createURLwithOldID">
+    <!-- wenn es keine ArachneEntityID gibt; ansonsten wie createURL -->
+    <xsl:param name="sub"/>
+    <xsl:param name="id"/>
+    <xsl:value-of>
+      <xsl:text>http://arachne.uni-koeln.de/</xsl:text>
+      <xsl:value-of select="$sub"/>
+      <xsl:text>/</xsl:text>
+      <xsl:value-of select="$id"/>
     </xsl:value-of>
   </xsl:function>
   
@@ -85,6 +85,7 @@
   <xsl:function name="crm:createContentURL">
     <!-- Pseudo-URLs, die mit Text aus einem Datenfeld eines Objekts 
       erzeugt werden, aber kein begrenztes Vokabular verwenden -->
+    <!-- wird evtl. gar nicht verwendet -->
     <xsl:param name="sub"/>
     <xsl:param name="context"/>
     <xsl:value-of>
@@ -296,11 +297,13 @@
   </xsl:template>
   
   <xsl:template match="marbilder" mode="teil2">
+    <!-- immer: Arachne-Link -->
     <crm:P138i_has_representation>
       <crm:E38_Image>
         <xsl:attribute name="rdf:about" select="crm:createURL(.)"/>
       </crm:E38_Image>
     </crm:P138i_has_representation>
+    <!-- manchmal: zusätzlicher Thumbnail-Link -->
     <xsl:if test="not(contains(., ','))">
       <crm:P138i_has_representation>
         <crm:E38_Image>
@@ -320,7 +323,7 @@
   
   <xsl:template match="objektkeramik" mode="teil2">
     <!-- verwendet PS_ObjektkeramikID, GefaessformenKeramik, WareKeramik, MalerKeramik, MaltechnikKeramik -->
-    <!-- Problem: kein ArachneEntityID ?? -->
+    <!-- keine ArachneEntityID ? -->
     <xsl:if test="PS_ObjektkeramikID">
       <crm:P41i_was_classified_by>
         <crm:E17_Type_Assignment>
