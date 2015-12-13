@@ -23,6 +23,7 @@
 
 
 #### origin
+* `origin` umbenennen! Kandidaten: original, raw, orig
 * Liste der Cidoc-Properties auf aktuelle CRM-Version aktualisieren 
   * dafür das aktuelle Cidoc-RDFS nehmen, Liste neu erzeugen
   * und Tabelle "Semantische Verknüpfungen" durchgehen?
