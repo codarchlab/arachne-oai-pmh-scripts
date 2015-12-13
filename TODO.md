@@ -96,8 +96,11 @@ altes todo:
 * So bearbeiten, dass nicht der Zeitstempel ausschlaggebend ist, sondern ob sich die Datei tatsächlich geändert hat.
 * Ist es einfacher, das Interface komplett neu zu schreiben?
 * Ziel: Man kann mit den aktuellen Daten einfach die vorhandenen Daten überschreiben, und das OAI-PMH-Interface macht den Rest. Und Arachne sollte die Daten dann ebenfalls automatisch finden und in die Einzelansicht einbinden.
+* Das Interface muss damit umgehen können, wenn Dateien in Unterordner 00, 01, ..., 99 aufgeteilt sind.
 
 Fragen gestellt im jOAI user forum: https://sourceforge.net/p/dlsciences/discussion/1138932/
+
+(Tippfehler, die ich dort gemacht habe, habe ich nicht korrigiert)
 
 #### Problems with Lucene
 There seems to be a problem with Lucene: If I try to define a set using some search term, I get a Lucen error message. Lucene says about "org.apache.lucene.analysis.Token": "Deprecated. This class is outdated and no longer used since Lucene 2.9. Nuke it finally!" 
@@ -130,8 +133,9 @@ You replied:
 Thanks for providing the specifics for the error you are seeing. I believe jOAI looks for the presence of the XML declaration <?xml version="1.0" encoding="UTF-8"?> and if found, removes the entire first line before inserting the metadata into the OAI-PMH container, as you describe. You are correct that it should only remove the XML declaration portion and not the rest of the line, if additional content appears there. We'll work to fix this for the next jOAI release.
 
 In the meantime a work-around is to ensure that the XML declaration in the metadata records appear alone by itself without other content on the same line.
-***
 
 #### less restrictive licence
 It seems that the sourcecode is licenced under the GPL v2 (excluding any libraries). Is there any chance that one could have an additional less restrictive license, such as Apache 2.0?
 
+#### Metadata Directories: also index subdirectories
+We sometimes need to split up our data in subdirectories such as 00, 01, ..., 99. It would be great if these subdirectories could be indexed without having to list them explicitly.
