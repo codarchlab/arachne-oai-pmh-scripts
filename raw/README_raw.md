@@ -48,9 +48,9 @@ Beachte: das Skript produziert schwer zu deutende Fehlermeldungen "cannot write 
 
 Voraussetzung: Vorher solr-Index aktualisieren!
 
-Einmal pro Kategorie. Mit SET z.B. = "objekt":
+Einmal pro Kategorie. Mit CATEGORY z.B. = "objekt":
 ```
 cd .../arachne-oai-pmh-data/raw/categories
-mkdir SET
-perl .../arachne-oai-pmh-scripts/raw/02_harvesting-von-solr.pl SET
+mkdir CATEGORY
+perl .../arachne-oai-pmh-scripts/raw/02_harvesting-von-solr.pl CATEGORY
 ```

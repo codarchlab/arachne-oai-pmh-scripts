@@ -1,4 +1,4 @@
-A collection of scripts for exporting Arachne datasets in a variety of data formats. The datasets can then be exported via an OAI PMH interface and via the Arachne frontend. 
+A collection of scripts for exporting Arachne datasets in a variety of data formats. The datasets can then be exported via an OAI PMH interface, the general data formats also via the Arachne frontend. 
 
 ## Workflow
 
@@ -14,71 +14,82 @@ raw ⟶ origin
 
 ### Start
 
-1. [raw](raw/raw.md)
+* [raw](raw/raw.md)
 
-2. [origin](origin/origin.md)
+* [origin](origin/origin.md)
 
 ### Derived formats
 
-in alphabetical order:
+#### General data formats
+
+* [Cidoc CRM](cidoc_crm/README_cidoc_crm.md)
+
+* [DC](dc/README_dc.md)
+
+* [METS](mets/README_mets.md) (only books)
+
+Projects that harvest a general data format may not be interested in all items. For example, Propylaeum is only interested in books from the set "semantique". 
+
+#### Data formats for specific projects
 
 * [Ariadne](ariadne/README_ariadne.md)
 
 * [Carare](carare/README_carare.md)
 
-* [Cidoc CRM](cidoc_crm/README_cidoc_crm.md)
-
 * [Claros](claros/README_claros.md)
 
-* [DC](dc/README_dc.md)
-
 * [EAGLE](eagle/README_eagle.md)
-
-* [METS](mets/README_mets.md)
 
 * [Pelagios](pelagios/README_pelagios.md)
 
 ## Data structure
 
+The data structure tentatively looks like this:
+
 ```
 arachne-oai-pmh-data/
 	raw/
 		categories/
-			SET/
-				SET-0000000.txt
-				SET-0000001.txt
+			CATEGORY/
+				CATEGORY-0000000.txt
+				CATEGORY-0000001.txt
 				...
 		connections/
 			(SemanticConnection.zip)
 			SemanticConnection.csv
 			by_category/
-				SET.txt
+				CATEGORY.txt
 	FORMAT/
 		vocab/
 			?
-		SET/
+		CATEGORY/
 			00/
-				SET-1000100-FORMAT.xml
-				SET-1000200-FORMAT.xml
+				CATEGORY-1000100-FORMAT.xml
+				CATEGORY-1000200-FORMAT.xml
 				...
 			01/
-				SET-1000101-FORMAT.xml
-				SET-1000201-FORMAT.xml
+				CATEGORY-1000101-FORMAT.xml
+				CATEGORY-1000201-FORMAT.xml
 				...
 			...
 			99/
-				SET-1000199-FORMAT.xml
-				SET-1000299-FORMAT.xml
+				CATEGORY-1000199-FORMAT.xml
+				CATEGORY-1000299-FORMAT.xml
 				...
+	mets/
+		SET/
+			buch-1-mets.xml
+			buch-2-mets.xml
+			...
 ```
 
-The data directory can be located anywhere. The name `arachne-oai-pmh-data` is just a suggestion.
+The name `arachne-oai-pmh-data` of the data directory is just a suggestion.
 
-FORMAT = origin, cidoc_crm, etc.
+FORMAT = origin, cidoc_crm, etc. (except mets)
 
-SET = bauwerk, objekt, etc.
+CATEGORY = bauwerk, objekt, etc.
 
-Not all combinations of FORMAT and SET are possible. For example, METS applies only to books.
+SET = buch, buch-semantique, buch-archive, etc.
 
 The numbers 1000199 etc. in the diagram stand for ArachneEntityIDs that end with 00, 01, ..., 99.
 

@@ -7,12 +7,12 @@ Voraussetzung: raw-Format bereits erstellt
 Einmal pro Kategorie:
 ```
 cd .../arachne-oai-pmh-scripts/origin/
-perl 03_solr2xml.pl .../arachne-oai-pmh-data/raw/categories SET
+perl 03_solr2xml.pl .../arachne-oai-pmh-data/raw/categories CATEGORY
 ```
 
 braucht:
 * "cidoc-properties.txt", Einträge der Form "P1I.identifies"; aus dem Cidoc-RDFS erzeugt
-* SET.txt (z.B. bauwerk.txt) in `arachne-oai-pmh-data/raw/connections/by_category`
+* CATEGORY.txt (z.B. bauwerk.txt) in `arachne-oai-pmh-data/raw/connections/by_category`
 
 Dinge, die das Skript implizit voraussetzt:
 * es gibt nur den "Namespace" fk (wenn es mal mehrere gibt, zum Beispiel datProd, datFund, etc., muss man das anpassen)
