@@ -49,7 +49,7 @@ arachne-oai-pmh-data/
 				SET-0000001.txt
 				...
 		connections/
-			SemanticConnection.zip
+			(SemanticConnection.zip)
 			SemanticConnection.csv
 			by_category/
 				SET.txt
@@ -71,6 +71,8 @@ arachne-oai-pmh-data/
 				SET-1000299-FORMAT.xml
 				...
 ```
+
+The data directory can be located anywhere. The name `arachne-oai-pmh-data` is just a suggestion.
 
 FORMAT = origin, cidoc_crm, etc.
 
