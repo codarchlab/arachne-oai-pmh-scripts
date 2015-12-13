@@ -9,7 +9,9 @@
   version="2.0">
  
   <xsl:output encoding="UTF-8" indent="yes"/>
-
+  
+  <xsl:variable name="unterkategorien" select="record/*/*[count(*)>0]"/>
+ 
   <!-- Funktionen zum Erstellen von URIs -->
   
   <xsl:function name="crm:fixURI">
@@ -26,16 +28,6 @@
     <xsl:value-of select="$newUri"/>
   </xsl:function>
   
-  <xsl:function name="crm:createURL">
-    <!-- URLs für DB-Einträge, die tatsächlich ein Arachne-Ergebnis liefern, 
-      wenn man sie anklickt -->
-    <xsl:param name="context"/>
-    <xsl:value-of>
-      <xsl:text>http://arachne.uni-koeln.de/entity/</xsl:text>
-      <xsl:value-of select="$context/ArachneEntityID"/>
-    </xsl:value-of>
-  </xsl:function>
-  
   <xsl:function name="crm:createArachneEntityURL">
     <!-- URLs für DB-Einträge, die tatsächlich ein Arachne-Ergebnis liefern, 
       wenn man sie anklickt -->
@@ -43,6 +35,16 @@
     <xsl:value-of>
       <xsl:text>http://arachne.uni-koeln.de/entity/</xsl:text>
       <xsl:value-of select="$context"/>
+    </xsl:value-of>
+  </xsl:function>
+  
+  <xsl:function name="crm:createURL">
+    <!-- URLs für DB-Einträge, die tatsächlich ein Arachne-Ergebnis liefern, 
+      wenn man sie anklickt -->
+    <xsl:param name="context"/>
+    <xsl:value-of>
+      <xsl:text>http://arachne.uni-koeln.de/entity/</xsl:text>
+      <xsl:value-of select="$context/ArachneEntityID"/>
     </xsl:value-of>
   </xsl:function>
   
@@ -60,16 +62,27 @@
   
   <xsl:function name="crm:createURLwithOldID">
     <!-- wenn es keine ArachneEntityID gibt; ansonsten wie createURL -->
-    <xsl:param name="sub"/>
+    <xsl:param name="kategorie"/>
     <xsl:param name="id"/>
     <xsl:value-of>
       <xsl:text>http://arachne.uni-koeln.de/</xsl:text>
-      <xsl:value-of select="$sub"/>
+      <xsl:value-of select="$kategorie"/>
       <xsl:text>/</xsl:text>
       <xsl:value-of select="$id"/>
     </xsl:value-of>
   </xsl:function>
-  
+
+  <xsl:function name="crm:createSubURLwithOldID">
+    <xsl:param name="sub"/>
+    <xsl:param name="kategorie"/>
+    <xsl:param name="id"/>
+    <xsl:value-of>
+      <xsl:value-of select="crm:createURLwithOldID($kategorie, $id)"/>
+      <xsl:text>/</xsl:text>
+      <xsl:value-of select="$sub"/>
+    </xsl:value-of>
+  </xsl:function>
+
   <xsl:function name="crm:createVocabularyURL">
     <!-- Pseudo-URLs für Vocabulary-Dateien -->
     <xsl:param name="sub"/>
@@ -108,6 +121,8 @@
     </xsl:value-of>
   </xsl:function>
   
+  <!-- root -->
+  
   <xsl:template match="/">
     <rdf:RDF>
       <xsl:apply-templates select="record/*"/>
@@ -117,6 +132,7 @@
   <!-- Kategorien -->
   
   <xsl:template match="objekt">
+    <xsl:comment> Kategorie: objekt </xsl:comment>
     <crm:E22_Man-Made_Object>
       <!-- Datenfelder -->
       <xsl:apply-templates select="ArachneEntityID"/>
@@ -126,66 +142,68 @@
       <xsl:apply-templates select="Fundort"/>
       <xsl:apply-templates select="Material"/>
       <xsl:apply-templates select="GattungAllgemein"/>
-      <!-- Unterkategorien -->
-      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
-      <xsl:apply-templates select="literaturzitat" mode="unterkategorie"/>
-      <xsl:apply-templates select="relief" mode="unterkategorie"/>
-      <xsl:apply-templates select="marbilder" mode="unterkategorie"/>
-      <xsl:apply-templates select="datierung" mode="unterkategorie"/>
-      <xsl:apply-templates select="objektkeramik" mode="unterkategorie"/> <!-- stimmt das? -->
-    </crm:E22_Man-Made_Object>
-  </xsl:template>
-  
-  <xsl:template match="sammlungen">
-    <crm:E22_Man-Made_Object>
-      <xsl:apply-templates select="ArachneEntityID"/>
-      <xsl:apply-templates select="KurzbeschreibungSammlungen"/>
-      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+      <!-- Unterkategorien: mindestens datierung, marbilder, ortsbezug, literaturzitat, relief, objektkeramik -->
+      <xsl:apply-templates select="$unterkategorien" mode="unterkategorie"/>
     </crm:E22_Man-Made_Object>
   </xsl:template>
   
   <xsl:template match="bauwerk">
+    <xsl:comment> Kategorie: bauwerk </xsl:comment>
     <crm:E22_Man-Made_Object>
       <xsl:apply-templates select="ArachneEntityID"/>
       <xsl:apply-templates select="KurzbeschreibungBauwerk"/>
-      <xsl:apply-templates select="datierung" mode="unterkategorie"/>
-      <xsl:apply-templates select="marbilder" mode="unterkategorie"/>
-      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+      <!-- Unterkategorien: mindestens datierung, marbilder, ortsbezug -->
+      <xsl:apply-templates select="$unterkategorien" mode="unterkategorie"/>
     </crm:E22_Man-Made_Object>
   </xsl:template>
   
   <xsl:template match="bauwerksteil">
+    <xsl:comment> Kategorie: bauwerksteil </xsl:comment>
     <crm:E22_Man-Made_Object>
       <xsl:apply-templates select="ArachneEntityID"/>
       <xsl:apply-templates select="KurzbeschreibungBauwerksteil"/>
-      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+      <!-- Unterkategorien: mindestens ortsbezug -->
+      <xsl:apply-templates select="$unterkategorien" mode="unterkategorie"/>
     </crm:E22_Man-Made_Object>
   </xsl:template>
   
   <xsl:template match="realien">
+    <xsl:comment> Kategorie: realien </xsl:comment>
     <crm:E22_Man-Made_Object>
       <xsl:apply-templates select="ArachneEntityID"/>
       <xsl:apply-templates select="KurzbeschreibungRealien"/>
-    </crm:E22_Man-Made_Object>
-  </xsl:template>
-  
-  <xsl:template match="topographie">
-    <crm:E22_Man-Made_Object>
-      <xsl:apply-templates select="ArachneEntityID"/>
-      <xsl:apply-templates select="KurzbeschreibungTopographie"/>
-      <xsl:apply-templates select="datierung" mode="unterkategorie"/>
-      <xsl:apply-templates select="marbilder" mode="unterkategorie"/>   
-      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+      <!-- Unterkategorien: mindestens marbilder -->
+      <xsl:apply-templates select="$unterkategorien" mode="unterkategorie"/>
     </crm:E22_Man-Made_Object>
   </xsl:template>
   
   <xsl:template match="reproduktion">
+    <xsl:comment> Kategorie: reproduktion </xsl:comment>
     <crm:E22_Man-Made_Object>
       <xsl:apply-templates select="ArachneEntityID"/>
       <xsl:apply-templates select="KurzbeschreibungReproduktion"/>
-      <xsl:apply-templates select="datierung" mode="unterkategorie"/>
-      <xsl:apply-templates select="marbilder" mode="unterkategorie"/>   
-      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+      <!-- Unterkategorien: mindestens datierung, marbilder, ortsbezug -->
+      <xsl:apply-templates select="$unterkategorien" mode="unterkategorie"/>
+    </crm:E22_Man-Made_Object>
+  </xsl:template>
+  
+  <xsl:template match="sammlungen">
+    <xsl:comment> Kategorie: sammlungen </xsl:comment>
+    <crm:E22_Man-Made_Object>
+      <xsl:apply-templates select="ArachneEntityID"/>
+      <xsl:apply-templates select="KurzbeschreibungSammlungen"/>
+      <!-- Unterkategorien: mindestens ortsbezug -->
+      <xsl:apply-templates select="$unterkategorien" mode="unterkategorie"/>
+    </crm:E22_Man-Made_Object>
+  </xsl:template>
+  
+  <xsl:template match="topographie">
+    <xsl:comment> Kategorie: topographie </xsl:comment>
+    <crm:E22_Man-Made_Object>
+      <xsl:apply-templates select="ArachneEntityID"/>
+      <xsl:apply-templates select="KurzbeschreibungTopographie"/>
+      <!-- Unterkategorien: mindestens datierung, marbilder, ortsbezug -->
+      <xsl:apply-templates select="$unterkategorien" mode="unterkategorie"/>
     </crm:E22_Man-Made_Object>
   </xsl:template>
   
@@ -198,7 +216,9 @@
     </crm:P70i_is_documented_in>
   </xsl:template>
   
+  <!-- KurzbeschreibungObjekt, KurzbeschreibungBauwerk, etc. -->
   <xsl:template match="*[starts-with(name(), 'Kurzbeschreibung')]">
+    <xsl:comment> Datenfeld: Kurzbeschreibung* </xsl:comment>
     <crm:P102_has_title>
       <crm:E35_Title>
         <rdf:value>
@@ -212,6 +232,7 @@
   </xsl:template>
   
   <xsl:template match="Erhaltung">
+    <xsl:comment> Datenfeld: Erhaltung </xsl:comment>
     <crm:P44_has_condition>
       <crm:E3_Condition_State>
         <crm:P2_has_type>
@@ -228,6 +249,7 @@
   
   <xsl:template match="Fundort">
     <!-- ruft Fundstaat auf -->
+    <xsl:comment> Datenfeld: Fundort </xsl:comment>
     <crm:P16i_was_used_for>
       <crm:E7_Activity>
         <crm:P2_has_type rdf:resource="http://purl.org/NET/Claros/vocab#Event_FindObject"/>
@@ -251,6 +273,7 @@
   
   <xsl:template match="Fundstaat">
     <!-- aufgerufen von Fundort -->
+    <xsl:comment> Datenfeld: Fundstaat </xsl:comment>
     <crm:P89_falls_within>
       <crm:E53_Place>
         <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('state', .)"/>
@@ -267,6 +290,7 @@
   </xsl:template>
   
   <xsl:template match="Funktion">
+    <xsl:comment> Datenfeld: Funktion </xsl:comment>
     <crm:P103_was_intended_for>
       <crm:E55_Type>
         <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('function', .)"/>
@@ -278,6 +302,7 @@
   </xsl:template>
   
   <xsl:template match="GattungAllgemein">
+    <xsl:comment> Datenfeld: GattungAllgemein </xsl:comment>
     <xsl:for-each select="tokenize(normalize-space(.), ' ')">
       <crm:P2_has_type>
         <crm:E55_Type>
@@ -292,6 +317,7 @@
   </xsl:template>
   
   <xsl:template match="Material">
+    <xsl:comment> Datenfeld: Material </xsl:comment>
     <crm:P45_consists_of>
       <crm:E57_Material>
         <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('material', .)"/>
@@ -313,18 +339,22 @@
   <!-- Unterkategorien -->
   
   <xsl:template match="datierung" mode="unterkategorie">
-    <!-- verwendet AnfEpoche, EndEpoche -->
+    <!-- verwendet AnfEpoche, EndEpoche, seriennummer -->
     <!-- Problem: kein ArachneEntityID ! -->
+    <!-- Wenn es weder AnfEpoche noch EndEpoche gibt, wird diese Unterkategorie gar nicht umgesetzt -->
+    <xsl:comment> Unterkategorie: datierung </xsl:comment>
     <xsl:choose>
       <xsl:when test="EndEpoche">
+        <!-- Annahme: dann gibt es auch AnfEpoche -->
         <crm:P108i_was_produced_by>
           <crm:E12_Production>
-            <xsl:attribute name="rdf:about" select="crm:createSubURL('production', .)"/>
+            <!-- <xsl:attribute name="rdf:about" select="crm:createSubURLwithOldID('production', 'item/datierung', seriennummer)"/> -->
+            <xsl:attribute name="rdf:about" select="crm:createSubURL('production', ..)"/>
             <crm:P4_has_time-span>
               <crm:E52_Time-Span>
                 <xsl:attribute name="rdf:about">
                   <!-- Ausnahme -->
-                  <xsl:value-of select="crm:createSubURL('timespan', .)"/>
+                  <xsl:value-of select="crm:createSubURLwithOldID('timespan', 'item/datierung', seriennummer)"/>
                   <xsl:value-of select="crm:fixURI(AnfEpoche)"/>
                   <xsl:text>-</xsl:text>
                   <xsl:value-of select="crm:fixURI(EndEpoche)"/>
@@ -341,9 +371,11 @@
         </crm:P108i_was_produced_by>
       </xsl:when>
       <xsl:when test="AnfEpoche">
+        <!-- wenn es zwar AnfEpoche, aber nicht EndEpoche gibt -->
         <crm:P108i_was_produced_by>
           <crm:E12_Production>
-            <xsl:attribute name="rdf:about" select="crm:createSubURL('production', .)"/>
+            <!-- <xsl:attribute name="rdf:about" select="crm:createSubURLwithOldID('production', 'item/datierung', seriennummer)"/> -->
+            <xsl:attribute name="rdf:about" select="crm:createSubURL('production', ..)"/>
             <crm:P4_has_time-span>
               <crm:E52_Time-Span>
                 <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('timespan', AnfEpoche)"/>
@@ -356,10 +388,11 @@
   </xsl:template>
   
   <xsl:template match="literaturzitat" mode="unterkategorie">
-    <!-- verwendet DAIRichtlinien -->
+    <!-- verwendet PS_LiteraturID, DAIRichtlinien -->
+    <xsl:comment> Unterkategorie: literaturzitat </xsl:comment>
     <crm:P67i_is_referred_to_by>
       <crm:E31_Document>
-        <xsl:attribute name="rdf:about" select="crm:createURLwithOldID('item/literatur', PS_LiteraturID)"/>
+        <xsl:attribute name="rdf:about" select="crm:createURLwithOldID('item/literaturzitat', PS_LiteraturID)"/>
         <rdfs:label>
           <xsl:value-of select="normalize-space(DAIRichtlinien)"/>
         </rdfs:label>
@@ -368,15 +401,14 @@
   </xsl:template>
   
   <xsl:template match="marbilder" mode="unterkategorie">
-    <!-- immer: Arachne-Link -->
+    <xsl:comment> Unterkategorie: marbilder </xsl:comment>
     <crm:P138i_has_representation>
+      <!-- immer: Arachne-Link -->
       <crm:E38_Image>
         <xsl:attribute name="rdf:about" select="crm:createURL(.)"/>
       </crm:E38_Image>
-    </crm:P138i_has_representation>
-    <!-- falls sinnvoll: zusätzlicher Thumbnail-Link -->
-    <xsl:if test="not(contains(., ','))">
-      <crm:P138i_has_representation>
+      <!-- falls sinnvoll: zusätzlicher Thumbnail-Link -->
+      <xsl:if test="not(contains(., ','))">
         <crm:E38_Image>
           <xsl:attribute name="rdf:about">
             <!-- Todo... This is a workaround that needs to be fixed in Arachne -->
@@ -388,13 +420,14 @@
           </xsl:attribute>
           <crm:P2_has_type rdf:resource="http://purl.org/NET/Claros/vocab#Thumbnail"/>
         </crm:E38_Image>
-      </crm:P138i_has_representation>
-    </xsl:if>
+      </xsl:if>
+    </crm:P138i_has_representation>
   </xsl:template>
   
   <xsl:template match="objektkeramik" mode="unterkategorie">
     <!-- verwendet PS_ObjektkeramikID, GefaessformenKeramik, WareKeramik, MalerKeramik, MaltechnikKeramik -->
     <!-- keine ArachneEntityID ? -->
+    <xsl:comment> Unterkategorie: objektkeramik </xsl:comment>
     <xsl:if test="PS_ObjektkeramikID">
       <crm:P41i_was_classified_by>
         <crm:E17_Type_Assignment>
@@ -463,6 +496,7 @@
   
   <xsl:template match="ortsbezug" mode="unterkategorie">
     <!-- verwendet ArtOrtsangabe, Aufbewahrungsort, Stadt -->
+    <xsl:comment> Unterkategorie: ortsbezug </xsl:comment>
     <xsl:choose>
       <xsl:when test="ArtOrtsangabe='Fundort'">
         <crm:P16i_was_used_for>
@@ -470,7 +504,7 @@
             <crm:P2_has_type rdf:resource="http://purl.org/NET/Claros/vocab#Event_FindObject"/>
             <crm:P7_took_place_at>
               <crm:E53_Place>
-                <xsl:attribute name="rdf:about" select="crm:createURL(.)"/>
+                <xsl:attribute name="rdf:about" select="crm:createURLwithOldID('item/ortsbezug', PS_OrtID)"/>
                 <crm:P87_is_identified_by>
                   <crm:E48_Place_Name>
                     <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('place', Aufbewahrungsort)"/>
@@ -488,7 +522,7 @@
       <xsl:otherwise>
         <crm:P53_has_former_or_current_location>
           <crm:E53_Place>
-            <xsl:attribute name="rdf:about" select="crm:createSubURL('depository', .)"/>
+            <xsl:attribute name="rdf:about" select="crm:createURLwithOldID('item/ortsbezug', PS_OrtID)"/>
             <crm:P87_is_identified_by>
               <crm:E48_Place_Name>
                 <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('depository', Aufbewahrungsort)"/>
@@ -542,6 +576,7 @@
   
   <xsl:template match="relief" mode="unterkategorie">
     <!-- verwendet KurzbeschreibungRelief -->
+    <xsl:comment> Unterkategorie: relief </xsl:comment>
     <crm:P56_bears_feature>
       <crm:E25_Man-Made_Feature>
         <xsl:attribute name="rdf:about" select="crm:createURL(.)"/>
@@ -560,5 +595,8 @@
       </crm:E25_Man-Made_Feature>
     </crm:P56_bears_feature>
   </xsl:template>
+  
+  <!-- ignoriere alle Unterkategorien, die nicht oben explizit aufgezählt sind -->
+  <xsl:template match="*" mode="unterkategorie"/>
   
 </xsl:stylesheet>
