@@ -10,6 +10,8 @@
  
   <xsl:output encoding="UTF-8" indent="yes"/>
 
+  <!-- Funktionen zum Erstellen von URIs -->
+  
   <xsl:function name="crm:fixURI">
     <xsl:param name="uri"/>
     <xsl:variable name="newUri" select="lower-case($uri)"/>
@@ -31,6 +33,16 @@
     <xsl:value-of>
       <xsl:text>http://arachne.uni-koeln.de/entity/</xsl:text>
       <xsl:value-of select="$context/ArachneEntityID"/>
+    </xsl:value-of>
+  </xsl:function>
+  
+  <xsl:function name="crm:createArachneEntityURL">
+    <!-- URLs für DB-Einträge, die tatsächlich ein Arachne-Ergebnis liefern, 
+      wenn man sie anklickt -->
+    <xsl:param name="context"/>
+    <xsl:value-of>
+      <xsl:text>http://arachne.uni-koeln.de/entity/</xsl:text>
+      <xsl:value-of select="$context"/>
     </xsl:value-of>
   </xsl:function>
   
@@ -102,30 +114,102 @@
     </rdf:RDF>
   </xsl:template>
 
+  <!-- Kategorien -->
+  
   <xsl:template match="objekt">
     <crm:E22_Man-Made_Object>
-      <xsl:attribute name="rdf:about" select="crm:createURL(.)"/>
-      <crm:P70i_is_documented_in>
-        <xsl:attribute name="rdf:resource" select="crm:createURL(.)"/>
-      </crm:P70i_is_documented_in>
-      <!-- Teil 1 -->
+      <!-- Datenfelder -->
+      <xsl:apply-templates select="ArachneEntityID"/>
       <xsl:apply-templates select="KurzbeschreibungObjekt"/>
       <xsl:apply-templates select="Erhaltung"/>
       <xsl:apply-templates select="Funktion"/>
       <xsl:apply-templates select="Fundort"/>
       <xsl:apply-templates select="Material"/>
       <xsl:apply-templates select="GattungAllgemein"/>
-      <!-- Teil 2 -->
-      <xsl:apply-templates select="literaturzitat" mode="teil2"/>
-      <xsl:apply-templates select="relief" mode="teil2"/>
-      <xsl:apply-templates select="marbilder" mode="teil2"/>
-      <xsl:apply-templates select="ortsbezug" mode="teil2"/>
-      <xsl:apply-templates select="datierung" mode="teil2"/>      
-      <xsl:apply-templates select="objektkeramik" mode="teil2"/> <!-- stimmt das? -->
+      <!-- Unterkategorien -->
+      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+      <xsl:apply-templates select="literaturzitat" mode="unterkategorie"/>
+      <xsl:apply-templates select="relief" mode="unterkategorie"/>
+      <xsl:apply-templates select="marbilder" mode="unterkategorie"/>
+      <xsl:apply-templates select="datierung" mode="unterkategorie"/>
+      <xsl:apply-templates select="objektkeramik" mode="unterkategorie"/> <!-- stimmt das? -->
     </crm:E22_Man-Made_Object>
   </xsl:template>
   
-  <!-- Teil 1 -->
+  <xsl:template match="sammlungen">
+    <crm:E22_Man-Made_Object>
+      <xsl:apply-templates select="ArachneEntityID"/>
+      <xsl:apply-templates select="KurzbeschreibungSammlungen"/>
+      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+    </crm:E22_Man-Made_Object>
+  </xsl:template>
+  
+  <xsl:template match="bauwerk">
+    <crm:E22_Man-Made_Object>
+      <xsl:apply-templates select="ArachneEntityID"/>
+      <xsl:apply-templates select="KurzbeschreibungBauwerk"/>
+      <xsl:apply-templates select="datierung" mode="unterkategorie"/>
+      <xsl:apply-templates select="marbilder" mode="unterkategorie"/>
+      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+    </crm:E22_Man-Made_Object>
+  </xsl:template>
+  
+  <xsl:template match="bauwerksteil">
+    <crm:E22_Man-Made_Object>
+      <xsl:apply-templates select="ArachneEntityID"/>
+      <xsl:apply-templates select="KurzbeschreibungBauwerksteil"/>
+      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+    </crm:E22_Man-Made_Object>
+  </xsl:template>
+  
+  <xsl:template match="realien">
+    <crm:E22_Man-Made_Object>
+      <xsl:apply-templates select="ArachneEntityID"/>
+      <xsl:apply-templates select="KurzbeschreibungRealien"/>
+    </crm:E22_Man-Made_Object>
+  </xsl:template>
+  
+  <xsl:template match="topographie">
+    <crm:E22_Man-Made_Object>
+      <xsl:apply-templates select="ArachneEntityID"/>
+      <xsl:apply-templates select="KurzbeschreibungTopographie"/>
+      <xsl:apply-templates select="datierung" mode="unterkategorie"/>
+      <xsl:apply-templates select="marbilder" mode="unterkategorie"/>   
+      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+    </crm:E22_Man-Made_Object>
+  </xsl:template>
+  
+  <xsl:template match="reproduktion">
+    <crm:E22_Man-Made_Object>
+      <xsl:apply-templates select="ArachneEntityID"/>
+      <xsl:apply-templates select="KurzbeschreibungReproduktion"/>
+      <xsl:apply-templates select="datierung" mode="unterkategorie"/>
+      <xsl:apply-templates select="marbilder" mode="unterkategorie"/>   
+      <xsl:apply-templates select="ortsbezug" mode="unterkategorie"/>
+    </crm:E22_Man-Made_Object>
+  </xsl:template>
+  
+  <!-- Datenfelder -->
+  
+  <xsl:template match="ArachneEntityID">
+    <xsl:attribute name="rdf:about" select="crm:createArachneEntityURL(.)"/>
+    <crm:P70i_is_documented_in>
+      <xsl:attribute name="rdf:resource" select="crm:createArachneEntityURL(.)"/>
+    </crm:P70i_is_documented_in>
+  </xsl:template>
+  
+  <xsl:template match="*[starts-with(name(), 'Kurzbeschreibung')]">
+    <crm:P102_has_title>
+      <crm:E35_Title>
+        <rdf:value>
+          <xsl:value-of select="."/>
+        </rdf:value>
+      </crm:E35_Title>
+    </crm:P102_has_title>
+    <rdfs:label>
+      <xsl:value-of select="."/>
+    </rdfs:label>
+  </xsl:template>
   
   <xsl:template match="Erhaltung">
     <crm:P44_has_condition>
@@ -207,19 +291,6 @@
     </xsl:for-each>
   </xsl:template>
   
-  <xsl:template match="KurzbeschreibungObjekt">
-    <crm:P102_has_title>
-      <crm:E35_Title>
-        <rdf:value>
-          <xsl:value-of select="."/>
-        </rdf:value>
-      </crm:E35_Title>
-    </crm:P102_has_title>
-    <rdfs:label>
-      <xsl:value-of select="."/>
-    </rdfs:label>
-  </xsl:template>
-  
   <xsl:template match="Material">
     <crm:P45_consists_of>
       <crm:E57_Material>
@@ -238,10 +309,10 @@
       </crm:E57_Material>
     </crm:P45_consists_of>
   </xsl:template>
+ 
+  <!-- Unterkategorien -->
   
-  <!-- Teil 2 -->
-  
-  <xsl:template match="datierung" mode="teil2">
+  <xsl:template match="datierung" mode="unterkategorie">
     <!-- verwendet AnfEpoche, EndEpoche -->
     <!-- Problem: kein ArachneEntityID ! -->
     <xsl:choose>
@@ -284,7 +355,7 @@
     </xsl:choose>
   </xsl:template>
   
-  <xsl:template match="literaturzitat" mode="teil2">
+  <xsl:template match="literaturzitat" mode="unterkategorie">
     <!-- verwendet DAIRichtlinien -->
     <crm:P67i_is_referred_to_by>
       <crm:E31_Document>
@@ -296,14 +367,14 @@
     </crm:P67i_is_referred_to_by>
   </xsl:template>
   
-  <xsl:template match="marbilder" mode="teil2">
+  <xsl:template match="marbilder" mode="unterkategorie">
     <!-- immer: Arachne-Link -->
     <crm:P138i_has_representation>
       <crm:E38_Image>
         <xsl:attribute name="rdf:about" select="crm:createURL(.)"/>
       </crm:E38_Image>
     </crm:P138i_has_representation>
-    <!-- manchmal: zusätzlicher Thumbnail-Link -->
+    <!-- falls sinnvoll: zusätzlicher Thumbnail-Link -->
     <xsl:if test="not(contains(., ','))">
       <crm:P138i_has_representation>
         <crm:E38_Image>
@@ -321,7 +392,7 @@
     </xsl:if>
   </xsl:template>
   
-  <xsl:template match="objektkeramik" mode="teil2">
+  <xsl:template match="objektkeramik" mode="unterkategorie">
     <!-- verwendet PS_ObjektkeramikID, GefaessformenKeramik, WareKeramik, MalerKeramik, MaltechnikKeramik -->
     <!-- keine ArachneEntityID ? -->
     <xsl:if test="PS_ObjektkeramikID">
@@ -333,56 +404,64 @@
               <rdfs:label>Arachne</rdfs:label>
             </crm:E39_Actor>
           </crm:P14_carried_out_by>
-          <xsl:if test="GefaessformenKeramik">
-            <crm:P42_assigned>
-              <crm:E55_Type>
-                <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('shape', GefaessformenKeramik)"/>
-                <rdfs:label>
-                  <xsl:value-of select="GefaessformenKeramik"/>
-                </rdfs:label>
-                <crm:P127_has_broader_term rdf:resource="http://purl.org/NET/Claros/vocab#Shape"/>
-              </crm:E55_Type>
-            </crm:P42_assigned>            
-          </xsl:if>
-          <xsl:if test="WareKeramik">
-            <crm:P42_assigned>
-              <crm:E55_Type>
-                <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('fabric', WareKeramik)"/>
-                <rdfs:label>
-                  <xsl:value-of select="WareKeramik"/>
-                </rdfs:label>
-                <crm:P127_has_broader_term rdf:resource="http://purl.org/NET/Claros/vocab#Fabric"/>
-              </crm:E55_Type>
-            </crm:P42_assigned>
-          </xsl:if>
-          <xsl:if test="MalerKeramik">
-            <crm:P42_assigned>
-              <crm:E55_Type>
-                <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('artist', MalerKeramik)"/>
-                <rdfs:label>
-                  <xsl:value-of select="MalerKeramik"/>
-                </rdfs:label>
-                <crm:P127_has_broader_term rdf:resource="http://purl.org/NET/Claros/vocab#Artist"/>
-              </crm:E55_Type>
-            </crm:P42_assigned>
-          </xsl:if>
-          <xsl:if test="MaltechnikKeramik">
-            <crm:P42_assigned>
-              <crm:E55_Type>
-                <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('technique', MaltechnikKeramik)"/>
-                <rdfs:label>
-                  <xsl:value-of select="technique"/>
-                </rdfs:label>
-                <crm:P127_has_broader_term rdf:resource="http://purl.org/NET/Claros/vocab#Technique"/>
-              </crm:E55_Type>
-            </crm:P42_assigned>
-          </xsl:if>
+          <xsl:apply-templates select="GefaessformenKeramik" mode="objektkeramik"/>
+          <xsl:apply-templates select="WareKeramik" mode="objektkeramik"/>
+          <xsl:apply-templates select="MalerKeramik" mode="objektkeramik"/>
+          <xsl:apply-templates select="MaltechnikKeramik" mode="objektkeramik"/>
         </crm:E17_Type_Assignment>
       </crm:P41i_was_classified_by>
     </xsl:if>
   </xsl:template>
   
-  <xsl:template match="ortsbezug" mode="teil2">
+  <xsl:template match="GefaessformenKeramik" mode="objektkeramik">
+    <crm:P42_assigned>
+      <crm:E55_Type>
+        <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('shape', .)"/>
+        <rdfs:label>
+          <xsl:value-of select="."/>
+        </rdfs:label>
+        <crm:P127_has_broader_term rdf:resource="http://purl.org/NET/Claros/vocab#Shape"/>
+      </crm:E55_Type>
+    </crm:P42_assigned>
+  </xsl:template>
+  
+  <xsl:template match="WareKeramik" mode="objektkeramik">
+    <crm:P42_assigned>
+      <crm:E55_Type>
+        <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('fabric', .)"/>
+        <rdfs:label>
+          <xsl:value-of select="."/>
+        </rdfs:label>
+        <crm:P127_has_broader_term rdf:resource="http://purl.org/NET/Claros/vocab#Fabric"/>
+      </crm:E55_Type>
+    </crm:P42_assigned>
+  </xsl:template>
+  
+  <xsl:template match="MalerKeramik" mode="objektkeramik">
+    <crm:P42_assigned>
+      <crm:E55_Type>
+        <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('artist', .)"/>
+        <rdfs:label>
+          <xsl:value-of select="."/>
+        </rdfs:label>
+        <crm:P127_has_broader_term rdf:resource="http://purl.org/NET/Claros/vocab#Artist"/>
+      </crm:E55_Type>
+    </crm:P42_assigned>
+  </xsl:template>
+  
+  <xsl:template match="MaltechnikKeramik" mode="objektkeramik">
+    <crm:P42_assigned>
+      <crm:E55_Type>
+        <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('technique', .)"/>
+        <rdfs:label>
+          <xsl:value-of select="."/>
+        </rdfs:label>
+        <crm:P127_has_broader_term rdf:resource="http://purl.org/NET/Claros/vocab#Technique"/>
+      </crm:E55_Type>
+    </crm:P42_assigned>
+  </xsl:template>
+  
+  <xsl:template match="ortsbezug" mode="unterkategorie">
     <!-- verwendet ArtOrtsangabe, Aufbewahrungsort, Stadt -->
     <xsl:choose>
       <xsl:when test="ArtOrtsangabe='Fundort'">
@@ -400,21 +479,7 @@
                     </rdf:value>
                   </crm:E48_Place_Name>
                 </crm:P87_is_identified_by>
-                <xsl:if test="Stadt">
-                  <crm:P89_falls_within>
-                    <crm:E53_Place>
-                      <xsl:attribute name="rdf:about" select="crm:createSubURL('state', .)"/>
-                      <crm:P87_is_identified_by>
-                        <crm:E48_Place_Name>
-                          <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('state', Stadt)"/>
-                          <rdf:value>
-                            <xsl:value-of select="Stadt"/>
-                          </rdf:value>
-                        </crm:E48_Place_Name>
-                      </crm:P87_is_identified_by>
-                    </crm:E53_Place>
-                  </crm:P89_falls_within>
-                </xsl:if>
+                <xsl:apply-templates select="Stadt" mode="ortsbezug"/>
               </crm:E53_Place>
             </crm:P7_took_place_at>
           </crm:E7_Activity>
@@ -432,31 +497,50 @@
                 </rdf:value>
               </crm:E48_Place_Name>
             </crm:P87_is_identified_by>
-            <xsl:if test="Stadt">
-              <crm:P89_falls_within>
-                <crm:E53_Place>
-                  <xsl:attribute name="rdf:about" select="crm:createSubURL('place', .)"/>
-                  <rdfs:label>
-                    <xsl:value-of select="Stadt"/>
-                  </rdfs:label>
-                  <crm:P87_is_identified_by>
-                    <crm:E48_Place_Name>
-                      <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('place', Stadt)"/>
-                      <rdf:value>
-                        <xsl:value-of select="Stadt"/>
-                      </rdf:value>
-                    </crm:E48_Place_Name>
-                  </crm:P87_is_identified_by>
-                </crm:E53_Place>
-              </crm:P89_falls_within>
-            </xsl:if>
+            <xsl:apply-templates select="Stadt" mode="ortsbezug"/>
           </crm:E53_Place>
         </crm:P53_has_former_or_current_location>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
   
-  <xsl:template match="relief" mode="teil2">
+<!--  
+  <xsl:template match="Aufbewahrungsort" mode="ortsbezug">
+    <crm:E53_Place>
+      <xsl:attribute name="rdf:about" select="crm:createArachneEntityURL(..)"/>
+      <crm:P87_is_identified_by>
+        <crm:E48_Place_Name>
+          <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('place', .)"/>
+          <rdf:value>
+            <xsl:value-of select="."/>
+          </rdf:value>
+        </crm:E48_Place_Name>
+      </crm:P87_is_identified_by>
+      <xsl:apply-templates select="Stadt" mode="ortsbezug"/>
+    </crm:E53_Place>
+  </xsl:template>
+-->
+
+  <xsl:template match="Stadt" mode="ortsbezug">
+    <crm:P89_falls_within>
+      <crm:E53_Place>
+        <xsl:attribute name="rdf:about" select="crm:createSubURL('place', ..)"/>
+        <rdfs:label>
+          <xsl:value-of select="Stadt"/>
+        </rdfs:label>
+        <crm:P87_is_identified_by>
+          <crm:E48_Place_Name>
+            <xsl:attribute name="rdf:about" select="crm:createVocabularyURL('place', .)"/>
+            <rdf:value>
+              <xsl:value-of select="Stadt"/>
+            </rdf:value>
+          </crm:E48_Place_Name>
+        </crm:P87_is_identified_by>
+      </crm:E53_Place>
+    </crm:P89_falls_within>   
+  </xsl:template>
+  
+  <xsl:template match="relief" mode="unterkategorie">
     <!-- verwendet KurzbeschreibungRelief -->
     <crm:P56_bears_feature>
       <crm:E25_Man-Made_Feature>
