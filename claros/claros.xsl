@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:crm="http://purl.org/NET/crm-owl#" xmlns:claros="http://purl.org/NET/Claros/vocab#" version="2.0">
-
+<xsl:stylesheet 
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:crm="http://purl.org/NET/crm-owl#" 
+  xmlns:claros="http://purl.org/NET/Claros/vocab#"
+  version="2.0">
+ 
   <xsl:output encoding="UTF-8" indent="yes"/>
 
   <xsl:function name="crm:ersterBuchstabeGross">
