@@ -33,6 +33,7 @@
 
 #### Cidoc CRM
 * Skript aufteilen in 1. Kategorien-Blaupausen erstellen, 2. Blaupause anwenden für einzelne Datensätze. Das war ja ein Hack, der für das Ad-hoc-Erstellen von Datensätzen in der alten Schnittstelle gedacht war.
+* Auch 3. das Entfernen der leeren Teile im Ergebnis in einem eigenen Skript? pro: könnte man vielleicht für verschiedene Formate standardisieren, das eigentlich Skript muss nicht erst eine Variable füllen, sondern kann direkt den Ergebnisbaum erstellen. contra: dann müsste man wohl eine Zwischenversion abspeichern und entweder gleich wieder überschreiben, oder man hat noch mehr Dateien. Also eher nein?
 * umstellen auf das 3M-Mapping-Format
 * Klären: wie ist das mit der "industrial strength"-Version, die viele Datensätze auf einmal verarbeiten kann und `<records>` statt `<record>` verwendet? Ist das bei Umstellung auf einen Datensatz pro Datei ebenfalls überflüssig? (siehe [#1](../../issues/1))
 * RDF: controlled vocabularies ergänzen
