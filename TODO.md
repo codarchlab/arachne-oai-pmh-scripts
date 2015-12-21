@@ -36,6 +36,7 @@
 * Auch 3. das Entfernen der leeren Teile im Ergebnis in einem eigenen Skript? pro: könnte man vielleicht für verschiedene Formate standardisieren, das eigentlich Skript muss nicht erst eine Variable füllen, sondern kann direkt den Ergebnisbaum erstellen. contra: dann müsste man wohl eine Zwischenversion abspeichern und entweder gleich wieder überschreiben, oder man hat noch mehr Dateien. Also eher nein?
 * umstellen auf das 3M-Mapping-Format
 * Klären: wie ist das mit der "industrial strength"-Version, die viele Datensätze auf einmal verarbeiten kann und `<records>` statt `<record>` verwendet? Ist das bei Umstellung auf einen Datensatz pro Datei ebenfalls überflüssig? (siehe [#1](../../issues/1))
+* Effizientere Cidoc-Verarbeitung bei 1 Datensatz pro File: Man muss das XSLT am besten bereits mit dem Parameter "welcher Arachne-Cidoc-Blueprint" aufrufen, damit der Blueprint einmal eingelesen werden kann und dann auf alle Datensätze in einem Ordner angewendet werden kann. Oder das Skript gewinnt die Information einmal aus dem Namen des Ordners, in dem die Datensätze sind.
 * RDF: controlled vocabularies ergänzen
 * 06_xml2turtle.py einchecken. Von Matteo, evtl. von mir angepasst?
 
