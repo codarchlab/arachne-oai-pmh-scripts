@@ -26,3 +26,8 @@ cd .../arachne-oai-pmh-scripts/origin/
 perl 04_objektkategorien-aufteilen.pl ../arachne-oai-pmh-data/raw/objekt
 ```
 
+### veraltet
+
+* Schema http://www.arachne.uni-koeln.de/formats/origin.xsd
+* Namespace: http://www.arachne.uni-koeln.de/formats/origin/
+

@@ -26,6 +26,8 @@ raw ⟶ origin
 
 * [DC](dc/README_dc.md)
 
+* Lido (soon)
+
 * [METS](mets/README_mets.md) (only books)
 
 Projects that harvest a general data format may not be interested in all items. For example, Propylaeum is only interested in books from the set "semantique". 
@@ -40,7 +42,14 @@ Projects that harvest a general data format may not be interested in all items. 
 
 * [EAGLE](eagle/README_eagle.md)
 
+* [Enrich](enrich/README_enrich.md)
+
 * [Pelagios](pelagios/README_pelagios.md)
+
+* [Prometheus](prometheus/README_prometheus.md)
+
+* Geo?
+
 
 ## Data structure
 
