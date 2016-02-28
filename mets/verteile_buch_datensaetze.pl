@@ -24,8 +24,16 @@ my @sets = (
 "buch-CIL",
 "buch-codexSpain",
 "buch-eagle",
-"buch-semantique"
+"buch-semantique",
+"buch-Leisner",
+"buch-oppenheim",
+"buch-Steindorff"
 );
+
+foreach my $set (@sets) {
+	my $subfolder = $datensatzDir."/".$set;
+	mkdir $subfolder unless -d $subfolder;
+}
 
 my %buch2dir;
 
@@ -53,6 +61,8 @@ foreach my $filename (@allfiles) {
 		next;
 	}
 
-	rename $datensatzDir."/".$filename, $datensatzDir."/".$buch2dir{$number}."/".$filename or die "konnte nicht verschieben: ".$filename."\n";
+	my $von = $datensatzDir."/".$filename;
+	my $nach = $datensatzDir."/".$buch2dir{$number}."/".$filename;
+	rename $von, $nach or die "konnte nicht verschieben: ".$von." --> ".$nach."\n";
 #	print $datensatzDir."/".$filename." --> ".$datensatzDir."/".$buch2dir{$number}."/".$filename."\n";
 }
