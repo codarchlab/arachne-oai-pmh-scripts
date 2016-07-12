@@ -5,19 +5,19 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/" 
     xmlns:dbpedia-owl="http://dbpedia.org/ontology/" 
     xmlns:foaf="http://xmlns.com/foaf/"
-    xmlns:dcmitype="http://purl.or g/dc/dcmitype/" 
+    xmlns:dcmitype="http://purl.org/dc/dcmitype/" 
     xmlns:vcard="http://www.w3.org/2006/vcard/ns#" 
     xmlns:dcterms="http://purl.org/dc/terms/" 
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
     xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-    xmlns:dcat="http://www.w3 .org/ns/dcat#" 
+    xmlns:dcat="http://www.w3.org/ns/dcat#" 
     xmlns:aat="http://vocab.getty.edu/aat/" 
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
     xmlns:sch="http://purl.oclc.org/dsdl/schematron"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
     xmlns:gll="http://archaeologydataservice.ac.uk/archives/view/greylit/" 
-    xmlns:xsi="http://ww w.w3.org/2001/XMLSchema-instance">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <acdm:ariadneArchaeologicalResource>
         <acdm:dataset>
             <dcterms:title>Land at Dunkeswell Airfield Dunkeswell Devon</dcterms:title>

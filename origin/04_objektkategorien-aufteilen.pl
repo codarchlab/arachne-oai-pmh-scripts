@@ -34,7 +34,8 @@ foreach my $filename (@allfiles) {
 	}
 
 	# wird mehr als ein Kategorienmapping benötigt?
-	next unless scalar(keys(%unterkategorie)) > 1;
+	# trotzdem Datei umbenennen!
+#	next unless scalar(keys(%unterkategorie)) > 1;
 
 	print "\n".$filename."\n";
 	foreach my $key (keys %unterkategorie) {

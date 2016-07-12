@@ -11,7 +11,7 @@ use Unicode::Normalize;
 # Vorbereitung: lies die Verknüpfungstabelle "SemanticConnection-kurz.txt" ein, die
 # von "connections-tabelle-verkuerzen.pl" erzeugt wurde
 
-my $verknuepfDir = "../connections/by_category";
+my $verknuepfDir = "connections/by_category";
 
 my $dirname = $ARGV[0]; 
 my $katname = $ARGV[1];
