@@ -12,16 +12,14 @@ Einmal pro Kategorie:
 ##### 1. Dateien erzeugen
 
 ```shell
-cd cidoc_crm
-perl 05_XSLT-anwenden.pl path/to/XSLT-engine <xslt-Script> ../data/origin/CATEGORY
+perl cidoc_crm/05_XSLT-anwenden.pl xslt-engine/Saxon9he.jar cidoc_crm/<xslt-Script> data/origin/CATEGORY
 ```
 
 
 ##### 2. RDF zusammenlegen
 
 ```shell
-cd data/cidoc_crm
-perl ../cidoc_crm/06_rdf_zusammen.pl marbilder
+perl cidoc_crm/06_rdf_zusammen.pl data/cidoc_crm/marbilder
 
 ```
 

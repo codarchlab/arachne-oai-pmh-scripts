@@ -20,16 +20,15 @@ Beispiel-Zeilen:
 2	1076425	objekt	16628	16705	gruppen	400000	P46i_forms_part_of	
 ```
 
-lokal speichern als
+Speichern als
 ```
-.../arachne-oai-pmh-data/raw/connections/SemanticConnection.csv
+data/raw/connections/SemanticConnection.csv
 ```
 
 ##### 1.2 nach Datensätzen sortieren
 
 ```
-cd .../arachne-oai-pmh-data/raw
-perl .../arachne-oai-pmh-scripts/raw/01_connections-tabelle-verkuerzen.pl connections/SemanticConnection.csv
+perl raw/01_connections-tabelle-verkuerzen.pl data/raw/connections/SemanticConnection.csv
 ```
 
 erzeugt für jede Kategorie eine Liste aller Datensätze mit ihren Verknüpfungen.
@@ -50,7 +49,6 @@ Voraussetzung: Vorher solr-Index aktualisieren!
 
 Einmal pro Kategorie. Mit CATEGORY z.B. = "objekt":
 ```
-cd .../arachne-oai-pmh-data/raw
-mkdir CATEGORY
-perl .../arachne-oai-pmh-scripts/raw/02_harvesting-von-solr.pl CATEGORY
+mkdir data/raw/CATEGORY
+perl raw/02_harvesting-von-solr.pl CATEGORY
 ```

@@ -6,8 +6,7 @@ Voraussetzung: raw-Format bereits erstellt
 #### Version mit vielen Datensätzen pro Datei
 Einmal pro Kategorie:
 ```
-cd origin/
-perl 03_solr2xml.pl ../data/raw CATEGORY
+perl origin/03_solr2xml.pl data/raw CATEGORY
 ```
 
 braucht:
@@ -22,8 +21,7 @@ Dinge, die das Skript implizit voraussetzt:
 #### "objekt" aufteilen nach Unterkategorien
 nur für die Kategorie "Objekt":
 ```
-cd origin/
-perl 04_objektkategorien-aufteilen.pl ../data/raw/objekt
+perl origin/04_objektkategorien-aufteilen.pl data/raw/objekt
 ```
 
 ### veraltet
