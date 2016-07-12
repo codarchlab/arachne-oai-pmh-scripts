@@ -6,8 +6,8 @@ Voraussetzung: raw-Format bereits erstellt
 #### Version mit vielen Datensätzen pro Datei
 Einmal pro Kategorie:
 ```
-cd .../arachne-oai-pmh-scripts/origin/
-perl 03_solr2xml.pl .../arachne-oai-pmh-data/raw CATEGORY
+cd origin/
+perl 03_solr2xml.pl ../data/raw CATEGORY
 ```
 
 braucht:
@@ -22,8 +22,8 @@ Dinge, die das Skript implizit voraussetzt:
 #### "objekt" aufteilen nach Unterkategorien
 nur für die Kategorie "Objekt":
 ```
-cd .../arachne-oai-pmh-scripts/origin/
-perl 04_objektkategorien-aufteilen.pl ../arachne-oai-pmh-data/raw/objekt
+cd origin/
+perl 04_objektkategorien-aufteilen.pl ../data/raw/objekt
 ```
 
 ### veraltet

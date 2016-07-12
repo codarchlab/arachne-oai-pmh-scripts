@@ -56,7 +56,7 @@ Projects that harvest a general data format may not be interested in all items. 
 The data structure tentatively looks like this:
 
 ```
-arachne-oai-pmh-data/
+data/
 	raw/
 		CATEGORY/
 			CATEGORY-0000000.txt
@@ -90,8 +90,6 @@ arachne-oai-pmh-data/
 			buch-2-mets.xml
 			...
 ```
-
-The name `arachne-oai-pmh-data` of the data directory is just a suggestion.
 
 FORMAT = origin, cidoc_crm, etc. (except mets)
 
