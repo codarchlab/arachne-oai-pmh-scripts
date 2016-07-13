@@ -1,0 +1,57 @@
+<dataset>
+	<!-- marbilderbestand -->
+	<PS_MarbilderbestandID>2500721</PS_MarbilderbestandID>
+	<ArbeitsnotizMARBilderBestand/>
+	<DatensatzgruppeMARBilderBestand>Arachne</DatensatzgruppeMARBilderBestand>
+	<DateinameMarbilderbestand>Bestand-AAArC-DIA013288-2-BOS-87-0-0-F-19x37.jpg</DateinameMarbilderbestand>
+	<Bestandsname>AAArC</Bestandsname>
+	<Standstaat/>
+	<Standstadt/>
+	<Inventarnummer/>
+	<EANummer/>
+	<FunddatumMarbilderbestand/>
+	<DatierungEpoche/>
+	<Fotoabzuege/>
+	<Eigentuemer/>
+	<DarstellungMarbilderbestand/>
+	<Breite/>
+	<Hoehe/>
+	<Tiefe/>
+	<Durchmesser/>
+	<MaszeMarbilderbestand/>
+	<Literatur/>
+	<AufbewahrungHerkunft/>
+	<Aufnahmedatum>1987-12-17</Aufnahmedatum>
+	<Bildautor>Kuper, Rudolph</Bildautor>
+	<Beschreibung/>
+	<Kategorie/>
+	<Bildnummer/>
+	<TitelMarbilderbestand>Diesel-Aufwärmen vorm Brennerpaß</TitelMarbilderbestand>
+	<TitelMarbilderbestandEN/>
+	<AFSPfad/>
+	<SOFSPfad>...</SOFSPfad>
+	<Unterkategorie>zz_additional_data;Photo;</Unterkategorie>
+	<Unterkategorie2/>
+	<FS_MarbilderbestandunterkategorieID>657969</FS_MarbilderbestandunterkategorieID>
+	<AlterDateinameMarbilderbestand/>
+	<AlteBildnummerMarbilderbestand/>
+	<MarbilderbestandPfad>http://arachne.uni-koeln.de/images/Abbildungen/aaarc_000051/Bestand-AAArC-DIA013288-2-BOS-87-0-0-F-19x37.jpg</MarbilderbestandPfad>
+	<lastModified>2016-07-08 01:30:01</lastModified>
+	<AAArC_Region/>
+	<AAArC_Fundplatz>0-0</AAArC_Fundplatz>
+	<Bildinhalt_1>camp\nlogistics\nvehicles\nMobility</Bildinhalt_1>
+	<Bildinhalt_2>People</Bildinhalt_2>
+	<Bildinhalt_3/>
+	<Favoritenkennung/>
+	<ArtDigitalisat>Photo</ArtDigitalisat>
+	<Material/>
+	<AAArC_Projekt>BOS-87</AAArC_Projekt>
+	<Gazetteerid/>
+	<!-- marbilderbestandunterkategorie -->
+	<PS_MarbilderbestandunterkategorieID>657969</PS_MarbilderbestandunterkategorieID>
+	<FS_MarbilderbestandunterkategorieID_parent>657875</FS_MarbilderbestandunterkategorieID_parent>
+	<Titel>Bestand-AAArC-DIA013288-2-BOS-87-0-0-F-19x37.jpg</Titel>
+	<Anzahl>1</Anzahl>
+	<DatensatzgruppeMarbilderbestandunterkategorie>Arachne</DatensatzgruppeMarbilderbestandunterkategorie>
+	<leaf>1</leaf>
+</dataset>
