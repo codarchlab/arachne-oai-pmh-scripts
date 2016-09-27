@@ -1,0 +1,126 @@
+<acdm:ariadne 
+	xmlns:acdm="http://registry.ariadne-infrastructure.eu/" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/" 
+	xmlns:dbpedia-owl="http://dbpedia.org/ontology/" 
+	xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+	xmlns:dcmitype="http://purl.org/dc/dcmitype/" 
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#" 
+	xmlns:dcterms="http://purl.org/dc/terms/" 
+	xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:dcat="http://www.w3.org/ns/dcat#" 
+	xmlns:aat="http://vocab.getty.edu/aat/" 
+	xmlns:owl="http://www.w3.org/2002/07/owl#" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:sch="http://purl.oclc.org/dsdl/schematron" 
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<acdm:ariadneArchaeologicalResource>
+		<acdm:database>
+			<!-- archaeologicalResourceType  -->
+			<dcterms:isPartOf>=Arachne</dcterms:isPartOf>
+			<acdm:publisher>
+				<foaf:name>=German Archaeological Institute</foaf:name>
+				<acdm:typeOfAnAgent>=Organization</acdm:typeOfAnAgent>
+				<foaf:mbox>=idai.objects@dainst.org</foaf:mbox>
+				<dcterms:isPartOf></dcterms:isPartOf>
+			</acdm:publisher>
+			<acdm:contributor>
+				<foaf:name>KorrektorTopographie</foaf:name>
+				<acdm:typeOfAnAgent>=Person</acdm:typeOfAnAgent>
+				<foaf:mbox>=idai.objects@dainst.org</foaf:mbox>
+				<dcterms:isPartOf></dcterms:isPartOf>
+			</acdm:contributor>
+			<acdm:creator>
+				<foaf:name>BearbeiterTopographie</foaf:name>
+				<acdm:typeOfAnAgent>=Person</acdm:typeOfAnAgent>
+				<foaf:mbox>=idai.objects@dainst.org</foaf:mbox>
+				<dcterms:isPartOf></dcterms:isPartOf>
+			</acdm:creator>
+			<acdm:owner>
+				<foaf:name>=German Archaeological Institute</foaf:name>
+				<acdm:typeOfAnAgent>=Organization</acdm:typeOfAnAgent>
+				<foaf:mbox>=idai.objects@dainst.org</foaf:mbox>
+				<dcterms:isPartOf></dcterms:isPartOf>
+			</acdm:owner>
+			<acdm:legalResponsible>
+				<foaf:name>=German Archaeological Institute</foaf:name>
+				<acdm:typeOfAnAgent>=Organization</acdm:typeOfAnAgent>
+				<foaf:mbox>=idai.objects@dainst.org</foaf:mbox>
+				<dcterms:isPartOf></dcterms:isPartOf>
+			</acdm:legalResponsible>
+			<acdm:scientificResponsible>
+				<foaf:name>=German Archaeological Institute</foaf:name>
+				<acdm:typeOfAnAgent>=Organization</acdm:typeOfAnAgent>
+				<foaf:mbox>=idai.objects@dainst.org</foaf:mbox>
+				<dcterms:isPartOf></dcterms:isPartOf>
+			</acdm:scientificResponsible>
+			<acdm:technicalResponsible>
+				<foaf:name>=German Archaeological Institute</foaf:name>
+				<acdm:typeOfAnAgent>=Organization</acdm:typeOfAnAgent>
+				<foaf:mbox>=idai.objects@dainst.org</foaf:mbox>
+				<dcterms:isPartOf></dcterms:isPartOf>
+			</acdm:technicalResponsible>
+			<acdm:hasAttachedDocuments>(URLs der Topographie-Bilder)</acdm:hasAttachedDocuments>
+			<!-- dataResourceType -->
+			<dcterms:title>KurzbeschreibungTopographie</dcterms:title>
+			<dc:description>=database of objects connected to this topography</dc:description>
+			<dcterms:issued>creation</dcterms:issued>
+			<dcterms:modified>last_modified</dcterms:modified>
+			<acdm:originalId>ArachneEntityID</acdm:originalId>
+			<dcat:keyword>=Archaeology</dcat:keyword>
+			<dc:language>=de</dc:language>
+			<dcat:landingPage>http://arachne.dainst.org/entity/...</dcat:landingPage>
+			<acdm:accessPolicy>=http://arachne.dainst.org/info/order</acdm:accessPolicy>
+			<dcterms:accessRights>=CC BY-NC-ND 3.0</dcterms:accessRights>
+			<dc:rights>=German Archaeological Institute</dc:rights>
+			<acdm:temporal>
+				<acdm:periodName>
+					<skos:Concept rdf:about="bauwerk-->datierung.AnfEpoche"/>
+				</acdm:periodName>
+				<acdm:from>bauwerk-->datierung.[date from several fields]</acdm:from>
+				<acdm:until>bauwerk-->datierung.[date from several fields]</acdm:until>
+			</acdm:temporal>
+			<acdm:spatial>
+				<acdm:placeName>bauwerk-->ort.Gazetteerid-->Place</acdm:placeName>
+				<acdm:country>bauwerk-->ort.Gazetteerid-->Country</acdm:country>
+			</acdm:spatial>
+			<dcterms:extent>(number of objects)</dcterms:extent>
+			<acdm:archaeologicalResourceType>=Sites and monuments databases or inventories</acdm:archaeologicalResourceType>
+			<acdm:distribution>
+				<dcterms:title></dcterms:title>
+				<dcterms:issued></dcterms:issued>
+				<dcterms:modified></dcterms:modified>
+				<acdm:publisher>
+					<foaf:name></foaf:name>
+					<acdm:typeOfAnAgent>=Organization</acdm:typeOfAnAgent>
+					<foaf:mbox></foaf:mbox>
+					<dcterms:isPartOf></dcterms:isPartOf>
+				</acdm:publisher>
+			</acdm:distribution>
+			<acdm:hasItemMetadataStructure>
+				<acdm:characterSet>=UTF-8</acdm:characterSet>
+			</acdm:hasItemMetadataStructure>
+			<acdm:hasMetadataRecord>
+				<acdm:xmlDoc></acdm:xmlDoc>
+				<acdm:conformsTo>
+					<acdm:characterSet>=UTF-8</acdm:characterSet>
+				</acdm:conformsTo>
+			</acdm:hasMetadataRecord>
+			<acdm:ariadneSubject></acdm:ariadneSubject>
+			<acdm:nativeSubject>
+				<skos:Concept rdf:about=""></skos:Concept>
+				<skos:closeMatch rdf:resource=""/>
+				<skos:exactMatch rdf:resource=""/>
+				<skos:narrowMatch rdf:resource=""/>
+				<skos:relatedMatch rdf:resource=""/>
+			</acdm:nativeSubject>
+			<!-- databaseType -->
+			<acdm:dbms>=MariaDB</acdm:dbms>
+			<acdm:hasSchema>
+				<acdm:type>=Simple</acdm:type>
+				<dc:description></dc:description>
+			</acdm:hasSchema>
+		</acdm:database>
+	</acdm:ariadneArchaeologicalResource>
+</acdm:ariadne>
