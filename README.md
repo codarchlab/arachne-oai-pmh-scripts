@@ -15,41 +15,41 @@ raw ⟶ origin
 More information can be found in the respective folders.
 
 
-### Start
+### Original data
 
-* [raw](raw)
+* [raw](original/raw)
 
-* [origin](origin)
+* [origin](original/origin)
 
 ### Derived formats
 
 #### General data formats
 
-* [Cidoc CRM](cidoc_crm)
+* [Cidoc CRM](general/cidoc_crm)
 
-* [Dublin Core](dc)
+* [Dublin Core](general/dc)
 
 * LIDO
 
-* [METS](mets) (only books)
+* [METS](general/mets) (only books)
 
 Projects that harvest a general data format may not be interested in all items. For example, Propylaeum is only interested in books from the set "semantique". 
 
 #### Data formats for specific projects
 
-* [ARIADNE](ariadne)
+* [ARIADNE](project-specific/ariadne)
 
-* [CARARE](carare)
+* [CARARE](project-specific/carare)
 
-* [Claros](claros)
+* [Claros](project-specific/claros)
 
-* [EAGLE](eagle)
+* [EAGLE](project-specific/eagle)
 
-* [Enrich](enrich)
+* [Enrich](project-specific/enrich)
 
-* [Pelagios](pelagios)
+* [Pelagios](project-specific/pelagios)
 
-* [Prometheus](prometheus)
+* [Prometheus](project-specific/prometheus)
 
 * Geo?
 
