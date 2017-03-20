@@ -17,39 +17,39 @@ More information can be found in the respective folders.
 
 ### Start
 
-* [raw](raw/raw.md)
+* [raw](raw/README.md)
 
-* [origin](origin/origin.md)
+* [origin](origin/README.md)
 
 ### Derived formats
 
 #### General data formats
 
-* [Cidoc CRM](cidoc_crm/README_cidoc_crm.md)
+* [Cidoc CRM](cidoc_crm/README.md)
 
-* [DC](dc/README_dc.md)
+* [DC](dc/README.md)
 
-* Lido (soon)
+* Lido
 
-* [METS](mets/README_mets.md) (only books)
+* [METS](mets/README.md) (only books)
 
 Projects that harvest a general data format may not be interested in all items. For example, Propylaeum is only interested in books from the set "semantique". 
 
 #### Data formats for specific projects
 
-* [Ariadne](ariadne/README_ariadne.md)
+* [Ariadne](ariadne/README.md)
 
-* [Carare](carare/README_carare.md)
+* [Carare](carare/README.md)
 
-* [Claros](claros/README_claros.md)
+* [Claros](claros/README.md)
 
-* [EAGLE](eagle/README_eagle.md)
+* [EAGLE](eagle/README.md)
 
-* [Enrich](enrich/README_enrich.md)
+* [Enrich](enrich/README.md)
 
-* [Pelagios](pelagios/README_pelagios.md)
+* [Pelagios](pelagios/README.md)
 
-* [Prometheus](prometheus/README_prometheus.md)
+* [Prometheus](prometheus/README.md)
 
 * Geo?
 
