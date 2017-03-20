@@ -25,31 +25,31 @@ More information can be found in the respective folders.
 
 #### General data formats
 
-* [Cidoc CRM](cidoc_crm/README.md)
+* [Cidoc CRM](cidoc_crm)
 
-* [DC](dc/README.md)
+* [Dublin Core](dc)
 
-* Lido
+* LIDO
 
-* [METS](mets/README.md) (only books)
+* [METS](mets) (only books)
 
 Projects that harvest a general data format may not be interested in all items. For example, Propylaeum is only interested in books from the set "semantique". 
 
 #### Data formats for specific projects
 
-* [Ariadne](ariadne/README.md)
+* [ARIADNE](ariadne)
 
-* [Carare](carare/README.md)
+* [CARARE](carare)
 
-* [Claros](claros/README.md)
+* [Claros](claros)
 
-* [EAGLE](eagle/README.md)
+* [EAGLE](eagle)
 
-* [Enrich](enrich/README.md)
+* [Enrich](enrich)
 
-* [Pelagios](pelagios/README.md)
+* [Pelagios](pelagios)
 
-* [Prometheus](prometheus/README.md)
+* [Prometheus](prometheus)
 
 * Geo?
 
