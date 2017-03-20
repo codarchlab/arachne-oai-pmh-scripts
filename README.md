@@ -12,6 +12,9 @@ raw ⟶ origin
                 (everything else)
 ```
 
+More information can be found in the respective folders.
+
+
 ### Start
 
 * [raw](raw/raw.md)
