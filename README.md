@@ -17,9 +17,9 @@ More information can be found in the respective folders.
 
 ### Start
 
-* [raw](raw/README.md)
+* [raw](raw)
 
-* [origin](origin/README.md)
+* [origin](origin)
 
 ### Derived formats
 
