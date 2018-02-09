@@ -1,6 +1,14 @@
 
 ### Arachne-DB harvesten
 
+Beachte: Für Schritt 2 muss das SOLR aktualisiert werden:
+
+```
+http://arachne.uni-koeln.de/solrOai35/dataimport/?command=status
+http://arachne.uni-koeln.de/solrOai35/dataimport/?command=reload-config
+http://arachne.uni-koeln.de/solrOai35/dataimport/?command=full-import
+```
+
 #### 1. Verknüpfungen
 
 Dieser Schritt muss nur einmal gemacht werden.
@@ -28,7 +36,8 @@ data/raw/connections/SemanticConnection.csv
 ##### 1.2 nach Datensätzen sortieren
 
 ```
-perl raw/01_connections-tabelle-verkuerzen.pl data/raw/connections/SemanticConnection.csv
+(cd arachne-oai-pmh-scripts)
+perl original/raw/01_connections-tabelle-verkuerzen.pl data/raw/connections/SemanticConnection.csv
 ```
 
 erzeugt für jede Kategorie eine Liste aller Datensätze mit ihren Verknüpfungen.

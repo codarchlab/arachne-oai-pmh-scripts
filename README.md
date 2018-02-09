@@ -12,6 +12,10 @@ raw ⟶ origin
                 (everything else)
 ```
 
+As can be seen, there are two different routes:
+* Route via Cidoc CRM: [raw](original/raw) ⟶ [origin](original/origin) ⟶ [Cidoc CRM](general/cidoc_crm) ⟶ [EAGLE](project-specific/eagle)
+* Direct route: [raw](original/raw) ⟶ [origin](original/origin) ⟶ [CARARE](project-specific/carare), etc.
+
 More information can be found in the respective folders.
 
 
