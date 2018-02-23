@@ -194,23 +194,6 @@
               </dcterms:temporal>
             </xsl:for-each>
           </xsl:if>
-          <!-- Check for mandatory elements on edm:currentLocation -->
-          <xsl:if test="../ortsbezug/Aufbewahrungsort">
-            <!-- edm:currentLocation, id: 110 -->
-            <edm:currentLocation>
-              <xsl:if test="(../ortsbezug/Aufbewahrungsort)">
-                <xsl:if test="../ortsbezug/Aufbewahrungsort">
-                  <xsl:attribute name="rdf:resource">
-                    <xsl:for-each select="../ortsbezug/Aufbewahrungsort">
-                      <xsl:if test="position() = 1">
-                        <xsl:value-of select="."/>
-                      </xsl:if>
-                    </xsl:for-each>
-                  </xsl:attribute>
-                </xsl:if>
-              </xsl:if>
-            </edm:currentLocation>
-          </xsl:if>
           <!-- edm:type, id: 134 -->
           <edm:type>
             <xsl:text>IMAGE</xsl:text>
