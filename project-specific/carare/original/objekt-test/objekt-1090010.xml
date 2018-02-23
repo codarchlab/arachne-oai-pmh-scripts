@@ -1,0 +1,195 @@
+<record>
+	<objekt>
+	  <creation>1997-07-10 08:06:06.0</creation>
+	  <ArachneEntityID>1090010</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:02.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Überblicksaufnahmen vom Swimming Pool mit antiken Säulen und Skulpturen</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>30810</seriennummer>
+	  <id>objekt-30810</id>
+	  <ForeignKey>30810</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>M.L. (10.07.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <marbilder>
+		<ArachneEntityID>5344191</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>305</Dateigroesse>
+		<Scannummer>30810</Scannummer>
+		<seriennummer>6694089</seriennummer>
+		<id>marbilder-6694089</id>
+		<erstellt>2015-05-29 14:27:40</erstellt>
+		<PfadNeu>objectscans//FADatenbankabb0624/FA2592-14_30810.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0624/FA2592-14_30810.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-04-24 20:50:20.0</lastModified>
+		<NegativNr>14</NegativNr>
+		<geaendert>2016-03-28 10:42:30</geaendert>
+		<FilmNr>2592</FilmNr>
+		<FS_ObjektID>30810</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA2592</BestandsnameMarbilder>
+		<ForeignKey>6694089</ForeignKey>
+		<DateinameMarbilder>FA2592-14_30810.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>5344201</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>332</Dateigroesse>
+		<Scannummer>30810,01</Scannummer>
+		<seriennummer>6694099</seriennummer>
+		<id>marbilder-6694099</id>
+		<erstellt>2015-05-29 14:28:12</erstellt>
+		<PfadNeu>objectscans//FADatenbankabb0624/FA2592-19_30810,01.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0624/FA2592-19_30810,01.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-04-24 20:50:32.0</lastModified>
+		<NegativNr>19</NegativNr>
+		<geaendert>2016-03-28 10:42:30</geaendert>
+		<FilmNr>2592</FilmNr>
+		<FS_ObjektID>30810</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA2592</BestandsnameMarbilder>
+		<ForeignKey>6694099</ForeignKey>
+		<DateinameMarbilder>FA2592-19_30810,01.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>5344202</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>358</Dateigroesse>
+		<Scannummer>30810,02</Scannummer>
+		<seriennummer>6694100</seriennummer>
+		<id>marbilder-6694100</id>
+		<erstellt>2015-05-29 14:28:13</erstellt>
+		<PfadNeu>objectscans//FADatenbankabb0624/FA2592-26_30810,02.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0624/FA2592-26_30810,02.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-04-24 20:50:34.0</lastModified>
+		<NegativNr>26</NegativNr>
+		<geaendert>2016-03-28 10:42:31</geaendert>
+		<FilmNr>2592</FilmNr>
+		<FS_ObjektID>30810</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA2592</BestandsnameMarbilder>
+		<ForeignKey>6694100</ForeignKey>
+		<DateinameMarbilder>FA2592-26_30810,02.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>5344192</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>328</Dateigroesse>
+		<Scannummer>30810,03</Scannummer>
+		<seriennummer>6694090</seriennummer>
+		<id>marbilder-6694090</id>
+		<erstellt>2015-05-29 14:27:50</erstellt>
+		<PfadNeu>objectscans//FADatenbankabb0624/FA2592-15_30810,03.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0624/FA2592-15_30810,03.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-04-24 20:50:22.0</lastModified>
+		<NegativNr>15</NegativNr>
+		<geaendert>2016-03-28 10:42:30</geaendert>
+		<FilmNr>2592</FilmNr>
+		<FS_ObjektID>30810</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA2592</BestandsnameMarbilder>
+		<ForeignKey>6694090</ForeignKey>
+		<DateinameMarbilder>FA2592-15_30810,03.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>5344199</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>339</Dateigroesse>
+		<Scannummer>30810,04</Scannummer>
+		<seriennummer>6694097</seriennummer>
+		<id>marbilder-6694097</id>
+		<erstellt>2015-05-29 14:28:02</erstellt>
+		<PfadNeu>objectscans//FADatenbankabb0624/FA2592-17_30810,04.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0624/FA2592-17_30810,04.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-04-24 20:50:28.0</lastModified>
+		<NegativNr>17</NegativNr>
+		<geaendert>2016-03-28 10:42:30</geaendert>
+		<FilmNr>2592</FilmNr>
+		<FS_ObjektID>30810</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA2592</BestandsnameMarbilder>
+		<ForeignKey>6694097</ForeignKey>
+		<DateinameMarbilder>FA2592-17_30810,04.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1206795</ArachneEntityID>
+		<Countrycode>GB</Countrycode>
+		<Land>Großbritannien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>3278</PS_OrtID>
+		<Aufbewahrungsort>Swimmingpool (ehem. Conservatory)</Aufbewahrungsort>
+		<seriennummer>146458</seriennummer>
+		<id>ortsbezug-146458</id>
+		<FS_OrtID>3278</FS_OrtID>
+		<Latitude>51.34981</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>30810</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>3278</ForeignKey>
+		<Geonamesid>2636715</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Stratfield Saye</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>-1.02018</Longitude>
+		<Gazetteerid>2096586</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

@@ -1,0 +1,132 @@
+<record>
+	<objekt>
+	  <creation>2004-01-29 07:06:06.0</creation>
+	  <Korrektor>Michael Remmy (20.11.2007)</Korrektor>
+	  <ArachneEntityID>1089174</ArachneEntityID>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Altarwange</KurzbeschreibungObjekt>
+	  <seriennummer>29840</seriennummer>
+	  <id>objekt-29840</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Fundort>Kyrene, Agora, Altar A</Fundort>
+	  <Fundstaat>Libyen</Fundstaat>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2011-08-04 11:04:02.0</lastModified>
+	  <zuMonument>ja</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>29840</ForeignKey>
+	  <BearbeiterObjekt>(29.01.2004)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <AntikerAufstellungsort>Agora, westlicher Altar</AntikerAufstellungsort>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <bauwerk>
+		<creation>2004-01-28 07:06:06.0</creation>
+		<ArachneEntityID>5876</ArachneEntityID>
+		<lastModified>2011-08-04 11:03:43.0</lastModified>
+		<set>bauwerk</set>
+		<isDeleted>0</isDeleted>
+		<seriennummer>2100316</seriennummer>
+		<ForeignKey>2100316</ForeignKey>
+		<id>bauwerk-2100316</id>
+		<oaiCategory>bauwerk</oaiCategory>
+		<KurzbeschreibungBauwerk>Westlicher Altar der Agora von Kyrene, sog. Altar A</KurzbeschreibungBauwerk>
+		<BearbeiterBauwerk>(28.01.2004)</BearbeiterBauwerk>
+		<antikeGriechLandschaftBauwerk>Kyrene</antikeGriechLandschaftBauwerk>
+		<TableName>bauwerk</TableName>
+		<kategorie>bauwerk</kategorie>
+		<KorrektorBauwerk>(09.03.2005); Paul Scheding (20.06.2006); Josephin  Szczepanski (27.12.2010)</KorrektorBauwerk>
+		<DatensatzGruppeBauwerk>Arachne</DatensatzGruppeBauwerk>
+		<antikeRoemProvinzBauwerk>Creta et Cyrenae</antikeRoemProvinzBauwerk>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </bauwerk>
+	  <marbilder>
+		<ArachneEntityID>207062</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2013-07-21 18:14:30.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2008-04-19 11:08:34</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>29840</FS_ObjektID>
+		<Dateigroesse>596</Dateigroesse>
+		<Scannummer>29840</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>1311237</seriennummer>
+		<id>marbilder-1311237</id>
+		<ForeignKey>1311237</ForeignKey>
+		<DateinameMarbilder>oA_29840.jpg</DateinameMarbilder>
+		<erstellt>2004-01-31 12:46:43</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0136/oA_29840.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0136/oA_29840.jpg</Pfad>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>in situ</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1209354</ArachneEntityID>
+		<Countrycode>LY</Countrycode>
+		<Land>Libyen</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>7274</PS_OrtID>
+		<Aufbewahrungsort>Agora-Altar A</Aufbewahrungsort>
+		<seriennummer>239214</seriennummer>
+		<id>ortsbezug-239214</id>
+		<FS_OrtID>7274</FS_OrtID>
+		<Latitude>32.82674</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>29840</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>7274</ForeignKey>
+		<Geonamesid>8410832</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Kyrene</Stadt>
+		<continentCode>AF</continentCode>
+		<continent>Afrika</continent>
+		<TableName>ort</TableName>
+		<Longitude>21.86335</Longitude>
+		<Gazetteerid>2105125</Gazetteerid>
+	  </ortsbezug>
+	  <topographie>
+		<creation>2004-01-28 07:06:06.0</creation>
+		<ArachneEntityID>27</ArachneEntityID>
+		<TopographieTypus>Platz</TopographieTypus>
+		<lastModified>2013-05-21 14:33:52.0</lastModified>
+		<antikeRoemProvinzTopographie>Creta et Cyrenae</antikeRoemProvinzTopographie>
+		<set>topographie</set>
+		<KorrektorTopographie>(09.03.2005); Paul Scheding (31.05.2006); Johanna Fuchs (22.11.2006); Eric Laufer (20.02.2008); Josephin  Szczepanski (07.04.2011); Josephin  Szczepanski (26.06.2012); Josephin  Szczepanski (16.11.2012)</KorrektorTopographie>
+		<Ausdehnung>Die Agora bedeckt ein Gebiet, das drei insulae des Stadtplans entspricht und insgesamt 118 x 75 m mißt.</Ausdehnung>
+		<BearbeiterTopographie>(28.01.2004)</BearbeiterTopographie>
+		<TopographieTypusZusatz>Ort/multipel, Siedlung bis Vicusgröße, öffentlich</TopographieTypusZusatz>
+		<isDeleted>0</isDeleted>
+		<seriennummer>500036</seriennummer>
+		<DatensatzGruppeTopographie>Arachne</DatensatzGruppeTopographie>
+		<ForeignKey>500036</ForeignKey>
+		<id>topographie-500036</id>
+		<oaiCategory>topographie</oaiCategory>
+		<TopographieArt>anthropogen</TopographieArt>
+		<KurzbeschreibungTopographie>Agora von Kyrene</KurzbeschreibungTopographie>
+		<freieBeschreibung>Kategorie: öffentlich</freieBeschreibung>
+		<TableName>topographie</TableName>
+		<kategorie>topographie</kategorie>
+		<antikeGriechLandschaftTopographie>Cyrenaika</antikeGriechLandschaftTopographie>
+		<ArbeitsnotizTopographie>Emagines3 - kontrolliert</ArbeitsnotizTopographie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </topographie>
+	</objekt>
+</record>

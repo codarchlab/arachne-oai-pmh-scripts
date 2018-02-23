@@ -1,0 +1,97 @@
+<record>
+	<objekt>
+	  <creation>1996-08-14 08:06:06.0</creation>
+	  <ArachneEntityID>1087240</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:01.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>27828</seriennummer>
+	  <id>objekt-27828</id>
+	  <ForeignKey>27828</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>S.V. (14.08.1996)</BearbeiterObjekt>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Katalognummer>Kurzbeschreibung</Katalognummer>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<id>datierung-20625</id>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<oaiCategory>datierung</oaiCategory>
+		<lastModified>2011-08-04 10:41:05.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>27828</FS_ObjektID>
+		<kategorie>datierung</kategorie>
+		<nachantik>nachantik</nachantik>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<seriennummer>20625</seriennummer>
+	  </datierung>
+	  <ortsbezug>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206008</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2323</PS_OrtID>
+		<Aufbewahrungsort_Synonym>Rome;Roma;Ρώμη;Urbs;罗马市;Рим;Romë;Rzym;روما;Roma Capitale</Aufbewahrungsort_Synonym>
+		<Aufbewahrungsort>Rom</Aufbewahrungsort>
+		<seriennummer>143765</seriennummer>
+		<id>ortsbezug-143765</id>
+		<FS_OrtID>2323</FS_OrtID>
+		<Region>Tyrrhenian Central Italy</Region>
+		<Latitude>41.89143</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2016-11-24 21:59:52.0</lastModified>
+		<FS_ObjektID>27828</FS_ObjektID>
+		<isDeleted>1</isDeleted>
+		<Ort_antik>Urbs aeterna / Roma</Ort_antik>
+		<Subregion>Latium</Subregion>
+		<ForeignKey>2323</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Zusatz>Slg. Zeri</Zusatz>
+		<Stadt>ehemalige Provinz Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.49362</Longitude>
+		<Gazetteerid>2323295</Gazetteerid>
+	  </ortsbezug>
+	  <typus>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1242297</ArachneEntityID>
+		<lastModified>2011-08-04 11:05:31.0</lastModified>
+		<set>typus</set>
+		<HistorischerKommentar>Die Ähnlichkeit mit dem Typus Korinth 136 spricht für die Benennung als Lucius Caesar, doch wurde von Fittschen auch eine Benennung als Agrippa Postumus vorgeschlagen.</HistorischerKommentar>
+		<TypusNebenbezeichnung>Gaius Caesar “Type II” (Pollini); Gaius Caesar (Kiss)</TypusNebenbezeichnung>
+		<DatensatzGruppeTypus>Arachne</DatensatzGruppeTypus>
+		<isDeleted>0</isDeleted>
+		<seriennummer>327</seriennummer>
+		<Klassifizierung>Portrait Kaiserhaus männlich bartlos</Klassifizierung>
+		<ForeignKey>327</ForeignKey>
+		<id>typus-327</id>
+		<KurzbeschreibungTypus>Lucius Caesar Cassino - Karthago</KurzbeschreibungTypus>
+		<oaiCategory>typus</oaiCategory>
+		<RoemGriech>Römisches Portrait</RoemGriech>
+		<KorrektorTypus>Melanie Lang (16.11.2007)</KorrektorTypus>
+		<NamengebendeReplik>27826</NamengebendeReplik>
+		<TableName>typus</TableName>
+		<kategorie>typus</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin</metadataformats>
+		<KunsthistorischeEinordnung>Die Frisur entspricht weitgehend dem Typus Korinth 136, doch ist die Haarzange über dem rechten Auge etwas geöffnet; ihr äußerer Arm wird auf vier Sichellocken verbreitert.</KunsthistorischeEinordnung>
+	  </typus>
+	</objekt>
+</record>

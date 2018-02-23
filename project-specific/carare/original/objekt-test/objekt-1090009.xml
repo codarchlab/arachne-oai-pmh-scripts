@@ -1,0 +1,139 @@
+<record>
+	<objekt>
+	  <creation>1997-07-10 08:06:06.0</creation>
+	  <ArachneEntityID>1090009</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:02.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Ansichtsaufnahmen der Hall mit Büsten</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>30809</seriennummer>
+	  <id>objekt-30809</id>
+	  <ForeignKey>30809</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>M.L. (10.07.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <marbilder>
+		<ArachneEntityID>5331945</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>254</Dateigroesse>
+		<Scannummer>30809</Scannummer>
+		<seriennummer>6675429</seriennummer>
+		<id>marbilder-6675429</id>
+		<erstellt>2015-05-29 14:27:40</erstellt>
+		<PfadNeu>objectscans//FADatenbankabb0700d/FA2592-30_30809.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0700d/FA2592-30_30809.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-04-24 14:20:34.0</lastModified>
+		<NegativNr>30</NegativNr>
+		<geaendert>2016-03-26 11:56:12</geaendert>
+		<FilmNr>2592</FilmNr>
+		<FS_ObjektID>30809</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA2592</BestandsnameMarbilder>
+		<ForeignKey>6675429</ForeignKey>
+		<DateinameMarbilder>FA2592-30_30809.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>5331946</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>266</Dateigroesse>
+		<Scannummer>30809,01</Scannummer>
+		<seriennummer>6675430</seriennummer>
+		<id>marbilder-6675430</id>
+		<erstellt>2015-05-29 14:27:29</erstellt>
+		<PfadNeu>objectscans//FADatenbankabb0700d/FA2592-31_30809,01.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0700d/FA2592-31_30809,01.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-04-24 14:20:36.0</lastModified>
+		<NegativNr>31</NegativNr>
+		<geaendert>2016-03-26 11:56:12</geaendert>
+		<FilmNr>2592</FilmNr>
+		<FS_ObjektID>30809</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA2592</BestandsnameMarbilder>
+		<ForeignKey>6675430</ForeignKey>
+		<DateinameMarbilder>FA2592-31_30809,01.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>5331944</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>271</Dateigroesse>
+		<Scannummer>30809,02</Scannummer>
+		<seriennummer>6675428</seriennummer>
+		<id>marbilder-6675428</id>
+		<erstellt>2015-05-29 14:27:29</erstellt>
+		<PfadNeu>objectscans//FADatenbankabb0700d/FA2592-29_30809,02.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0700d/FA2592-29_30809,02.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-04-24 14:20:32.0</lastModified>
+		<NegativNr>29</NegativNr>
+		<geaendert>2016-03-26 11:56:12</geaendert>
+		<FilmNr>2592</FilmNr>
+		<FS_ObjektID>30809</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA2592</BestandsnameMarbilder>
+		<ForeignKey>6675428</ForeignKey>
+		<DateinameMarbilder>FA2592-29_30809,02.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1206794</ArachneEntityID>
+		<Countrycode>GB</Countrycode>
+		<Land>Großbritannien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>3277</PS_OrtID>
+		<Aufbewahrungsort>Hall</Aufbewahrungsort>
+		<seriennummer>146457</seriennummer>
+		<id>ortsbezug-146457</id>
+		<FS_OrtID>3277</FS_OrtID>
+		<Latitude>51.34981</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>30809</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>3277</ForeignKey>
+		<Geonamesid>2636715</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Stratfield Saye</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>-1.02018</Longitude>
+		<Gazetteerid>2096582</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

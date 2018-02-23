@@ -1,0 +1,58 @@
+<record>
+	<objekt>
+	  <creation>1997-05-08 08:06:06.0</creation>
+	  <ArachneEntityID>1091624</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:03.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Herme eines Pan</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>32573</seriennummer>
+	  <id>objekt-32573</id>
+	  <ForeignKey>32573</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>S.V. (08.05.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Fundort>Padua</Fundort>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1205699</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>1993</PS_OrtID>
+		<Aufbewahrungsort>Museo Civico di Padova</Aufbewahrungsort>
+		<seriennummer>136196</seriennummer>
+		<id>ortsbezug-136196</id>
+		<FS_OrtID>1993</FS_OrtID>
+		<Latitude>45.41519</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>32573</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>Nr. ingresso 111927</InvNr>
+		<ForeignKey>1993</ForeignKey>
+		<Geonamesid>3171728</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Padua</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>11.88181</Longitude>
+		<Gazetteerid>2092590</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

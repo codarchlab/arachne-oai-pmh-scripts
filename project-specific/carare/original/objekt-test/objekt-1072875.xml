@@ -1,0 +1,142 @@
+<record>
+	<objekt>
+	  <creation>2006-06-06 08:06:06.0</creation>
+	  <Korrektor>A.B.</Korrektor>
+	  <ArachneEntityID>1072875</ArachneEntityID>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Panzerstatue</KurzbeschreibungObjekt>
+	  <seriennummer>12963</seriennummer>
+	  <id>objekt-12963</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <HoeheGesamt>203</HoeheGesamt>
+	  <BearbeitungenModern>außer Kleinigkeiten an Gewand und Füßen, die Arme und das Mittelstück des Leibes; Kopf der Panzerstatue ist modern, das Original des Kopfes befindet sich auf moderner Büste in Houghton Hall</BearbeitungenModern>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2011-08-04 11:03:54.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <Bearbeitungen>ergänzt</Bearbeitungen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>12963</ForeignKey>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<id>datierung-16277</id>
+		<AnfDatvn>n. Chr.</AnfDatvn>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<oaiCategory>datierung</oaiCategory>
+		<lastModified>2011-08-04 10:41:04.0</lastModified>
+		<AnfDatZeitraum>Ende</AnfDatZeitraum>
+		<set>datierung</set>
+		<FS_ObjektID>12963</FS_ObjektID>
+		<AnfDatJh>1</AnfDatJh>
+		<kategorie>datierung</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<seriennummer>16277</seriennummer>
+	  </datierung>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>23954</ArachneEntityID>
+		<Katnummer>1606</Katnummer>
+		<Titel>Photographische Einzelaufnahmen Antiker Sculpturen</Titel>
+		<Ort>München</Ort>
+		<StichwortSortierung>Arndt - Amelung</StichwortSortierung>
+		<Jahr>1893-1947</Jahr>
+		<PS_LiteraturID>34</PS_LiteraturID>
+		<seriennummer>1734</seriennummer>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<DAIRichtlinien>P. Arndt – W. Amelung (Hrsg.), Photographische Einzelaufnahmen Antiker Sculpturen (München 1893-1947)</DAIRichtlinien>
+		<id>literaturzitat-1734</id>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+		<H1Nachname>Arndt</H1Nachname>
+		<H2Vorname>Walther</H2Vorname>
+		<lastModified>2013-09-20 11:32:09.0</lastModified>
+		<FS_ObjektID>12963</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<H1Vorname>Paul</H1Vorname>
+		<ForeignKey>34</ForeignKey>
+		<ZenonID>000822883</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>34</FS_LiteraturID>
+		<TableName>literatur</TableName>
+		<H2Nachname>Amelung</H2Nachname>
+	  </literaturzitat>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1205310</ArachneEntityID>
+		<Countrycode>ES</Countrycode>
+		<Land>Spanien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>1562</PS_OrtID>
+		<Aufbewahrungsort_Synonym>Musée du Prado;Μουσείο ντελ Πράδο;Museum Prado;متحف ديل برادو;Bảo tàng Prado;Prado Müzesi;Prado;Museu do Prado;Музей Прадо;普拉多博物馆</Aufbewahrungsort_Synonym>
+		<Aufbewahrungsort>Museo Nacional del Prado</Aufbewahrungsort>
+		<seriennummer>129273</seriennummer>
+		<id>ortsbezug-129273</id>
+		<FS_OrtID>1562</FS_OrtID>
+		<Latitude>40.41369</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>12963</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>168-E</InvNr>
+		<ForeignKey>1562</ForeignKey>
+		<Geonamesid>6452756</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Madrid</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>-3.69241</Longitude>
+		<Gazetteerid>2091217</Gazetteerid>
+	  </ortsbezug>
+	  <rezeption>
+		<spiegelverkehrt>nein</spiegelverkehrt>
+		<creation>2006-02-07 07:06:06.0</creation>
+		<ArachneEntityID>1239535</ArachneEntityID>
+		<MaterialRezeption>Marmor</MaterialRezeption>
+		<StandortRezeption>Madrid</StandortRezeption>
+		<AufbewahrungsortRezeption>Königliches Museum</AufbewahrungsortRezeption>
+		<set>rezeption</set>
+		<FunktionRezeption>unbekannt</FunktionRezeption>
+		<KopfparameterClarac>Kopf modern ergänzt</KopfparameterClarac>
+		<BearbeitungenModernRezeption>Kopf</BearbeitungenModernRezeption>
+		<seriennummer>351014</seriennummer>
+		<id>rezeption-351014</id>
+		<GattungAllgemeinRezeption>Rundplastik</GattungAllgemeinRezeption>
+		<DatensatzGruppeRezeption>Arachne</DatensatzGruppeRezeption>
+		<DarstellungErgaenzt>nein</DarstellungErgaenzt>
+		<kategorie>rezeption</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin</metadataformats>
+		<BearbeitungenRezeption>ergänzt</BearbeitungenRezeption>
+		<lastModified>2011-08-04 11:05:28.0</lastModified>
+		<MaterialbeschreibungRezeption>Carrara</MaterialbeschreibungRezeption>
+		<Rezeptionsquelle>C.-O.-F.-J.-B. Comte de Clarac, Musée de Sculpture 5</Rezeptionsquelle>
+		<isDeleted>0</isDeleted>
+		<KurzbeschreibungRezeption>Kaiser</KurzbeschreibungRezeption>
+		<BeschreibungClarac>Statue eines stehenden Mannes im Brustpanzer; die rechte Hand hält ein Schwert, die linke die Schwertscheide; der Blick ist gegen den Himmel gerichtet; über den Panzer ist eine chlamys gelegt, die über der linken Schulter gefibelt ist und über die rechte Hüfte um den Körper geschlungen ist; das eine Ende fällt über den linken Unterarm herab</BeschreibungClarac>
+		<ForeignKey>351014</ForeignKey>
+		<BearbeiterRezeption>Jörn Lang (07.02.2006)</BearbeiterRezeption>
+		<oaiCategory>rezeption</oaiCategory>
+		<HoeheGesamtRezeption>ca. 210</HoeheGesamtRezeption>
+		<KulturkreisRezeption>römisch</KulturkreisRezeption>
+		<ergImStich>ja</ergImStich>
+		<StandstaatRezeption>Spanien</StandstaatRezeption>
+		<TableName>rezeption</TableName>
+		<ErhaltungRezeption>fragmentiert</ErhaltungRezeption>
+	  </rezeption>
+	</objekt>
+</record>

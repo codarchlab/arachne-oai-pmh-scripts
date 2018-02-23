@@ -1,0 +1,57 @@
+<record>
+	<objekt>
+	  <creation>1996-07-29 08:06:06.0</creation>
+	  <ArachneEntityID>1085615</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:00.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>26156</seriennummer>
+	  <id>objekt-26156</id>
+	  <ForeignKey>26156</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Erhaltung>Fragment(e)</Erhaltung>
+	  <BearbeiterObjekt>M.L. (29.07.1996)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Katalognummer>Kurzbeschreibung</Katalognummer>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206131</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2457</PS_OrtID>
+		<Aufbewahrungsort>Musei Capitolini, Museo Nuovo Capitolino</Aufbewahrungsort>
+		<seriennummer>142146</seriennummer>
+		<id>ortsbezug-142146</id>
+		<FS_OrtID>2457</FS_OrtID>
+		<Latitude>41.89359</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>26156</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>2457</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Kapitol</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.483172</Longitude>
+		<Gazetteerid>2094155</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

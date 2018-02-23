@@ -1,0 +1,137 @@
+<record>
+	<objekt>
+	  <creation>1995-07-12 08:06:06.0</creation>
+	  <TiefeGesamt>4,.2</TiefeGesamt>
+	  <Korrektor>A.B.</Korrektor>
+	  <ArachneEntityID>1081430</ArachneEntityID>
+	  <set>objekt</set>
+	  <BreiteGesamt>15</BreiteGesamt>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Reliefragment mit Meerwesen</KurzbeschreibungObjekt>
+	  <seriennummer>21788</seriennummer>
+	  <id>objekt-21788</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <HoeheGesamt>21</HoeheGesamt>
+	  <Katalogbearbeitung>Sinn</Katalogbearbeitung>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <GattungAllgemein>Relief</GattungAllgemein>
+	  <lastModified>2011-08-04 11:03:58.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>21788</ForeignKey>
+	  <BearbeiterObjekt>M.L. (12.07.1995)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Herkunft>Magazzino Galli Wand B 66</Herkunft>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206498</ArachneEntityID>
+		<Countrycode>VA</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2908</PS_OrtID>
+		<Aufbewahrungsort>Musei Vaticani, Museo Gregoriano Profano</Aufbewahrungsort>
+		<seriennummer>138002</seriennummer>
+		<id>ortsbezug-138002</id>
+		<FS_OrtID>2908</FS_OrtID>
+		<Latitude>41.90225</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>21788</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>7195</InvNr>
+		<ForeignKey>2908</ForeignKey>
+		<Geonamesid>3164670</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Zusatz>Magazzino ex Ponteggi</Zusatz>
+		<Stadt>Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.4533</Longitude>
+		<Gazetteerid>2095538</Gazetteerid>
+	  </ortsbezug>
+	  <sammlungen>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1241246</ArachneEntityID>
+		<EntstehungDatum>um 1505</EntstehungDatum>
+		<lastModified>2013-03-19 14:18:38.0</lastModified>
+		<GeschichteSammlungen>Francesco Bianchini richtet das „Museo Ecclesiastico“ ein, das sich aber nur bis 1716 hält. Die Objekte wurden nur nach historischen und philologischen Aspekten ausgewählt, dazu gehörten auch mittelalterliche Ausstellungsstücke.</GeschichteSammlungen>
+		<set>sammlungen</set>
+		<vollstaendig>nein</vollstaendig>
+		<Herkunftsland>Italien</Herkunftsland>
+		<isDeleted>0</isDeleted>
+		<seriennummer>1000466</seriennummer>
+		<ForeignKey>1000466</ForeignKey>
+		<id>sammlungen-1000466</id>
+		<KurzbeschreibungSammlungen>Musei Vaticani</KurzbeschreibungSammlungen>
+		<oaiCategory>sammlungen</oaiCategory>
+		<KorrektorSammlungen>Jörn Lang (18.04.2005); Jörn Lang (08.08.2005); Jörn Lang (12.08.2005); Jörn Lang (15.08.2005); Jörn Lang (08.11.2005); Jörn Lang (21.11.2005); Jörn Lang (28.11.2005); Jörn Lang (30.11.2005); Jörn Lang (05.12.2005); Jörn Lang (06.12.2005); Vinzenz Borchert (06.12.2005); Agnes Thomas (07.12.2005); Jörn Lang (19.12.2005); Jörn Lang (20.12.2005); Jörn Lang (29.12.2005); Jörn Lang (30.12.2005); Jörn Lang (02.01.2006); Janine Lehmann (02.01.2006); Jörn Lang (03.01.2006); Jörn Lang (04.01.2006); Jörn Lang (09.01.2006); Janine Lehmann (10.01.2006); Jörn Lang (16.01.2006); Janine Lehmann (16.01.2006); Jörn Lang (17.01.2006); Jörn Lang (18.01.2006); Jörn Lang (23.01.2006); Janine Lehmann (23.01.2006); Jörn Lang (25.01.2006); Jörn Lang (30.01.2006); Janine Lehmann (30.01.2006); Jörn Lang (31.01.2006); Janine Lehmann (31.01.2006); Jörn Lang (01.02.2006); Janine Lehmann (06.02.2006); Jörn Lang (07.02.2006); Jörn Lang (09.02.2006); Jörn Lang (13.02.2006); Jörn Lang (14.02.2006); Janine Lehmann (14.02.2006); Johanna Fuchs (22.01.2008); Reinhard Foertsch (18.03.2009); Marian Keuler (18.03.2009); Marian Keuler (19.03.2009)</KorrektorSammlungen>
+		<AufstellungSammlungen>Die Vatikanischen Museen beherbergen die päpstlichen Kunstsammlungen und befinden sich auf dem Territorium der Vatikanstadt. Die Sammlung ist eine der wichtigsten und größten der Welt und umfasst die Bereiche orientalische Altertümer (Ägypten und Assyrien), klassische Antike (griechisch-römische Kunst), etruskisch-italische Altertümer (heutiges Italien vor der Römerzeit), frühchristliche und mittelalterliche Kunst (3.-14. Jh.), Kunst von der Renaissance (15. Jh.) bis ins 19. Jahrhundert, zeitgenössische Kunst und eine völkerkundliche Sammlung. 
+Im Museo Pio Clementino wird die Aufstellung der Exponate der Architektur angepasst. Beim Umbau des Cortile delle Statue in einen oktogonalen Hof mit umlaufender Portikus, genauso wie bei dem Bau der Sala delle Muse, der Sala Rotonda und der Sala a Croce Greca, verwirklichte man eine neue museale Architektur, die mit dem Charakter der ausgestellten Stücke verschmelzen sollte. Für die Sala a Croce Greca kopierte man Thermensäle und für die Sala Rotonda das Pantheon.</AufstellungSammlungen>
+		<Entstehung>Die päpstliche Sammlungstätigkeit beginnt 1506 mit dem Kauf des Laokoon und dauert zunächst nur 60 Jahre, denn Papst Pius V. sammelt nicht und verkauft sogar einige Stücke. 
+150 Jahre später interessiert sich erst Papst Clemens XI. wieder für die Antiken und nominiert 1703 Francesco Bianchini zum Kommissar für die Antiken Roms.
+Durch den Ankauf von Sarkophagen und Inschriften aus der Sammlung Cavaceppi und durch die Schenkung der Sammlung Vettori wird 1757 das Museo Cristiano gegründet und in der Galerie Papst Urbans VIII. in den vatikanischen Palästen eingerichtet.
+1770 wird das Museo Pio-Clementino eingerichtet, das nun eher kunsthistorische Aspekte berücksichtigt.  Die Gründung des Museums hängt mit dem Erwerb der Kandelaber Barberini und der Sammlung Mattei zusammen, wodurch eine Neustrukturierung der vatikanischen Museen nötig wurde. 
+Hinzu kamen später Erwerbungen und Schenkungen aus den Sammlungen Verospi, Fusconi-Pichini, Giustiniani, Altemps, Pamphili, Colonna und Casali.
+Anfang des 19. Jh. kam es zur Einrichtung des Museo Chiaramonti. Zwischen 1816 und 1822 gab es Erweiterungen des Museo Chiramonti durch den Braccio Nuovo.
+1836 kommt es zudem zur Einrichtung des Museo Etrusco und 1839 des Museo Egizio durch Papst Gregor XVI.</Entstehung>
+		<BearbeiterSammlungen>S.V.</BearbeiterSammlungen>
+		<TableName>sammlungen</TableName>
+		<DatensatzGruppeSammlungen>Arachne</DatensatzGruppeSammlungen>
+		<kategorie>sammlungen</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </sammlungen>
+	  <sammlungen>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1241582</ArachneEntityID>
+		<EntstehungDatum>1844</EntstehungDatum>
+		<lastModified>2012-05-21 13:12:39.0</lastModified>
+		<set>sammlungen</set>
+		<vollstaendig>nein</vollstaendig>
+		<Aufloesung>Nach 1963 ging die Sammlung in den Musei Vaticani auf.</Aufloesung>
+		<isDeleted>0</isDeleted>
+		<seriennummer>1005577</seriennummer>
+		<ForeignKey>1005577</ForeignKey>
+		<id>sammlungen-1005577</id>
+		<KurzbeschreibungSammlungen>Museo Gregoriano Profano</KurzbeschreibungSammlungen>
+		<oaiCategory>sammlungen</oaiCategory>
+		<KorrektorSammlungen>Annette Pohl (20.07.2005); Velia Boecker (13.10.2005); Michael Remmy (07.11.2005); Michael Remmy (14.11.2005); Janine Lehmann (24.01.2006); Agnes Thomas (15.02.2006); Johanna Fuchs (18.01.2008); Johanna Fuchs (22.01.2008); R. Förtsch (11.02.2008)</KorrektorSammlungen>
+		<Entstehung>Das Museo Gregoriano Profano wurde am 16.5.1844 unter Papst Gregor XVI. im Lateranspalast eingeweiht.</Entstehung>
+		<BearbeiterSammlungen>M.F.</BearbeiterSammlungen>
+		<TableName>sammlungen</TableName>
+		<DatensatzGruppeSammlungen>Arachne</DatensatzGruppeSammlungen>
+		<kategorie>sammlungen</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </sammlungen>
+	  <sammlungen>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1241575</ArachneEntityID>
+		<lastModified>2014-05-21 17:52:23.0</lastModified>
+		<set>sammlungen</set>
+		<isDeleted>0</isDeleted>
+		<seriennummer>1005567</seriennummer>
+		<id>sammlungen-1005567</id>
+		<ForeignKey>1005567</ForeignKey>
+		<KurzbeschreibungSammlungen>Museo Gregoriano Profano ex Lateranense</KurzbeschreibungSammlungen>
+		<oaiCategory>sammlungen</oaiCategory>
+		<KorrektorSammlungen>Annette Pohl (20.07.2005); Velia Boecker (13.10.2005); Michael Remmy (07.11.2005); Michael Remmy (14.11.2005); Janine Lehmann (24.01.2006); Agnes Thomas (15.02.2006); Johanna Fuchs (21.01.2008); R. Förtsch (11.02.2008); Lisa Jureczko (21.05.2014)</KorrektorSammlungen>
+		<Entstehung>Die Sammlung gelangte nach 1963 aus dem Lateran in die Musei Vaticani.</Entstehung>
+		<TableName>sammlungen</TableName>
+		<DatensatzGruppeSammlungen>Arachne</DatensatzGruppeSammlungen>
+		<kategorie>sammlungen</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </sammlungen>
+	</objekt>
+</record>

@@ -1,0 +1,90 @@
+<record>
+	<objekt>
+	  <creation>1997-02-28 07:06:06.0</creation>
+	  <ArachneEntityID>1087783</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:01.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>hellenist. Grabrelief mit Kerykeion-Träger</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>28406</seriennummer>
+	  <id>objekt-28406</id>
+	  <ForeignKey>28406</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>(28.02.1997)</BearbeiterObjekt>
+	  <Kulturkreis>griechisch</Kulturkreis>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <Funktion>Grab</Funktion>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<id>datierung-20833</id>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<oaiCategory>datierung</oaiCategory>
+		<AnfEpoche>hellenistisch</AnfEpoche>
+		<lastModified>2011-08-04 10:41:05.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>28406</FS_ObjektID>
+		<kategorie>datierung</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<seriennummer>20833</seriennummer>
+	  </datierung>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206834</ArachneEntityID>
+		<Countrycode>GR</Countrycode>
+		<Land>Griechenland</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>3326</PS_OrtID>
+		<Aufbewahrungsort>Museum</Aufbewahrungsort>
+		<seriennummer>144299</seriennummer>
+		<id>ortsbezug-144299</id>
+		<FS_OrtID>3326</FS_OrtID>
+		<Latitude>38.31667</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>28406</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>3326</ForeignKey>
+		<Geonamesid>253045</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Tanagra</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>23.53333</Longitude>
+		<Gazetteerid>2096729</Gazetteerid>
+	  </ortsbezug>
+	  <sammlungen>
+		<creation>2008-01-04 07:06:06.0</creation>
+		<ArachneEntityID>1241717</ArachneEntityID>
+		<lastModified>2011-08-04 11:05:29.0</lastModified>
+		<Sammlungskategorie>Museum</Sammlungskategorie>
+		<set>sammlungen</set>
+		<isDeleted>0</isDeleted>
+		<seriennummer>1005720</seriennummer>
+		<id>sammlungen-1005720</id>
+		<ForeignKey>1005720</ForeignKey>
+		<KurzbeschreibungSammlungen>Museum Tanagra</KurzbeschreibungSammlungen>
+		<oaiCategory>sammlungen</oaiCategory>
+		<KorrektorSammlungen>Eric Laufer (10.01.2008)</KorrektorSammlungen>
+		<BearbeiterSammlungen>Michael Remmy (04.01.2008)</BearbeiterSammlungen>
+		<TableName>sammlungen</TableName>
+		<DatensatzGruppeSammlungen>Arachne</DatensatzGruppeSammlungen>
+		<kategorie>sammlungen</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </sammlungen>
+	</objekt>
+</record>

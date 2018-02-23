@@ -1,0 +1,55 @@
+<record>
+	<objekt>
+	  <creation>2006-06-06 08:06:06.0</creation>
+	  <Korrektor>Sophie Löwenstein (18.04.2005); Fabian  Zavodnik (14.06.2011)</Korrektor>
+	  <ArachneEntityID>1078049</ArachneEntityID>
+	  <Auftraggeber>M.L.</Auftraggeber>
+	  <DurchmesserGesamt>15.11.1994</DurchmesserGesamt>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Portraitbüste des Clodius Albinus</KurzbeschreibungObjekt>
+	  <seriennummer>18281</seriennummer>
+	  <id>objekt-18281</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <HerkFundKommentar>Slg. Clarke</HerkFundKommentar>
+	  <Fundstaat>Deutschland</Fundstaat>
+	  <FreieBeschreibung>spezielle Funktion: Rundplastik</FreieBeschreibung>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2012-05-21 13:09:53.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>ja</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>18281</ForeignKey>
+	  <BearbeiterObjekt>ergänzt (Panzerpaludamentumbüste)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <Herkunft>66,3</Herkunft>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <typus>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1242137</ArachneEntityID>
+		<lastModified>2015-05-07 16:32:15.0</lastModified>
+		<set>typus</set>
+		<isDeleted>0</isDeleted>
+		<DatensatzGruppeTypus>Arachne</DatensatzGruppeTypus>
+		<seriennummer>156</seriennummer>
+		<Klassifizierung>Portrait Kaiserhaus männlich</Klassifizierung>
+		<ForeignKey>156</ForeignKey>
+		<id>typus-156</id>
+		<KurzbeschreibungTypus>Clodius Albinus</KurzbeschreibungTypus>
+		<oaiCategory>typus</oaiCategory>
+		<Einordnungsargumente>Die physiognomische Ähnlichkeit zu Septimius Severus lässt vermuten, dass dieser Typus bereits häufig unter die Porträts dieses Kaisers eingereiht wurde. Zugleich hilft dies bei der zeitlichen Einordnung des Typus, der folglich im letzten Jahrzehnt des 2. Jhs. n. Chr. entstanden sein muss. Der Vergleich mit Münzbildnissen hat gezeigft, daß es sich bei den Bildnissen dieses Typus um solche des Clodius Albinus handeln dürfte, zumal eine Angleichung seines Porträts an das des Septimius Severus historisch erklärbar wäre.</Einordnungsargumente>
+		<KorrektorTypus>Melanie Lang (28.01.2008); Semra Saral (07.05.2015)</KorrektorTypus>
+		<KommentarVorbild>formale Klassifikation: bärtig</KommentarVorbild>
+		<NamengebendeReplik>30021</NamengebendeReplik>
+		<TableName>typus</TableName>
+		<kategorie>typus</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin</metadataformats>
+		<KunsthistorischeEinordnung>Das Bildnis steht der kleinteiligen Gliederung der Kopfhaare und dem ausgeprägten Bohrstil zufolge stilistisch in der Tradition der spätantoninischen Plastik. Dies wird auch an dem Kontrast zwischen dem glatten Gesicht und der durch Schattenkanäle aufgerissenen Haar- und Bartmasse, an der straffen Bohrung der Pupillen sowie an dem starken plastischen Eigengewicht der Gesichtspartien deutlich.</KunsthistorischeEinordnung>
+	  </typus>
+	</objekt>
+</record>

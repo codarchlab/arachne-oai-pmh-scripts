@@ -1,0 +1,205 @@
+<record>
+	<objekt>
+	  <creation>1997-06-06 08:06:06.0</creation>
+	  <Korrektor>CF; Michael Remmy (29.01.2008)</Korrektor>
+	  <ArachneEntityID>1089802</ArachneEntityID>
+	  <Erhaltungszustand>Hinterkopf fehlt</Erhaltungszustand>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Kopf einer Göttin</KurzbeschreibungObjekt>
+	  <seriennummer>30595</seriennummer>
+	  <id>objekt-30595</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Fundort>Alba</Fundort>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2011-08-04 11:04:02.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <Bearbeitungen>nicht ergänzt</Bearbeitungen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>30595</ForeignKey>
+	  <BearbeiterObjekt>S.V. (06.06.1997)</BearbeiterObjekt>
+	  <Erhaltung>fragmentiert</Erhaltung>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <marbilder>
+		<md5sum>c36e33cdc9637533ce3113eb36976595</md5sum>
+		<ArachneEntityID>89005</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>337</Dateigroesse>
+		<Scannummer>30595</Scannummer>
+		<seriennummer>474564</seriennummer>
+		<Projekttitel>Emagines Emagines1</Projekttitel>
+		<id>marbilder-474564</id>
+		<erstellt>2007-02-11 08:19:44</erstellt>
+		<PfadNeu>objectscans/FADatenbankabb0283/D-DAI-ROM-74.1544_30595.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0283/D-DAI-ROM-74.1544_30595.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2013-07-21 16:17:41.0</lastModified>
+		<NegativNr>74.1544</NegativNr>
+		<geaendert>2007-02-11 09:00:29</geaendert>
+		<FS_ObjektID>30595</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<ForeignKey>474564</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-74.1544_30595.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>584b47a300c6c10161ebfb6abfc591d9</md5sum>
+		<ArachneEntityID>89332</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2013-07-21 16:17:52.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2007-02-11 09:00:33</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>30595</FS_ObjektID>
+		<Dateigroesse>238</Dateigroesse>
+		<Scannummer>30595,01</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>474933</seriennummer>
+		<id>marbilder-474933</id>
+		<ForeignKey>474933</ForeignKey>
+		<DateinameMarbilder>oA_30595,01.jpg</DateinameMarbilder>
+		<erstellt>2007-02-11 08:26:51</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<Scanquelle>FA - Scan</Scanquelle>
+		<PfadNeu>objectscans/FADatenbankabb0283/oA_30595,01.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0283/oA_30595,01.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>c751120706963f7d5813f1b5d512db8a</md5sum>
+		<ArachneEntityID>89007</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>265</Dateigroesse>
+		<Scannummer>30595,02</Scannummer>
+		<seriennummer>474566</seriennummer>
+		<Projekttitel>Emagines Emagines1</Projekttitel>
+		<id>marbilder-474566</id>
+		<erstellt>2007-02-11 08:19:46</erstellt>
+		<PfadNeu>objectscans/FADatenbankabb0283/D-DAI-ROM-74.1546_30595,02.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0283/D-DAI-ROM-74.1546_30595,02.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2013-07-21 16:17:41.0</lastModified>
+		<NegativNr>74.1546</NegativNr>
+		<geaendert>2007-02-11 09:00:29</geaendert>
+		<FS_ObjektID>30595</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<ForeignKey>474566</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-74.1546_30595,02.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>0344eda9d0b2e160b3ac60582b23ebd5</md5sum>
+		<ArachneEntityID>89006</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>315</Dateigroesse>
+		<Scannummer>30595,03</Scannummer>
+		<seriennummer>474565</seriennummer>
+		<Projekttitel>Emagines Emagines1</Projekttitel>
+		<id>marbilder-474565</id>
+		<erstellt>2007-02-11 08:19:45</erstellt>
+		<PfadNeu>objectscans/FADatenbankabb0283/D-DAI-ROM-74.1545_30595,03.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0283/D-DAI-ROM-74.1545_30595,03.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2013-07-21 16:17:41.0</lastModified>
+		<NegativNr>74.1545</NegativNr>
+		<geaendert>2007-02-11 09:00:29</geaendert>
+		<FS_ObjektID>30595</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<ForeignKey>474565</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-74.1545_30595,03.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>4d83f6ea844ee7cd8934fa718fe07e46</md5sum>
+		<ArachneEntityID>89010</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>334</Dateigroesse>
+		<Scannummer>30595,05</Scannummer>
+		<seriennummer>474572</seriennummer>
+		<Projekttitel>Emagines Emagines1</Projekttitel>
+		<id>marbilder-474572</id>
+		<erstellt>2007-02-11 08:19:51</erstellt>
+		<PfadNeu>objectscans/FADatenbankabb0283/D-DAI-ROM-7713_30595,05.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0283/D-DAI-ROM-7713_30595,05.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2013-07-21 16:17:41.0</lastModified>
+		<NegativNr>7713</NegativNr>
+		<geaendert>2007-02-11 09:00:29</geaendert>
+		<FS_ObjektID>30595</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<ForeignKey>474572</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-7713_30595,05.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206976</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>3531</PS_OrtID>
+		<Aufbewahrungsort>Museo di Antichità</Aufbewahrungsort>
+		<seriennummer>146254</seriennummer>
+		<id>ortsbezug-146254</id>
+		<FS_OrtID>3531</FS_OrtID>
+		<Latitude>45.074174</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>30595</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>209</InvNr>
+		<ForeignKey>3531</ForeignKey>
+		<Geonamesid>3165524</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Turin</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>7.686149</Longitude>
+		<Gazetteerid>2097219</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

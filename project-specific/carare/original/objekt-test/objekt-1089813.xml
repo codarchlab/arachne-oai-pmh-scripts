@@ -1,0 +1,57 @@
+<record>
+	<objekt>
+	  <creation>1997-06-26 08:06:06.0</creation>
+	  <ArachneEntityID>1089813</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:02.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Unterkörperfragment einer weiblichen Gewandstatue</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>30606</seriennummer>
+	  <id>objekt-30606</id>
+	  <ForeignKey>30606</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>S.V. (26.06.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Fundort>?</Fundort>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1206816</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>3299</PS_OrtID>
+		<Aufbewahrungsort_Synonym>Суза;Segusium;سوسا;Suse</Aufbewahrungsort_Synonym>
+		<Aufbewahrungsort>Susa</Aufbewahrungsort>
+		<seriennummer>146265</seriennummer>
+		<id>ortsbezug-146265</id>
+		<FS_OrtID>3299</FS_OrtID>
+		<Latitude>45.13677</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>30606</FS_ObjektID>
+		<isDeleted>1</isDeleted>
+		<ForeignKey>3299</ForeignKey>
+		<Geonamesid>3166018</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Turin (Metropolitanstadt)</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>7.05809</Longitude>
+		<Gazetteerid>2096658</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

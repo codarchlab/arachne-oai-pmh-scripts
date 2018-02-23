@@ -1,0 +1,58 @@
+<record>
+	<objekt>
+	  <creation>1997-09-12 08:06:06.0</creation>
+	  <ArachneEntityID>1091718</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:03.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Silenenstatue</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>32667</seriennummer>
+	  <id>objekt-32667</id>
+	  <ForeignKey>32667</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>S.V. (12.09.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Fundstaat>Italien</Fundstaat>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1204033</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>147</PS_OrtID>
+		<Aufbewahrungsort>Museo Archeologico Nazionale</Aufbewahrungsort>
+		<seriennummer>136290</seriennummer>
+		<id>ortsbezug-136290</id>
+		<FS_OrtID>147</FS_OrtID>
+		<Latitude>45.767413</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>32667</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>o.Nr.</InvNr>
+		<ForeignKey>147</ForeignKey>
+		<Geonamesid>3182943</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Aquileia</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>13.367962</Longitude>
+		<Gazetteerid>2086725</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

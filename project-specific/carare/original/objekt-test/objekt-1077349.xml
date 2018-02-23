@@ -1,0 +1,61 @@
+<record>
+	<objekt>
+	  <creation>1994-09-03 08:06:06.0</creation>
+	  <ArachneEntityID>1077349</ArachneEntityID>
+	  <lastModified>2011-08-04 11:03:56.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>17561</seriennummer>
+	  <id>objekt-17561</id>
+	  <ForeignKey>17561</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>M.L. (03.09.1994)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <HoeheGesamt>42</HoeheGesamt>
+	  <Katalognummer>Kurzbeschreibung</Katalognummer>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1206008</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2323</PS_OrtID>
+		<Aufbewahrungsort_Synonym>Rome;Roma;Ρώμη;Urbs;罗马市;Рим;Romë;Rzym;روما;Roma Capitale</Aufbewahrungsort_Synonym>
+		<Aufbewahrungsort>Rom</Aufbewahrungsort>
+		<seriennummer>133591</seriennummer>
+		<id>ortsbezug-133591</id>
+		<FS_OrtID>2323</FS_OrtID>
+		<Region>Tyrrhenian Central Italy</Region>
+		<Latitude>41.89143</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>17561</FS_ObjektID>
+		<isDeleted>1</isDeleted>
+		<Ort_antik>Urbs aeterna / Roma</Ort_antik>
+		<InvNr>175</InvNr>
+		<Subregion>Latium</Subregion>
+		<ForeignKey>2323</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>ehemalige Provinz Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.49362</Longitude>
+		<Gazetteerid>2323295</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

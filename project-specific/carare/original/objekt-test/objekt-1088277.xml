@@ -1,0 +1,75 @@
+<record>
+	<objekt>
+	  <creation>1997-04-23 08:06:06.0</creation>
+	  <ArachneEntityID>1088277</ArachneEntityID>
+	  <Erhaltungszustand>Kopf nicht zugehörig</Erhaltungszustand>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>spätrepublikan. Togatus</KurzbeschreibungObjekt>
+	  <seriennummer>28907</seriennummer>
+	  <id>objekt-28907</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2011-08-04 11:04:01.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <Bearbeitungen>ergänzt</Bearbeitungen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>28907</ForeignKey>
+	  <BearbeiterObjekt>M.L. (23.04.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<AnfDatvn>v. Chr.</AnfDatvn>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<lastModified>2011-08-04 10:41:05.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>28907</FS_ObjektID>
+		<seriennummer>20953</seriennummer>
+		<id>datierung-20953</id>
+		<oaiCategory>datierung</oaiCategory>
+		<AnfEpoche>republikanisch, spät</AnfEpoche>
+		<AnfDatZeitraum>1. Hälfte</AnfDatZeitraum>
+		<AnfDatJh>1</AnfDatJh>
+		<kategorie>datierung</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  </datierung>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1206052</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2372</PS_OrtID>
+		<Aufbewahrungsort>Collegio Nazareno</Aufbewahrungsort>
+		<seriennummer>144780</seriennummer>
+		<id>ortsbezug-144780</id>
+		<FS_OrtID>2372</FS_OrtID>
+		<Latitude>41.89474</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>28907</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>2372</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.4839</Longitude>
+		<Gazetteerid>2093855</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

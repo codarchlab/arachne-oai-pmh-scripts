@@ -1,0 +1,57 @@
+<record>
+	<objekt>
+	  <Korrektor>C.B.</Korrektor>
+	  <creation>1995-10-31 07:06:06.0</creation>
+	  <ArachneEntityID>1070215</ArachneEntityID>
+	  <lastModified>2011-08-04 11:03:52.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>10201</seriennummer>
+	  <id>objekt-10201</id>
+	  <ForeignKey>10201</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>(31.10.1995)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Katalognummer>Kurzbeschreibung</Katalognummer>
+	  <Herkunft>Ince Blundell Hall</Herkunft>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1205214</ArachneEntityID>
+		<Countrycode>GB</Countrycode>
+		<Land>Großbritannien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>1461</PS_OrtID>
+		<seriennummer>126641</seriennummer>
+		<id>ortsbezug-126641</id>
+		<FS_OrtID>1461</FS_OrtID>
+		<Stadt_Synonym>ليفربول;Ливерпуль;利物浦;Λίβερπουλ;Liverpolium</Stadt_Synonym>
+		<Latitude>53.41058</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>10201</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>1461</ForeignKey>
+		<Geonamesid>2644210</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Liverpool</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>-2.97794</Longitude>
+		<Gazetteerid>2089923</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

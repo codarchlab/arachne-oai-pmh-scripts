@@ -1,0 +1,85 @@
+<record>
+	<objekt>
+	  <creation>1997-09-11 08:06:06.0</creation>
+	  <ArachneEntityID>1091656</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:03.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Torso eines Satyrn</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>32605</seriennummer>
+	  <id>objekt-32605</id>
+	  <ForeignKey>32605</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>S.V. (11.09.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Fundstaat>Italien</Fundstaat>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <marbilder>
+		<ArachneEntityID>2106733</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2014-02-25 16:18:36.0</lastModified>
+		<NegativNr>82.427</NegativNr>
+		<Visible>Arachne</Visible>
+		<geaendert>2012-01-18 14:33:19</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>32605</FS_ObjektID>
+		<Dateigroesse>280</Dateigroesse>
+		<Scannummer>32605</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<seriennummer>4083190</seriennummer>
+		<id>marbilder-4083190</id>
+		<ForeignKey>4083190</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-82.427_32605.jpg</DateinameMarbilder>
+		<erstellt>2012-01-18 14:33:19</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0533/D-DAI-ROM-82.427_32605.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0533/D-DAI-ROM-82.427_32605.jpg</Pfad>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1204033</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>147</PS_OrtID>
+		<Aufbewahrungsort>Museo Archeologico Nazionale</Aufbewahrungsort>
+		<seriennummer>136228</seriennummer>
+		<id>ortsbezug-136228</id>
+		<FS_OrtID>147</FS_OrtID>
+		<Latitude>45.767413</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>32605</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>o. Nr.</InvNr>
+		<ForeignKey>147</ForeignKey>
+		<Geonamesid>3182943</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Aquileia</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>13.367962</Longitude>
+		<Gazetteerid>2086725</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

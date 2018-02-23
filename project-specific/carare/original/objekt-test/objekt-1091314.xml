@@ -1,0 +1,75 @@
+<record>
+	<objekt>
+	  <creation>1997-09-16 08:06:06.0</creation>
+	  <ArachneEntityID>1091314</ArachneEntityID>
+	  <set>objekt</set>
+	  <BreiteGesamt>18.6</BreiteGesamt>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Bronze</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Bronzelampe in Entenform</KurzbeschreibungObjekt>
+	  <seriennummer>32247</seriennummer>
+	  <id>objekt-32247</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <HoeheGesamt>26.4</HoeheGesamt>
+	  <FreieBeschreibung>spezielle Funktion: Lampe</FreieBeschreibung>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2012-05-21 13:09:54.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>32247</ForeignKey>
+	  <BearbeiterObjekt>M.L. (16.09.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <funktionaleVerwendung>Gerät</funktionaleVerwendung>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<id>datierung-21975</id>
+		<AnfDatvn>n. Chr.</AnfDatvn>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<oaiCategory>datierung</oaiCategory>
+		<AnfEpoche>frühkaiserzeitlich</AnfEpoche>
+		<lastModified>2011-08-04 10:41:06.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>32247</FS_ObjektID>
+		<AnfDatJh>1</AnfDatJh>
+		<kategorie>datierung</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<seriennummer>21975</seriennummer>
+	  </datierung>
+	  <ortsbezug>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1205106</ArachneEntityID>
+		<Countrycode>CH</Countrycode>
+		<Land>Schweiz</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>1341</PS_OrtID>
+		<seriennummer>147780</seriennummer>
+		<id>ortsbezug-147780</id>
+		<FS_OrtID>1341</FS_OrtID>
+		<Stadt_Synonym>Zurich;Zúrich;زيورخ;Zurigo;Turicum;Zurych;Zurique;Цюрих;Zürih;Ζυρίχη;Zuerich</Stadt_Synonym>
+		<Latitude>47.36667</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2016-11-24 21:59:54.0</lastModified>
+		<FS_ObjektID>32247</FS_ObjektID>
+		<isDeleted>1</isDeleted>
+		<ForeignKey>1341</ForeignKey>
+		<Geonamesid>2657896</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Zusatz>Leo Mildenberg</Zusatz>
+		<Stadt>Zürich</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>8.55</Longitude>
+		<Gazetteerid>2090501</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

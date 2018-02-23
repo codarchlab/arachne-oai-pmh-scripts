@@ -1,0 +1,58 @@
+<record>
+	<objekt>
+	  <creation>1997-05-02 08:06:06.0</creation>
+	  <ArachneEntityID>1091618</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:03.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Togatus</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>32567</seriennummer>
+	  <id>objekt-32567</id>
+	  <ForeignKey>32567</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>S.V. (02.05.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Fundort>Sibrium</Fundort>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1205327</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>1580</PS_OrtID>
+		<Aufbewahrungsort>Museo Patrio d'Archeologia</Aufbewahrungsort>
+		<seriennummer>136190</seriennummer>
+		<id>ortsbezug-136190</id>
+		<FS_OrtID>1580</FS_OrtID>
+		<Latitude>45.46427</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>32567</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>A 1155</InvNr>
+		<ForeignKey>1580</ForeignKey>
+		<Geonamesid>3173435</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Mailand</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>9.18951</Longitude>
+		<Gazetteerid>2091281</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

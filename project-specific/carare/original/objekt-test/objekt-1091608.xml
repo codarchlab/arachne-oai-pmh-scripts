@@ -1,0 +1,86 @@
+<record>
+	<objekt>
+	  <creation>1997-04-24 08:06:06.0</creation>
+	  <ArachneEntityID>1091608</ArachneEntityID>
+	  <Erhaltungszustand>Die rechte Seite ist erhalten. Gebrochen entlang einer Linie von der Oberlippe bis zur linken Schläfe.</Erhaltungszustand>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Weibliche Maske</KurzbeschreibungObjekt>
+	  <seriennummer>32557</seriennummer>
+	  <id>objekt-32557</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <HoeheGesamt>19,5</HoeheGesamt>
+	  <Fundort>Aquileia, Hafengrabung</Fundort>
+	  <Fundstaat>Italien</Fundstaat>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2011-08-04 11:04:03.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <Bearbeitungen>nicht ergänzt</Bearbeitungen>
+	  <ForeignKey>32557</ForeignKey>
+	  <BearbeiterObjekt>S.V. (24.04.1997)</BearbeiterObjekt>
+	  <Erhaltung>Fragment(e)</Erhaltung>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1204033</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>147</PS_OrtID>
+		<Aufbewahrungsort>Museo Archeologico Nazionale</Aufbewahrungsort>
+		<seriennummer>136180</seriennummer>
+		<id>ortsbezug-136180</id>
+		<FS_OrtID>147</FS_OrtID>
+		<Latitude>45.767413</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>32557</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>2709</InvNr>
+		<ForeignKey>147</ForeignKey>
+		<Geonamesid>3182943</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Aquileia</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>13.367962</Longitude>
+		<Gazetteerid>2086725</Gazetteerid>
+	  </ortsbezug>
+	  <topographie>
+		<creation>2008-06-10 08:06:06.0</creation>
+		<ArachneEntityID>3303</ArachneEntityID>
+		<TopographieTypus>Stadt</TopographieTypus>
+		<lastModified>2013-05-21 14:33:52.0</lastModified>
+		<antikeRoemProvinzTopographie>Italia</antikeRoemProvinzTopographie>
+		<set>topographie</set>
+		<KorrektorTopographie>Eric Laufer (18.05.2009); Janine Seidel (25.05.2012); Janine Seidel (31.05.2012)</KorrektorTopographie>
+		<BearbeiterTopographie>Melanie Lang (10.06.2008)</BearbeiterTopographie>
+		<isDeleted>0</isDeleted>
+		<seriennummer>8004698</seriennummer>
+		<DatensatzGruppeTopographie>Arachne</DatensatzGruppeTopographie>
+		<ForeignKey>8004698</ForeignKey>
+		<id>topographie-8004698</id>
+		<GeschichteTopographie>Mehrere Phasen von Stadtmauern reichen von der Republik bis in die Spätantike. Dabei verlagert sich das Stadtzentrum vom römischen Forum zu den frühchristlichen Kirchen nach Süden.</GeschichteTopographie>
+		<oaiCategory>topographie</oaiCategory>
+		<TopographieArt>anthropogen</TopographieArt>
+		<KurzbeschreibungTopographie>Aquileia</KurzbeschreibungTopographie>
+		<TableName>topographie</TableName>
+		<kategorie>topographie</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </topographie>
+	</objekt>
+</record>

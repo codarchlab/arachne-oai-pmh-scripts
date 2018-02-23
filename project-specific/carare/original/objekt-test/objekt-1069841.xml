@@ -1,0 +1,144 @@
+<record>
+	<objekt>
+	  <creation>1994-07-26 08:06:06.0</creation>
+	  <Korrektor>D.D.</Korrektor>
+	  <ArachneEntityID>1069841</ArachneEntityID>
+	  <Erhaltungszustand>nur die rechte Seite des Kopfes ist erhalten</Erhaltungszustand>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Kopf einer Frau</KurzbeschreibungObjekt>
+	  <seriennummer>9794</seriennummer>
+	  <id>objekt-9794</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Fundort>unbekannt</Fundort>
+	  <Fundstaat>Italien</Fundstaat>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2011-08-04 11:03:52.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>9794</ForeignKey>
+	  <BearbeiterObjekt>M.L. (26.07.1994)</BearbeiterObjekt>
+	  <Erhaltung>fragmentiert</Erhaltung>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <marbilder>
+		<ArachneEntityID>2234848</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2014-02-25 16:19:29.0</lastModified>
+		<NegativNr>72.1291</NegativNr>
+		<Visible>Arachne</Visible>
+		<geaendert>2012-04-21 10:06:16</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>9794</FS_ObjektID>
+		<Dateigroesse>875</Dateigroesse>
+		<Scannummer>9794</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<seriennummer>4175606</seriennummer>
+		<id>marbilder-4175606</id>
+		<ForeignKey>4175606</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-72.1291_9794.jpg</DateinameMarbilder>
+		<erstellt>2012-04-21 10:06:16</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0548/D-DAI-ROM-72.1291_9794.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0548/D-DAI-ROM-72.1291_9794.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>2234849</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2014-02-25 16:19:29.0</lastModified>
+		<NegativNr>72.1292</NegativNr>
+		<Visible>Arachne</Visible>
+		<geaendert>2012-04-21 10:06:17</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>9794</FS_ObjektID>
+		<Dateigroesse>877</Dateigroesse>
+		<Scannummer>9794,01</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<seriennummer>4175607</seriennummer>
+		<id>marbilder-4175607</id>
+		<ForeignKey>4175607</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-72.1292_9794,01.jpg</DateinameMarbilder>
+		<erstellt>2012-04-21 10:06:17</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0548/D-DAI-ROM-72.1292_9794,01.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0548/D-DAI-ROM-72.1292_9794,01.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>2234850</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2014-02-25 16:19:29.0</lastModified>
+		<NegativNr>72.1292a</NegativNr>
+		<Visible>Arachne</Visible>
+		<geaendert>2012-04-21 10:06:18</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>9794</FS_ObjektID>
+		<Dateigroesse>812</Dateigroesse>
+		<Scannummer>9794,02</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<seriennummer>4175608</seriennummer>
+		<id>marbilder-4175608</id>
+		<ForeignKey>4175608</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-72.1292a_9794,02.jpg</DateinameMarbilder>
+		<erstellt>2012-04-21 10:06:18</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0548/D-DAI-ROM-72.1292a_9794,02.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0548/D-DAI-ROM-72.1292a_9794,02.jpg</Pfad>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1205131</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>1368</PS_OrtID>
+		<Aufbewahrungsort>Museo Civico</Aufbewahrungsort>
+		<seriennummer>126172</seriennummer>
+		<id>ortsbezug-126172</id>
+		<FS_OrtID>1368</FS_OrtID>
+		<Latitude>44.11054</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>9794</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>2616</InvNr>
+		<ForeignKey>1368</ForeignKey>
+		<Geonamesid>3175081</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Ligurien</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>9.84339</Longitude>
+		<Gazetteerid>2090592</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

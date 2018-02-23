@@ -1,0 +1,83 @@
+<record>
+	<objekt>
+	  <creation>1997-04-16 08:06:06.0</creation>
+	  <ArachneEntityID>1088042</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:01.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <Material>Marmor</Material>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Ansicht eines Teils der Palazzo - Fassade</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>28667</seriennummer>
+	  <id>objekt-28667</id>
+	  <ForeignKey>28667</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>M.L. (16.04.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1209947</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>7872</PS_OrtID>
+		<Aufbewahrungsort>Sammlung Barberini</Aufbewahrungsort>
+		<seriennummer>144547</seriennummer>
+		<id>ortsbezug-144547</id>
+		<FS_OrtID>7872</FS_OrtID>
+		<Latitude>41.89474</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>28667</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>7872</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.4839</Longitude>
+		<Gazetteerid>2107247</Gazetteerid>
+	  </ortsbezug>
+	  <sammlungen>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<EntstehungDatum>um 1620</EntstehungDatum>
+		<ArachneEntityID>1240787</ArachneEntityID>
+		<lastModified>2012-05-21 13:12:39.0</lastModified>
+		<GeschichteSammlungen>Die Sammlung war am Ende des 18. Jhs. für die Öffentlichkeit zugänglich.</GeschichteSammlungen>
+		<set>sammlungen</set>
+		<Herkunftsland>Italien</Herkunftsland>
+		<vollstaendig>nein</vollstaendig>
+		<Aufloesung>Die Auflösung beginnt bereits am Ende des 18. Jahrhunderts. Die Skulpturen  gehen nach England, nach München und  in die Sammlung Sciarra.</Aufloesung>
+		<isDeleted>0</isDeleted>
+		<seriennummer>1000007</seriennummer>
+		<ForeignKey>1000007</ForeignKey>
+		<id>sammlungen-1000007</id>
+		<KurzbeschreibungSammlungen>Sammlung Barberini Rom</KurzbeschreibungSammlungen>
+		<oaiCategory>sammlungen</oaiCategory>
+		<KorrektorSammlungen>Sophie Löwenstein (24.08.2005); Sophie Löwenstein (25.08.2005); Jörn Lang (20.12.2005); Annette Pohl (21.12.2005); Jörn Lang (29.12.2005); Jörn Lang (09.01.2006); Johanna Fuchs (22.01.2008); Johanna Fuchs (23.01.2008)</KorrektorSammlungen>
+		<AufstellungSammlungen>U. a. die Villa in Castelgandolfo, die mit Skulpturen aus Rom und aus der Domitiansvilla ausgestattet wurde.</AufstellungSammlungen>
+		<Entstehung>Grabungen und Erwerbungen (1625 Villa Carpi der Sforza).</Entstehung>
+		<AufloesungDatum>um 1790</AufloesungDatum>
+		<BearbeiterSammlungen>C.B. S.V.</BearbeiterSammlungen>
+		<TableName>sammlungen</TableName>
+		<DatensatzGruppeSammlungen>Arachne</DatensatzGruppeSammlungen>
+		<kategorie>sammlungen</kategorie>
+		<Vasen>Malereien, Mosaiken (Nilmosaik aus Palestrina), Portlandvase.</Vasen>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </sammlungen>
+	</objekt>
+</record>

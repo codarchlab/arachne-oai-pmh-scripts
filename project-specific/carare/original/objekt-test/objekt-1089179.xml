@@ -1,0 +1,110 @@
+<record>
+	<objekt>
+	  <creation>2004-01-31 07:06:06.0</creation>
+	  <ArachneEntityID>1089179</ArachneEntityID>
+	  <lastModified>2013-02-25 16:59:31.0</lastModified>
+	  <zuMonument>ja</zuMonument>
+	  <set>objekt</set>
+	  <Material>Marmor</Material>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Altarwange mit Ranke</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>29845</seriennummer>
+	  <id>objekt-29845</id>
+	  <ForeignKey>29845</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>AB (31.01.2004)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <marbilder>
+		<md5sum>3a9f663349ca6e9670724118a6e47394</md5sum>
+		<ArachneEntityID>154672</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2013-07-21 18:14:41.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2007-09-06 22:56:54</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>29845</FS_ObjektID>
+		<Dateigroesse>545</Dateigroesse>
+		<Scannummer>29845</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>680818</seriennummer>
+		<id>marbilder-680818</id>
+		<ForeignKey>680818</ForeignKey>
+		<DateinameMarbilder>oA_29845.jpg</DateinameMarbilder>
+		<erstellt>2004-02-08 10:37:16</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0137/oA_29845.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0137/oA_29845.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>1fc49a7c18e427a50c552e3249d72c2f</md5sum>
+		<ArachneEntityID>154671</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2016-12-20 09:02:01.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2007-09-06 22:56:54</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>29845</FS_ObjektID>
+		<Dateigroesse>567</Dateigroesse>
+		<Scannummer>29845,01</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>680817</seriennummer>
+		<id>marbilder-680817</id>
+		<ForeignKey>680817</ForeignKey>
+		<DateinameMarbilder>oA_29845,01.jpg</DateinameMarbilder>
+		<erstellt>2004-02-08 10:37:14</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans//FADatenbankabb0137/oA_29845,01.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0137/oA_29845,01.jpg</Pfad>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>Fundort</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1205109</ArachneEntityID>
+		<Countrycode>LY</Countrycode>
+		<Land>Libyen</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>1345</PS_OrtID>
+		<Aufbewahrungsort>Agora</Aufbewahrungsort>
+		<seriennummer>438434</seriennummer>
+		<id>ortsbezug-438434</id>
+		<FS_OrtID>1345</FS_OrtID>
+		<Ursprungsinformationen>Libyen, Kyrene, Agora (?)</Ursprungsinformationen>
+		<Latitude>32.82674</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2013-02-25 17:08:20.0</lastModified>
+		<FS_ObjektID>29845</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>1345</ForeignKey>
+		<Geonamesid>8410832</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Kyrene</Stadt>
+		<continentCode>AF</continentCode>
+		<continent>Afrika</continent>
+		<TableName>ort</TableName>
+		<Longitude>21.86335</Longitude>
+		<Gazetteerid>2090510</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

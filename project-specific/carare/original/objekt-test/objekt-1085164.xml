@@ -1,0 +1,113 @@
+<record>
+	<objekt>
+	  <creation>1996-06-26 08:06:06.0</creation>
+	  <ArachneEntityID>1085164</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:00.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>25686</seriennummer>
+	  <id>objekt-25686</id>
+	  <ForeignKey>25686</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>S.V. (26.06.1996)</BearbeiterObjekt>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Katalognummer>Kurzbeschreibung</Katalognummer>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206407</ArachneEntityID>
+		<Countrycode>VA</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2776</PS_OrtID>
+		<Aufbewahrungsort_Synonym>Musei Vaticani</Aufbewahrungsort_Synonym>
+		<Aufbewahrungsort>Vatikanische Museen</Aufbewahrungsort>
+		<seriennummer>141702</seriennummer>
+		<id>ortsbezug-141702</id>
+		<FS_OrtID>2776</FS_OrtID>
+		<Latitude>41.904995</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>25686</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>2776</ForeignKey>
+		<Geonamesid>3164670</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.454655</Longitude>
+		<Gazetteerid>2095186</Gazetteerid>
+	  </ortsbezug>
+	  <sammlungen>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1241246</ArachneEntityID>
+		<EntstehungDatum>um 1505</EntstehungDatum>
+		<lastModified>2013-03-19 14:18:38.0</lastModified>
+		<GeschichteSammlungen>Francesco Bianchini richtet das „Museo Ecclesiastico“ ein, das sich aber nur bis 1716 hält. Die Objekte wurden nur nach historischen und philologischen Aspekten ausgewählt, dazu gehörten auch mittelalterliche Ausstellungsstücke.</GeschichteSammlungen>
+		<set>sammlungen</set>
+		<vollstaendig>nein</vollstaendig>
+		<Herkunftsland>Italien</Herkunftsland>
+		<isDeleted>0</isDeleted>
+		<seriennummer>1000466</seriennummer>
+		<ForeignKey>1000466</ForeignKey>
+		<id>sammlungen-1000466</id>
+		<KurzbeschreibungSammlungen>Musei Vaticani</KurzbeschreibungSammlungen>
+		<oaiCategory>sammlungen</oaiCategory>
+		<KorrektorSammlungen>Jörn Lang (18.04.2005); Jörn Lang (08.08.2005); Jörn Lang (12.08.2005); Jörn Lang (15.08.2005); Jörn Lang (08.11.2005); Jörn Lang (21.11.2005); Jörn Lang (28.11.2005); Jörn Lang (30.11.2005); Jörn Lang (05.12.2005); Jörn Lang (06.12.2005); Vinzenz Borchert (06.12.2005); Agnes Thomas (07.12.2005); Jörn Lang (19.12.2005); Jörn Lang (20.12.2005); Jörn Lang (29.12.2005); Jörn Lang (30.12.2005); Jörn Lang (02.01.2006); Janine Lehmann (02.01.2006); Jörn Lang (03.01.2006); Jörn Lang (04.01.2006); Jörn Lang (09.01.2006); Janine Lehmann (10.01.2006); Jörn Lang (16.01.2006); Janine Lehmann (16.01.2006); Jörn Lang (17.01.2006); Jörn Lang (18.01.2006); Jörn Lang (23.01.2006); Janine Lehmann (23.01.2006); Jörn Lang (25.01.2006); Jörn Lang (30.01.2006); Janine Lehmann (30.01.2006); Jörn Lang (31.01.2006); Janine Lehmann (31.01.2006); Jörn Lang (01.02.2006); Janine Lehmann (06.02.2006); Jörn Lang (07.02.2006); Jörn Lang (09.02.2006); Jörn Lang (13.02.2006); Jörn Lang (14.02.2006); Janine Lehmann (14.02.2006); Johanna Fuchs (22.01.2008); Reinhard Foertsch (18.03.2009); Marian Keuler (18.03.2009); Marian Keuler (19.03.2009)</KorrektorSammlungen>
+		<AufstellungSammlungen>Die Vatikanischen Museen beherbergen die päpstlichen Kunstsammlungen und befinden sich auf dem Territorium der Vatikanstadt. Die Sammlung ist eine der wichtigsten und größten der Welt und umfasst die Bereiche orientalische Altertümer (Ägypten und Assyrien), klassische Antike (griechisch-römische Kunst), etruskisch-italische Altertümer (heutiges Italien vor der Römerzeit), frühchristliche und mittelalterliche Kunst (3.-14. Jh.), Kunst von der Renaissance (15. Jh.) bis ins 19. Jahrhundert, zeitgenössische Kunst und eine völkerkundliche Sammlung. 
+Im Museo Pio Clementino wird die Aufstellung der Exponate der Architektur angepasst. Beim Umbau des Cortile delle Statue in einen oktogonalen Hof mit umlaufender Portikus, genauso wie bei dem Bau der Sala delle Muse, der Sala Rotonda und der Sala a Croce Greca, verwirklichte man eine neue museale Architektur, die mit dem Charakter der ausgestellten Stücke verschmelzen sollte. Für die Sala a Croce Greca kopierte man Thermensäle und für die Sala Rotonda das Pantheon.</AufstellungSammlungen>
+		<Entstehung>Die päpstliche Sammlungstätigkeit beginnt 1506 mit dem Kauf des Laokoon und dauert zunächst nur 60 Jahre, denn Papst Pius V. sammelt nicht und verkauft sogar einige Stücke. 
+150 Jahre später interessiert sich erst Papst Clemens XI. wieder für die Antiken und nominiert 1703 Francesco Bianchini zum Kommissar für die Antiken Roms.
+Durch den Ankauf von Sarkophagen und Inschriften aus der Sammlung Cavaceppi und durch die Schenkung der Sammlung Vettori wird 1757 das Museo Cristiano gegründet und in der Galerie Papst Urbans VIII. in den vatikanischen Palästen eingerichtet.
+1770 wird das Museo Pio-Clementino eingerichtet, das nun eher kunsthistorische Aspekte berücksichtigt.  Die Gründung des Museums hängt mit dem Erwerb der Kandelaber Barberini und der Sammlung Mattei zusammen, wodurch eine Neustrukturierung der vatikanischen Museen nötig wurde. 
+Hinzu kamen später Erwerbungen und Schenkungen aus den Sammlungen Verospi, Fusconi-Pichini, Giustiniani, Altemps, Pamphili, Colonna und Casali.
+Anfang des 19. Jh. kam es zur Einrichtung des Museo Chiaramonti. Zwischen 1816 und 1822 gab es Erweiterungen des Museo Chiramonti durch den Braccio Nuovo.
+1836 kommt es zudem zur Einrichtung des Museo Etrusco und 1839 des Museo Egizio durch Papst Gregor XVI.</Entstehung>
+		<BearbeiterSammlungen>S.V.</BearbeiterSammlungen>
+		<TableName>sammlungen</TableName>
+		<DatensatzGruppeSammlungen>Arachne</DatensatzGruppeSammlungen>
+		<kategorie>sammlungen</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </sammlungen>
+	  <typus>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1242135</ArachneEntityID>
+		<lastModified>2015-04-23 15:13:25.0</lastModified>
+		<set>typus</set>
+		<DatensatzGruppeTypus>Arachne</DatensatzGruppeTypus>
+		<isDeleted>0</isDeleted>
+		<seriennummer>154</seriennummer>
+		<Klassifizierung>Portrait Kaiserhaus männlich</Klassifizierung>
+		<ForeignKey>154</ForeignKey>
+		<id>typus-154</id>
+		<KurzbeschreibungTypus>Claudius Haupttypus</KurzbeschreibungTypus>
+		<oaiCategory>typus</oaiCategory>
+		<RoemGriech>Römisches Portrait</RoemGriech>
+		<Einordnungsargumente>Im Gegensatz zu den vorausgehenden Kaiser- und Prinzenbildnissen zeigt das Claudiusporträt eine realistische, individuelle Physiognomie. Widersprüchlich ist aber das immer noch nach einem kunstvollen System von Zangen und Gabeln gestaltete Haar (Fittschen).
+Nach dem Zeugnis der Münzbilder muß der Haupttypus bald nach dem Regierungsantritt des Claudius geschaffen worden sein (Boschung).</Einordnungsargumente>
+		<KorrektorTypus>Melanie Lang (07.12.2007); Semra Saral (18.02.2015); Semra Saral (23.04.2015)</KorrektorTypus>
+		<KommentarVorbild>formale Klassifikation: bartlos</KommentarVorbild>
+		<NamengebendeReplik>8623</NamengebendeReplik>
+		<TableName>typus</TableName>
+		<kategorie>typus</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin</metadataformats>
+		<KunsthistorischeEinordnung>Das Stirnhaar wird über dem Ansatz der linken Braue geteilt und von hier nach außen gestrichen. Über den Außenwinkeln beider Augen drehen sich etwas längere Locken zur Gesichtsmitte zurück und bilden auf diese Weise Eckzangen, die jedoch nicht genau symmetrische angelegt sind: der äußere Arm der rechten Eckzange ist breiter und reicht tiefer herab. Neben beiden Eckzangen sind Locken schwungvoll nach außen gedreht und leiten zum Schläfenhaar über. Bei einigen Bildnissen wird die linke Eckzange unterdrückt. Das Gesicht zeigt markante Stirn- und Wangenfalten und wirkt auf diese Weise gegenüber dem Typus Kassel älter.</KunsthistorischeEinordnung>
+	  </typus>
+	</objekt>
+</record>

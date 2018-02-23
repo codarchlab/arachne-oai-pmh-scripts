@@ -1,0 +1,327 @@
+<record>
+	<objekt>
+	  <Korrektor>SG; Michael Remmy (02.08.2005)</Korrektor>
+	  <creation>1996-07-30 08:06:06.0</creation>
+	  <InschriftCorpusObjekt>CIL VI 12098</InschriftCorpusObjekt>
+	  <TiefeGesamt>29</TiefeGesamt>
+	  <ArachneEntityID>1085629</ArachneEntityID>
+	  <Auftraggeber>Uliades</Auftraggeber>
+	  <Erhaltungszustand>das Relief ist rechts gebrochen, die Ecken sind bestoßen, ebenso das Gesicht des Thaleros, das Relief war vermauert</Erhaltungszustand>
+	  <set>objekt</set>
+	  <BreiteGesamt>95</BreiteGesamt>
+	  <Material>Marmor</Material>
+	  <MedienAG>nein</MedienAG>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Kastengrabrelief mit drei Portraitbüsten</KurzbeschreibungObjekt>
+	  <seriennummer>26173</seriennummer>
+	  <id>objekt-26173</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Adressat>Apemantus, Thaleros und Uliades</Adressat>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <HoeheGesamt>59</HoeheGesamt>
+	  <InschriftObjekt>APEMANTO ∞ THALERO ∞ FRATERIB(us) ∞ VLIADE(...</InschriftObjekt>
+	  <Fundstaat>Italien</Fundstaat>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <InschriftSpracheObjekt>lateinisch</InschriftSpracheObjekt>
+	  <GattungAllgemein>Inschrift</GattungAllgemein>
+	  <lastModified>2011-08-04 11:04:00.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <Bearbeitungen>nicht ergänzt</Bearbeitungen>
+	  <InschriftLatein_OLD>APEMANTO ∞ THALERO ∞ FRATERIB(us) ∞ VLIADE(...</InschriftLatein_OLD>
+	  <ForeignKey>26173</ForeignKey>
+	  <Erhaltung>fragmentiert</Erhaltung>
+	  <BearbeiterObjekt>M.L. (30.07.1996)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Herkunft>Palazzo dei Conservatori, Braccio Nuovo, zuvor Rom, Villa Casali</Herkunft>
+	  <InschriftCorpusLatein_OLD>CIL VI 12098</InschriftCorpusLatein_OLD>
+	  <funktionaleVerwendung>Grabbau: Relief</funktionaleVerwendung>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <Funktion>Grab</Funktion>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<AnfDatvn>n. Chr.</AnfDatvn>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<lastModified>2011-08-04 10:41:05.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<seriennummer>20003</seriennummer>
+		<id>datierung-20003</id>
+		<oaiCategory>datierung</oaiCategory>
+		<AnfEpoche>flavisch</AnfEpoche>
+		<AnfDatZeitraum>letztes Drittel</AnfDatZeitraum>
+		<AnfDatJh>1</AnfDatJh>
+		<kategorie>datierung</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  </datierung>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<Katnummer>3812</Katnummer>
+		<ArachneEntityID>23976</ArachneEntityID>
+		<Titel>Antike Bildwerke in Rom mit Ausschluss der grösseren Sammlungen. Reliefs und Sonstiges</Titel>
+		<Ort>Leipzig</Ort>
+		<A1Vorname>Friedrich</A1Vorname>
+		<StichwortSortierung>Matz - Duhn</StichwortSortierung>
+		<Jahr>1882</Jahr>
+		<PS_LiteraturID>56</PS_LiteraturID>
+		<seriennummer>7240</seriennummer>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<DAIRichtlinien>F. Matz, Antike Bildwerke in Rom mit Ausschluss der grösseren Sammlungen III. Reliefs und Sonstiges. Fortgeführt und hrsg. von F. v. Duhn (Rom 1882)</DAIRichtlinien>
+		<A1Nachname>Matz</A1Nachname>
+		<id>literaturzitat-7240</id>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+		<lastModified>2012-08-01 15:40:36.0</lastModified>
+		<A2Vorname>F.</A2Vorname>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<Band>III</Band>
+		<ForeignKey>56</ForeignKey>
+		<ZenonID>000972060</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<A2Nachname>von Duhn</A2Nachname>
+		<FS_LiteraturID>56</FS_LiteraturID>
+		<TableName>literatur</TableName>
+	  </literaturzitat>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<Katnummer>M10</Katnummer>
+		<ArachneEntityID>24421</ArachneEntityID>
+		<lastModified>2012-08-01 15:06:41.0</lastModified>
+		<StichwortSortierung>Kockel</StichwortSortierung>
+		<Tafel>119b-d</Tafel>
+		<Seite>204f.</Seite>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<PS_LiteraturID>508</PS_LiteraturID>
+		<DAIRichtlinien>V. Kockel, Porträtreliefs stadtrömischer Grabbauten, Beiträge zur Erschließung hellenistischer und kaiserzeitlicher Skulptur und Architektur 12 (Mainz 1993)</DAIRichtlinien>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<seriennummer>77661</seriennummer>
+		<id>literaturzitat-77661</id>
+		<ForeignKey>508</ForeignKey>
+		<ZenonID>000923599</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>508</FS_LiteraturID>
+		<TableName>literatur</TableName>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+	  </literaturzitat>
+	  <marbilder>
+		<ArachneEntityID>6111067</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2017-03-12 02:23:13.0</lastModified>
+		<NegativNr>2001.2100</NegativNr>
+		<Visible>Arachne</Visible>
+		<geaendert>2017-03-11 23:40:47</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<Dateigroesse>164</Dateigroesse>
+		<Scannummer>26173</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<seriennummer>7705027</seriennummer>
+		<id>marbilder-7705027</id>
+		<ForeignKey>7705027</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-2001.2100_26173.jpg</DateinameMarbilder>
+		<erstellt>2017-01-03 11:35:28</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans//FADatenbankabb0589/D-DAI-ROM-2001.2100_26173.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0589/D-DAI-ROM-2001.2100_26173.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>6111068</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2017-03-12 02:23:14.0</lastModified>
+		<NegativNr>2001.2101</NegativNr>
+		<Visible>Arachne</Visible>
+		<geaendert>2017-03-11 23:40:47</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<Dateigroesse>178</Dateigroesse>
+		<Scannummer>26173,01</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<seriennummer>7705028</seriennummer>
+		<id>marbilder-7705028</id>
+		<ForeignKey>7705028</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-2001.2101_26173,01.jpg</DateinameMarbilder>
+		<erstellt>2017-01-03 11:35:28</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans//FADatenbankabb0589/D-DAI-ROM-2001.2101_26173,01.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0589/D-DAI-ROM-2001.2101_26173,01.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>6111069</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>338</Dateigroesse>
+		<Scannummer>26173,03</Scannummer>
+		<seriennummer>7705029</seriennummer>
+		<id>marbilder-7705029</id>
+		<erstellt>2012-04-04 14:10:35</erstellt>
+		<Fotograf>G. Fittschen-Badura</Fotograf>
+		<PfadNeu>objectscans//FADatenbankabb0589/FittCap71-43-05_26173,03.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0589/FittCap71-43-05_26173,03.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2017-03-12 02:23:15.0</lastModified>
+		<NegativNr>05</NegativNr>
+		<geaendert>2017-03-11 23:40:47</geaendert>
+		<FilmNr>Cap71-43</FilmNr>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FittCap71</BestandsnameMarbilder>
+		<ForeignKey>7705029</ForeignKey>
+		<DateinameMarbilder>FittCap71-43-05_26173,03.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>6111070</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>337</Dateigroesse>
+		<Scannummer>26173,04</Scannummer>
+		<seriennummer>7705030</seriennummer>
+		<id>marbilder-7705030</id>
+		<erstellt>2012-04-04 14:10:40</erstellt>
+		<Fotograf>G. Fittschen-Badura</Fotograf>
+		<PfadNeu>objectscans//FADatenbankabb0589/FittCap71-43-06_26173,04.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0589/FittCap71-43-06_26173,04.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2017-03-12 02:23:16.0</lastModified>
+		<NegativNr>06</NegativNr>
+		<geaendert>2017-03-11 23:40:47</geaendert>
+		<FilmNr>Cap71-43</FilmNr>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FittCap71</BestandsnameMarbilder>
+		<ForeignKey>7705030</ForeignKey>
+		<DateinameMarbilder>FittCap71-43-06_26173,04.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>6111071</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>346</Dateigroesse>
+		<Scannummer>26173,05</Scannummer>
+		<seriennummer>7705031</seriennummer>
+		<id>marbilder-7705031</id>
+		<erstellt>2012-04-04 14:10:50</erstellt>
+		<Fotograf>G. Fittschen-Badura</Fotograf>
+		<PfadNeu>objectscans//FADatenbankabb0589/FittCap71-43-07_26173,05.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0589/FittCap71-43-07_26173,05.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2017-03-12 02:23:18.0</lastModified>
+		<NegativNr>07</NegativNr>
+		<geaendert>2017-03-11 23:40:47</geaendert>
+		<FilmNr>Cap71-43</FilmNr>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FittCap71</BestandsnameMarbilder>
+		<ForeignKey>7705031</ForeignKey>
+		<DateinameMarbilder>FittCap71-43-07_26173,05.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206130</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2456</PS_OrtID>
+		<Aufbewahrungsort>Musei Capitolini, Centrale Montemartini</Aufbewahrungsort>
+		<seriennummer>142162</seriennummer>
+		<id>ortsbezug-142162</id>
+		<FS_OrtID>2456</FS_OrtID>
+		<Latitude>41.866918</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>2898</InvNr>
+		<ForeignKey>2456</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.478889</Longitude>
+		<Gazetteerid>2094151</Gazetteerid>
+	  </ortsbezug>
+	  <relief>
+		<PersonenIdentifiziert>die Brüder Apemantus und Thaleros; Uliades</PersonenIdentifiziert>
+		<creation>2003-06-18 08:06:06.0</creation>
+		<ArachneEntityID>1215961</ArachneEntityID>
+		<set>relief</set>
+		<AnzahlFigurenRelief>3</AnzahlFigurenRelief>
+		<SzeneBreite>95</SzeneBreite>
+		<Szenennummer>1</Szenennummer>
+		<seriennummer>2617301</seriennummer>
+		<BearbeiterRelief>(18.06.2003)</BearbeiterRelief>
+		<id>relief-2617301</id>
+		<BemerkungenRelief>rechts fehlt vermutlich das Portrait der Gattin des Uliades, wie eine deutliche Kopfwendung vermuten läßt</BemerkungenRelief>
+		<ThematikSonstiges>Menschen;Portrait</ThematikSonstiges>
+		<AnzahlUnbestimmt>0</AnzahlUnbestimmt>
+		<KorrektorRelief>(09.03.2005)</KorrektorRelief>
+		<Personen>Menschen</Personen>
+		<PersonenMenschen>Römer;Mann</PersonenMenschen>
+		<kategorie>relief</kategorie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+		<AnzahlTiere>0</AnzahlTiere>
+		<DatensatzGruppeRelief>Arachne</DatensatzGruppeRelief>
+		<lastModified>2012-05-21 13:16:06.0</lastModified>
+		<HandlungSonstiges>Thematik: Andere Themen</HandlungSonstiges>
+		<AnzahlWeiblich>0</AnzahlWeiblich>
+		<FS_ObjektID>26173</FS_ObjektID>
+		<KurzbeschreibungRelief>drei männliche Portraitbüsten</KurzbeschreibungRelief>
+		<isDeleted>0</isDeleted>
+		<AnzahlGoetterMythWesen>0</AnzahlGoetterMythWesen>
+		<AnzahlHeroenMenschen>3</AnzahlHeroenMenschen>
+		<ForeignKey>2617301</ForeignKey>
+		<ErhaltungRelief>Fragment(e)</ErhaltungRelief>
+		<oaiCategory>relief</oaiCategory>
+		<BearbeitungenRelief>nicht ergänzt</BearbeitungenRelief>
+		<AnzahlMaennlich>3</AnzahlMaennlich>
+		<TableName>relief</TableName>
+		<ErhaltungszustandRelief>das Relief ist rechts gebrochen, die Ecken sind bestoßen, ebenso das Gesicht des Thaleros, das Relief war vermauert</ErhaltungszustandRelief>
+		<SzeneHoehe>59</SzeneHoehe>
+	  </relief>
+	</objekt>
+</record>

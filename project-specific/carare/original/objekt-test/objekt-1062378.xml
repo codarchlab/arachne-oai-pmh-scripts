@@ -1,0 +1,61 @@
+<record>
+	<objekt>
+	  <creation>1997-05-07 08:06:06.0</creation>
+	  <ArachneEntityID>1062378</ArachneEntityID>
+	  <Erhaltungszustand>Einsatzbüste, r. Arm, l. Unterarm mit Ellbogen, l. Knie, r. Fuß und Teil des Mantelbausches fehlen</Erhaltungszustand>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Weibliche Gewandstatue</KurzbeschreibungObjekt>
+	  <seriennummer>2072</seriennummer>
+	  <id>objekt-2072</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Fundort>unbekannt</Fundort>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2011-08-04 11:03:48.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>2072</ForeignKey>
+	  <BearbeiterObjekt>S.V. (07.05.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Herkunft>Accademia Carrara, Bergamo</Herkunft>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1204208</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>341</PS_OrtID>
+		<Aufbewahrungsort_Synonym>Museo Romanoi</Aufbewahrungsort_Synonym>
+		<Aufbewahrungsort>Civico Museo Archeologico</Aufbewahrungsort>
+		<seriennummer>118874</seriennummer>
+		<id>ortsbezug-118874</id>
+		<FS_OrtID>341</FS_OrtID>
+		<Latitude>45.706121</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>2072</FS_ObjektID>
+		<isDeleted>1</isDeleted>
+		<ForeignKey>341</ForeignKey>
+		<Geonamesid>3182164</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Bergamo</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>9.659708</Longitude>
+		<Gazetteerid>2359572</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

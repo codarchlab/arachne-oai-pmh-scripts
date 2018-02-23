@@ -1,0 +1,133 @@
+<record>
+	<objekt>
+	  <creation>1997-04-23 08:06:06.0</creation>
+	  <Korrektor>Melanie Lang (11.07.2012)</Korrektor>
+	  <ArachneEntityID>1088281</ArachneEntityID>
+	  <Erhaltungszustand>Kopf nicht zugehörig</Erhaltungszustand>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Togatus</KurzbeschreibungObjekt>
+	  <seriennummer>28911</seriennummer>
+	  <id>objekt-28911</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <Arbeitsnotiz>Emagines3 - MLang</Arbeitsnotiz>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2012-07-11 15:25:42.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <Bearbeitungen>ergänzt</Bearbeitungen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>28911</ForeignKey>
+	  <BearbeiterObjekt>M.L. (23.04.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<AnfDatvn>n. Chr.</AnfDatvn>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<lastModified>2011-08-04 10:41:05.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>28911</FS_ObjektID>
+		<seriennummer>20957</seriennummer>
+		<id>datierung-20957</id>
+		<oaiCategory>datierung</oaiCategory>
+		<AnfEpoche>antoninisch</AnfEpoche>
+		<AnfDatZeitraum>2. Hälfte</AnfDatZeitraum>
+		<AnfDatJh>2</AnfDatJh>
+		<kategorie>datierung</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  </datierung>
+	  <marbilder>
+		<ArachneEntityID>2356258</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>211</Dateigroesse>
+		<Scannummer>28911</Scannummer>
+		<seriennummer>4277268</seriennummer>
+		<Projekttitel>Emagines</Projekttitel>
+		<id>marbilder-4277268</id>
+		<erstellt>2012-07-20 12:28:20</erstellt>
+		<PfadNeu>objectscans//FADatenbankabb0564/D-DAI-ROM-59.652_28911.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0564/D-DAI-ROM-59.652_28911.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-12-23 19:45:03.0</lastModified>
+		<NegativNr>59.652</NegativNr>
+		<geaendert>2012-07-20 12:28:20</geaendert>
+		<FS_ObjektID>28911</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Emagines</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<ForeignKey>4277268</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-59.652_28911.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>2356259</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>159</Dateigroesse>
+		<Scannummer>28911,01</Scannummer>
+		<seriennummer>4277269</seriennummer>
+		<Projekttitel>Emagines</Projekttitel>
+		<id>marbilder-4277269</id>
+		<erstellt>2012-07-20 12:28:09</erstellt>
+		<PfadNeu>objectscans/FADatenbankabb0564/D-DAI-ROM-59.653_28911,01.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0564/D-DAI-ROM-59.653_28911,01.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2015-07-06 11:26:41.0</lastModified>
+		<NegativNr>59.653</NegativNr>
+		<geaendert>2012-07-20 12:28:09</geaendert>
+		<FS_ObjektID>28911</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Emagines</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<ForeignKey>4277269</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-59.653_28911,01.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1206052</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2372</PS_OrtID>
+		<Aufbewahrungsort>Collegio Nazareno</Aufbewahrungsort>
+		<seriennummer>144784</seriennummer>
+		<id>ortsbezug-144784</id>
+		<FS_OrtID>2372</FS_OrtID>
+		<Latitude>41.89474</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>28911</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>2372</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.4839</Longitude>
+		<Gazetteerid>2093855</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

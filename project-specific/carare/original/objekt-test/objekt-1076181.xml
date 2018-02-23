@@ -1,0 +1,275 @@
+<record>
+	<objekt>
+	  <TiefeGesamt>26</TiefeGesamt>
+	  <creation>1994-08-23 08:06:06.0</creation>
+	  <InschriftCorpusObjekt>CIL VI 715</InschriftCorpusObjekt>
+	  <Korrektor>A.W.B. (27.07.2005); Marlene Scholz (26.08.2014); Paul Pasieka (13.01.2015)</Korrektor>
+	  <ArachneEntityID>1076181</ArachneEntityID>
+	  <Auftraggeber>P. Aelius Amandus (eques singularis)</Auftraggeber>
+	  <set>objekt</set>
+	  <BreiteGesamt>37,5</BreiteGesamt>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <InschriftKommentar>Buchstaben 2,8 cm</InschriftKommentar>
+	  <KurzbeschreibungObjekt>Weihaltar für Sol Invictus</KurzbeschreibungObjekt>
+	  <seriennummer>16366</seriennummer>
+	  <id>objekt-16366</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Adressat>Sol Invictus</Adressat>
+	  <Fundkontext>nahe der Castra Praetoria 1.6.3</Fundkontext>
+	  <HoeheGesamt>66</HoeheGesamt>
+	  <Fundort>Rom, Villa Patrizi</Fundort>
+	  <Fundstaat>Italien</Fundstaat>
+	  <FS_GruppenID_bak>0</FS_GruppenID_bak>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <InschriftSpracheObjekt>lateinisch</InschriftSpracheObjekt>
+	  <GattungAllgemein>Inschrift</GattungAllgemein>
+	  <lastModified>2015-01-13 08:54:39.0</lastModified>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>16366</ForeignKey>
+	  <BearbeiterObjekt>M.L. (23.08.1994)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <InschriftCorpusLatein_OLD>CIL VI 715</InschriftCorpusLatein_OLD>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <buchseite>
+		<seite>112</seite>
+		<creation>2009-03-19 22:25:16.0</creation>
+		<ArachneEntityID>1596217</ArachneEntityID>
+		<lastModified>2015-01-13 08:56:10.0</lastModified>
+		<set>buchseite</set>
+		<FS_BuchID>477</FS_BuchID>
+		<KorrektorBuchseite>Paul Scheding (14.10.2009)
+Paul Scheding (14.10.2009)</KorrektorBuchseite>
+		<creatienDateTime>2009-03-19 21:25:16.0</creatienDateTime>
+		<image>BOOK-Inv1976§Inv1976§Bd69§S112-0113_100200.jpg</image>
+		<isDeleted>0</isDeleted>
+		<seriennummer>100200</seriennummer>
+		<version>0</version>
+		<seite_natuerlich>113</seite_natuerlich>
+		<ForeignKey>100200</ForeignKey>
+		<id>buchseite-100200</id>
+		<Inventarnummern>76.1953, 
+76.1954, 
+76.1955, 
+76.1956, 
+76.1957, 
+76.1958, 
+76.1959, 
+76.1960, 
+76.1961, 
+76.1962, 
+76.1963, 
+76.1964, 
+76.1965, 
+76.1966, 
+76.1967, 
+76.1968</Inventarnummern>
+		<oaiCategory>buchseite</oaiCategory>
+		<image_old>BOOK-Inv1976§Inv1976§Bd69§S112-0113.jpg</image_old>
+		<BearbeiterBuchseite>clemens</BearbeiterBuchseite>
+		<TableName>buchseite</TableName>
+		<kategorie>buchseite</kategorie>
+		<DatensatzGruppeBuchseite>Arachne</DatensatzGruppeBuchseite>
+		<metadataformats>oai_dc;origin;cidoc_crm</metadataformats>
+	  </buchseite>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<Katnummer>57a</Katnummer>
+		<ArachneEntityID>23997</ArachneEntityID>
+		<lastModified>2012-08-09 14:28:20.0</lastModified>
+		<StichwortSortierung>Stuart Jones</StichwortSortierung>
+		<Tafel>34a</Tafel>
+		<Seite>132</Seite>
+		<FS_ObjektID>16366</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<PS_LiteraturID>77</PS_LiteraturID>
+		<DAIRichtlinien>H. Stuart Jones, The Sculptures of the  Museo Capitolino (Oxford 1912)</DAIRichtlinien>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<seriennummer>310466</seriennummer>
+		<id>literaturzitat-310466</id>
+		<ForeignKey>77</ForeignKey>
+		<ZenonID>000724523</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>77</FS_LiteraturID>
+		<FS_LiteraturAktualisierungID>0</FS_LiteraturAktualisierungID>
+		<TableName>literatur</TableName>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+	  </literaturzitat>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<Katnummer>18</Katnummer>
+		<ArachneEntityID>25198</ArachneEntityID>
+		<lastModified>2012-08-09 13:33:16.0</lastModified>
+		<StichwortSortierung>Speidel</StichwortSortierung>
+		<Seite>55</Seite>
+		<FS_ObjektID>16366</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<PS_LiteraturID>1290</PS_LiteraturID>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<seriennummer>310467</seriennummer>
+		<DAIRichtlinien>M. P. Speidel, Die Denkmäler der Kaiserreiter. Equites singulares Augusti (Köln 1994)</DAIRichtlinien>
+		<id>literaturzitat-310467</id>
+		<ForeignKey>1290</ForeignKey>
+		<ZenonID>000153292</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>1290</FS_LiteraturID>
+		<FS_LiteraturAktualisierungID>0</FS_LiteraturAktualisierungID>
+		<TableName>literatur</TableName>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+	  </literaturzitat>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>30192</ArachneEntityID>
+		<Anmerkung>74</Anmerkung>
+		<lastModified>2013-04-24 11:24:22.0</lastModified>
+		<StichwortSortierung>Busch</StichwortSortierung>
+		<Seite>37</Seite>
+		<FS_ObjektID>16366</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<PS_LiteraturID>6309</PS_LiteraturID>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<seriennummer>315450</seriennummer>
+		<DAIRichtlinien>A. W. Busch, Militär in Rom. Militärische und paramilitärische Einheiten im kaiserzeitlichen Stadtbild, Palilia 20 (Wiesbaden 2011)</DAIRichtlinien>
+		<id>literaturzitat-315450</id>
+		<ForeignKey>6309</ForeignKey>
+		<ZenonID>001314052</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>6309</FS_LiteraturID>
+		<FS_LiteraturAktualisierungID>0</FS_LiteraturAktualisierungID>
+		<TableName>literatur</TableName>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+	  </literaturzitat>
+	  <marbilder>
+		<md5sum>5b5a7eb245855242f1d7e2dd24f63da1</md5sum>
+		<ArachneEntityID>53382</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>316</Dateigroesse>
+		<Scannummer>16366</Scannummer>
+		<seriennummer>198982</seriennummer>
+		<id>marbilder-198982</id>
+		<erstellt>2004-05-21 19:40:22</erstellt>
+		<Fotograf>B. Malter</Fotograf>
+		<PfadNeu>objectscans//FADatenbankabb0149/Mal162-06_16366.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0149/Mal162-06_16366.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-12-21 06:09:01.0</lastModified>
+		<NegativNr>06</NegativNr>
+		<geaendert>2005-10-28 10:05:07</geaendert>
+		<FilmNr>162</FilmNr>
+		<FS_ObjektID>16366</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>Mal162</BestandsnameMarbilder>
+		<ForeignKey>198982</ForeignKey>
+		<DateinameMarbilder>Mal162-06_16366.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206124</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2449</PS_OrtID>
+		<Aufbewahrungsort_Synonym>Museo Capitolino;Kapitolinische Museen, Konservatorenpalast;Musei Capitolini</Aufbewahrungsort_Synonym>
+		<Aufbewahrungsort>Kapitolinische Museen</Aufbewahrungsort>
+		<seriennummer>194139</seriennummer>
+		<id>ortsbezug-194139</id>
+		<FS_OrtID>2449</FS_OrtID>
+		<Latitude>41.892894</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2016-11-24 21:59:54.0</lastModified>
+		<FS_ObjektID>16366</FS_ObjektID>
+		<isDeleted>1</isDeleted>
+		<InvNr>NCE 1866 (ehemals: 4799)</InvNr>
+		<ForeignKey>2449</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Zusatz>Galleria</Zusatz>
+		<Stadt>Kapitol</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.482545</Longitude>
+		<Gazetteerid>2359930</Gazetteerid>
+	  </ortsbezug>
+	  <ortsbezug>
+		<ArtOrtsangabe>Fundort</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206390</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2755</PS_OrtID>
+		<Aufbewahrungsort>Villa Patrizi</Aufbewahrungsort>
+		<seriennummer>670688</seriennummer>
+		<id>ortsbezug-670688</id>
+		<FS_OrtID>2755</FS_OrtID>
+		<Latitude>41.89474</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2014-08-26 11:02:40.0</lastModified>
+		<FS_ObjektID>16366</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>2755</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.4839</Longitude>
+		<Gazetteerid>2095134</Gazetteerid>
+	  </ortsbezug>
+	  <sammlungen>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<EntstehungDatum>um 1480</EntstehungDatum>
+		<ArachneEntityID>1241138</ArachneEntityID>
+		<lastModified>2012-05-21 13:12:39.0</lastModified>
+		<GeschichteSammlungen>Der Kapitolsplatz wurde seit dem späteren 15. Jahrhundert  ein Sammelplatz antiker Skulpturen und erhielt nach und nach einen programmatischen und repräsentativen Schmuck mit antiken Statuen.
+Das Museum ist keines, das durch das Wohlwollen eines Adeligen besteht, sondern als öffentliche Einrichtung organisiert ist mit einer Verwaltung , Kuratoren, Katalogen, festen Öffnungszeiten und mit dem Zweck, das künstlerische Erbe in der Stadt zu halten und die Jugend  in den Künsten zu bilden. Zu diesem Zweck wird 1740 auch noch die Accademia delle Romane Antichità auf dem Kapitol gegründet und 1749 die kapitolinische Pinakothek eingerichtet.</GeschichteSammlungen>
+		<set>sammlungen</set>
+		<Herkunftsland>Italien</Herkunftsland>
+		<vollstaendig>nein</vollstaendig>
+		<Aufloesung>Nach 1772 werden Skulpturen aus dem Kapitolinischen Museum in das Museo Pio Clementino gebracht. Am Ende des 18. Jahrhunderts werden die wichtigsten Stücke nach Paris gebracht, aber nach 1815 zurückerstattet.</Aufloesung>
+		<isDeleted>0</isDeleted>
+		<seriennummer>1000358</seriennummer>
+		<ForeignKey>1000358</ForeignKey>
+		<id>sammlungen-1000358</id>
+		<KurzbeschreibungSammlungen>Museo Capitolino / Kapitolinisches Museum Rom</KurzbeschreibungSammlungen>
+		<oaiCategory>sammlungen</oaiCategory>
+		<KorrektorSammlungen>Jörn Lang (20.04.2005); Jörn Lang (05.12.2005); Jörn Lang (21.12.2005); Jörn Lang (29.12.2005); Janine Lehmann (02.01.2006); Jörn Lang (04.01.2006); Jörn Lang (09.01.2006); Jörn Lang (10.01.2006); Jörn Lang (11.01.2006); Janine Lehmann (11.01.2006); Janine Lehmann (16.01.2006); Jörn Lang (16.01.2006); Janine Lehmann (17.01.2006); Janine Lehmann (23.01.2006); Jörn Lang (25.01.2006); Janine Lehmann (30.01.2006); Jörn Lang (31.01.2006); Janine Lehmann (13.02.2006); Jörn Lang (13.02.2006); Janine Lehmann (14.02.2006); Johanna Fuchs (22.01.2008); Johanna Fuchs (23.01.2008)</KorrektorSammlungen>
+		<AufstellungSammlungen>Museo Capitolino. Konservatorenpalast. Kapitolsplatz.</AufstellungSammlungen>
+		<Entstehung>Zu dem von Sixtus IV. gestifteten Kern kommen 1566 Stücke aus dem Belvedere. Viele weitere Stücke gelangen im Laufe der folgenden Jahrhunderte in das Museum.  Durch Clemens XII. kommt die Sammlung des Kardinals Albani in das Kapitolinische Museum (1734). Benedikt XIV. läßt Skulpturen aus der Villa Adriana in das Museum bringen. 
+1876 wird der Konservatorenpalast als neues Museum eröffnet, das durch die vielen Neufunde nötig wurde.</Entstehung>
+		<AufloesungDatum>um 1800</AufloesungDatum>
+		<BearbeiterSammlungen>S.V.</BearbeiterSammlungen>
+		<TableName>sammlungen</TableName>
+		<DatensatzGruppeSammlungen>Arachne</DatensatzGruppeSammlungen>
+		<kategorie>sammlungen</kategorie>
+		<Vasen>Vasen, Münzen</Vasen>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </sammlungen>
+	</objekt>
+</record>

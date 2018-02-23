@@ -1,0 +1,55 @@
+<record>
+	<objekt>
+	  <creation>1997-07-10 08:06:06.0</creation>
+	  <ArachneEntityID>1090063</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:02.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Ansichtsaufnahmen der antike Steinbrüche</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>30864</seriennummer>
+	  <id>objekt-30864</id>
+	  <ForeignKey>30864</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>M.L. (10.07.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1206806</ArachneEntityID>
+		<Countrycode>GR</Countrycode>
+		<Land>Griechenland</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>3289</PS_OrtID>
+		<Aufbewahrungsort>antike Steinbrüche</Aufbewahrungsort>
+		<seriennummer>146511</seriennummer>
+		<id>ortsbezug-146511</id>
+		<FS_OrtID>3289</FS_OrtID>
+		<Latitude>38.18333</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>30864</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>3289</ForeignKey>
+		<Geonamesid>256572</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Styra</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>24.2</Longitude>
+		<Gazetteerid>2096621</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

@@ -1,0 +1,72 @@
+<record>
+	<objekt>
+	  <creation>1996-01-05 07:06:06.0</creation>
+	  <ArachneEntityID>1070229</ArachneEntityID>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Marmor</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <seriennummer>10215</seriennummer>
+	  <id>objekt-10215</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <HoeheGesamt>40</HoeheGesamt>
+	  <Fundort>Löwen / Louvain (1910)</Fundort>
+	  <Katalognummer>Kurzbeschreibung</Katalognummer>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2012-05-21 13:16:53.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>10215</ForeignKey>
+	  <BearbeiterObjekt>(05.01.1996)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <MaterialBemerkung>Material speziell: weiß</MaterialBemerkung>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<id>datierung-15546</id>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<oaiCategory>datierung</oaiCategory>
+		<lastModified>2011-08-04 10:41:04.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>10215</FS_ObjektID>
+		<kategorie>datierung</kategorie>
+		<nachantik>nachantik</nachantik>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<seriennummer>15546</seriennummer>
+	  </datierung>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1205226</ArachneEntityID>
+		<Countrycode>BE</Countrycode>
+		<Land>Königreich Belgien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>1474</PS_OrtID>
+		<seriennummer>126655</seriennummer>
+		<id>ortsbezug-126655</id>
+		<FS_OrtID>1474</FS_OrtID>
+		<Stadt_Synonym>Louvain;Leuven;Λέουβεν;Lovanio;Löwen;Lovaina;Лёвен;鲁汶;Lovanium</Stadt_Synonym>
+		<Latitude>50.87959</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>10215</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>1474</ForeignKey>
+		<Geonamesid>2792482</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Löwen / Louvain</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>4.70093</Longitude>
+		<Gazetteerid>2090915</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

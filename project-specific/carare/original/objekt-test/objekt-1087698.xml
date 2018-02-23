@@ -1,0 +1,112 @@
+<record>
+	<objekt>
+	  <creation>1997-02-16 07:06:06.0</creation>
+	  <Korrektor>Marian Keuler (21.01.2008); Julia Schmidt (03.07.2009)</Korrektor>
+	  <ArachneEntityID>1087698</ArachneEntityID>
+	  <Erhaltungszustand>Einsatzkopf fehlt ; unterhalb Knie abgebrochen</Erhaltungszustand>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <Material>Kalkstein</Material>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Togatus - Torso</KurzbeschreibungObjekt>
+	  <seriennummer>28308</seriennummer>
+	  <id>objekt-28308</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <HoeheGesamt>114</HoeheGesamt>
+	  <Fundort>Tarragona, frühchristl. Nekropole</Fundort>
+	  <Fundstaat>Spanien</Fundstaat>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2012-05-21 13:17:00.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>28308</ForeignKey>
+	  <BearbeiterObjekt>M.L. (16.02.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <MaterialBemerkung>Material speziell: Muschelkalk</MaterialBemerkung>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<Katnummer>98</Katnummer>
+		<ArachneEntityID>24739</ArachneEntityID>
+		<lastModified>2012-08-01 13:42:47.0</lastModified>
+		<StichwortSortierung>Koppel</StichwortSortierung>
+		<Tafel>38, 1-2</Tafel>
+		<Seite>77</Seite>
+		<FS_ObjektID>28308</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<PS_LiteraturID>827</PS_LiteraturID>
+		<DAIRichtlinien>E. M. Koppel, Die römischen Skulpturen von Tarraco, Madrider Forschungen 15 (Berlin 1985)</DAIRichtlinien>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<seriennummer>178195</seriennummer>
+		<id>literaturzitat-178195</id>
+		<ForeignKey>827</ForeignKey>
+		<ZenonID>000040581</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>827</FS_LiteraturID>
+		<FS_LiteraturAktualisierungID>0</FS_LiteraturAktualisierungID>
+		<TableName>literatur</TableName>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+	  </literaturzitat>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1207557</ArachneEntityID>
+		<Countrycode>ES</Countrycode>
+		<Land>Spanien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>5328</PS_OrtID>
+		<Aufbewahrungsort_Synonym>Museo y Necrópolis Paleocristianos;(MNAT)</Aufbewahrungsort_Synonym>
+		<Aufbewahrungsort>Museu i Necròpolis Paleocristians</Aufbewahrungsort>
+		<seriennummer>246828</seriennummer>
+		<id>ortsbezug-246828</id>
+		<FS_OrtID>5328</FS_OrtID>
+		<Latitude>41.11572</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>28308</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>5328</ForeignKey>
+		<Geonamesid>8629338</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Tarragona(O) / Tarragona(M) / Tarragona(P) / Catalunya</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>1.23901</Longitude>
+		<Gazetteerid>2099308</Gazetteerid>
+	  </ortsbezug>
+	  <topographie>
+		<creation>2008-05-02 08:06:06.0</creation>
+		<ArachneEntityID>3211</ArachneEntityID>
+		<TopographieTypus>Stadt</TopographieTypus>
+		<lastModified>2013-05-21 14:33:52.0</lastModified>
+		<antikeRoemProvinzTopographie>Hispania Tarraconensis</antikeRoemProvinzTopographie>
+		<set>topographie</set>
+		<KorrektorTopographie>Michael Remmy (25.02.2009); Michael Remmy (03.03.2009); Josephin  Szczepanski (12.11.2011)</KorrektorTopographie>
+		<BearbeiterTopographie>Melanie Lang (02.05.2008)</BearbeiterTopographie>
+		<isDeleted>0</isDeleted>
+		<seriennummer>8004606</seriennummer>
+		<DatensatzGruppeTopographie>Arachne</DatensatzGruppeTopographie>
+		<ForeignKey>8004606</ForeignKey>
+		<id>topographie-8004606</id>
+		<oaiCategory>topographie</oaiCategory>
+		<TopographieArt>anthropogen</TopographieArt>
+		<KurzbeschreibungTopographie>Tarraco / Tarragona</KurzbeschreibungTopographie>
+		<TableName>topographie</TableName>
+		<kategorie>topographie</kategorie>
+		<ArbeitsnotizTopographie>Emagines Emagines2</ArbeitsnotizTopographie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </topographie>
+	</objekt>
+</record>

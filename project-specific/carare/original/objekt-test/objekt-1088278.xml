@@ -1,0 +1,74 @@
+<record>
+	<objekt>
+	  <creation>1997-04-23 08:06:06.0</creation>
+	  <ArachneEntityID>1088278</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:01.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <Material>Marmor</Material>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>spätrepublikan. Togatus</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <Bearbeitungen>nicht ergänzt</Bearbeitungen>
+	  <seriennummer>28908</seriennummer>
+	  <id>objekt-28908</id>
+	  <ForeignKey>28908</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>M.L. (23.04.1997)</BearbeiterObjekt>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<AnfDatvn>n. Chr.</AnfDatvn>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<lastModified>2011-08-04 10:41:05.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>28908</FS_ObjektID>
+		<seriennummer>20954</seriennummer>
+		<id>datierung-20954</id>
+		<oaiCategory>datierung</oaiCategory>
+		<AnfEpoche>tiberisch</AnfEpoche>
+		<AnfDatZeitraum>1. Drittel</AnfDatZeitraum>
+		<AnfDatJh>1</AnfDatJh>
+		<kategorie>datierung</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  </datierung>
+	  <ortsbezug>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<ArachneEntityID>1206052</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2372</PS_OrtID>
+		<Aufbewahrungsort>Collegio Nazareno</Aufbewahrungsort>
+		<seriennummer>144781</seriennummer>
+		<id>ortsbezug-144781</id>
+		<FS_OrtID>2372</FS_OrtID>
+		<Latitude>41.89474</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>ungenau</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>28908</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<ForeignKey>2372</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Rom</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.4839</Longitude>
+		<Gazetteerid>2093855</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

@@ -1,0 +1,137 @@
+<record>
+	<objekt>
+	  <creation>1997-08-17 08:06:06.0</creation>
+	  <ArachneEntityID>1091636</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:03.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Männlicher Torso</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <Bearbeitungen>nicht ergänzt</Bearbeitungen>
+	  <seriennummer>32585</seriennummer>
+	  <id>objekt-32585</id>
+	  <ForeignKey>32585</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>S.V. (17.08.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Fundort>unbekannt</Fundort>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <marbilder>
+		<md5sum>30f8291af9a7573ea741c2ddb43ee26f</md5sum>
+		<ArachneEntityID>122838</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2013-07-21 16:20:47.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2007-09-06 22:57:49</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>32585</FS_ObjektID>
+		<Dateigroesse>410</Dateigroesse>
+		<Scannummer>32585</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>629627</seriennummer>
+		<id>marbilder-629627</id>
+		<ForeignKey>629627</ForeignKey>
+		<DateinameMarbilder>Museum_32585.jpg</DateinameMarbilder>
+		<erstellt>2007-05-27 15:47:37</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0298/Museum_32585.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0298/Museum_32585.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>ee57412f090ef29a62c433b73236ab15</md5sum>
+		<ArachneEntityID>122836</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2013-07-21 16:20:47.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2007-09-06 22:57:49</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>32585</FS_ObjektID>
+		<Dateigroesse>320</Dateigroesse>
+		<Scannummer>32585,01</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>629625</seriennummer>
+		<id>marbilder-629625</id>
+		<ForeignKey>629625</ForeignKey>
+		<DateinameMarbilder>Museum_32585,01.jpg</DateinameMarbilder>
+		<erstellt>2007-05-27 15:47:35</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0298/Museum_32585,01.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0298/Museum_32585,01.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>4ecaad199c4cbd6ab5f26789cc77ec88</md5sum>
+		<ArachneEntityID>122837</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2013-07-21 16:20:47.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2007-09-06 22:57:49</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>32585</FS_ObjektID>
+		<Dateigroesse>380</Dateigroesse>
+		<Scannummer>32585,02</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>629626</seriennummer>
+		<id>marbilder-629626</id>
+		<ForeignKey>629626</ForeignKey>
+		<DateinameMarbilder>Museum_32585,02.jpg</DateinameMarbilder>
+		<erstellt>2007-05-27 15:47:36</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0298/Museum_32585,02.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0298/Museum_32585,02.jpg</Pfad>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1204208</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>341</PS_OrtID>
+		<Aufbewahrungsort_Synonym>Museo Romanoi</Aufbewahrungsort_Synonym>
+		<Aufbewahrungsort>Civico Museo Archeologico</Aufbewahrungsort>
+		<seriennummer>136208</seriennummer>
+		<id>ortsbezug-136208</id>
+		<FS_OrtID>341</FS_OrtID>
+		<Latitude>45.706121</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>32585</FS_ObjektID>
+		<isDeleted>1</isDeleted>
+		<ForeignKey>341</ForeignKey>
+		<Geonamesid>3182164</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Bergamo</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>9.659708</Longitude>
+		<Gazetteerid>2359572</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

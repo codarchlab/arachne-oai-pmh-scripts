@@ -1,0 +1,53 @@
+<record>
+	<objekt>
+	  <creation>1997-05-09 08:06:06.0</creation>
+	  <ArachneEntityID>1091625</ArachneEntityID>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Männliche Herme</KurzbeschreibungObjekt>
+	  <seriennummer>32574</seriennummer>
+	  <id>objekt-32574</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <HoeheGesamt>20</HoeheGesamt>
+	  <Fundort>?</Fundort>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <lastModified>2011-08-04 11:04:03.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <Bearbeitungen>nicht ergänzt</Bearbeitungen>
+	  <isDeleted>0</isDeleted>
+	  <ForeignKey>32574</ForeignKey>
+	  <BearbeiterObjekt>S. V. (09.05.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Herkunft>?</Herkunft>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <ortsbezug>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1203904</ArachneEntityID>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<set>ortsbezug</set>
+		<PS_OrtID>1</PS_OrtID>
+		<FS_ObjektID>32574</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<seriennummer>182687</seriennummer>
+		<ForeignKey>1</ForeignKey>
+		<id>ortsbezug-182687</id>
+		<Geonamesid>0</Geonamesid>
+		<Stadt_Synonym>verschollen</Stadt_Synonym>
+		<FS_OrtID>1</FS_OrtID>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>unbekannt</Stadt>
+		<Latitude>0.0</Latitude>
+		<TableName>ort</TableName>
+		<Longitude>0.0</Longitude>
+		<kategorie>ortsbezug</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+	  </ortsbezug>
+	</objekt>
+</record>

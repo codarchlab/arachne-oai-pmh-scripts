@@ -1,0 +1,348 @@
+<record>
+	<objekt>
+	  <Korrektor>NS; Johanna Fuchs (01.09.2010)</Korrektor>
+	  <creation>1996-07-29 08:06:06.0</creation>
+	  <InschriftCorpusObjekt>CIL I 804</InschriftCorpusObjekt>
+	  <TiefeGesamt>89</TiefeGesamt>
+	  <ArachneEntityID>1085617</ArachneEntityID>
+	  <Auftraggeber>Postumius Albinus, A.</Auftraggeber>
+	  <Erhaltungszustand>Der Körper des Altars ist unten durch eine primitive Hohlkehle und oben durch einen horizontalen Wulst von den rechteckigen Teilen abgesetzt, die Oberfläche und Teile die Inschrift sind beschädigt</Erhaltungszustand>
+	  <set>objekt</set>
+	  <BreiteGesamt>89</BreiteGesamt>
+	  <Material>anderes Gestein</Material>
+	  <MedienAG>nein</MedienAG>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Altar etruskischer Form</KurzbeschreibungObjekt>
+	  <seriennummer>26160</seriennummer>
+	  <id>objekt-26160</id>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <Adressat>Verminus</Adressat>
+	  <Kulturkreis>römisch</Kulturkreis>
+	  <HoeheGesamt>101,5</HoeheGesamt>
+	  <Fundort>Rom, Via del Macao</Fundort>
+	  <InschriftObjekt>VERMINO / A(ulus) POSTVMIVS A(uli) N(epos) ALBI(nus) / DUO(m) VIR LEGE PLAETORIA</InschriftObjekt>
+	  <Fundstaat>Italien</Fundstaat>
+	  <kategorie>objekt</kategorie>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <Technik>Bildhauerei</Technik>
+	  <InschriftSpracheObjekt>lateinisch</InschriftSpracheObjekt>
+	  <GattungAllgemein>Inschrift</GattungAllgemein>
+	  <lastModified>2012-05-21 13:17:00.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <isDeleted>0</isDeleted>
+	  <Bearbeitungen>nicht ergänzt</Bearbeitungen>
+	  <InschriftLatein_OLD>VERMINO A(ulus) POSTVMIVS A(uli) N(epos) ALBI(nus) DUO(m) VIR LEGE PLAETORIA</InschriftLatein_OLD>
+	  <ForeignKey>26160</ForeignKey>
+	  <Erhaltung>Fragment(e)</Erhaltung>
+	  <BearbeiterObjekt>M.L. (29.07.1996)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <MaterialBemerkung>Material speziell: Peperin</MaterialBemerkung>
+	  <TableName>objekt</TableName>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <Funktion>Weihung</Funktion>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<id>datierung-19993</id>
+		<AnfDatvn>v. Chr.</AnfDatvn>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<oaiCategory>datierung</oaiCategory>
+		<lastModified>2011-08-04 10:41:05.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<AnfPraezise>175</AnfPraezise>
+		<kategorie>datierung</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<seriennummer>19993</seriennummer>
+	  </datierung>
+	  <datierung>
+		<derived-date>2017</derived-date>
+		<AnfDatvn>v. Chr.</AnfDatvn>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<lastModified>2011-08-04 10:41:36.0</lastModified>
+		<set>datierung</set>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<seriennummer>98924</seriennummer>
+		<id>datierung-98924</id>
+		<DatVorschlagAutor>W. Hermann</DatVorschlagAutor>
+		<oaiCategory>datierung</oaiCategory>
+		<Argument>Inschrift</Argument>
+		<AnfDatJh>2</AnfDatJh>
+		<kategorie>datierung</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  </datierung>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>23971</ArachneEntityID>
+		<Katnummer>1598</Katnummer>
+		<Titel>Führer durch die öffentlichen Sammlungen klassischer Altertümer in Rom. Die Städtischen Sammlungen. Die Staatlichen Sammlungen</Titel>
+		<Ort>Tübingen</Ort>
+		<A1Vorname>Wolfgang</A1Vorname>
+		<StichwortSortierung>Helbig</StichwortSortierung>
+		<Jahr>1966</Jahr>
+		<PS_LiteraturID>51</PS_LiteraturID>
+		<seriennummer>6452</seriennummer>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<DAIRichtlinien>W. Helbig, Führer durch die öffentlichen Sammlungen klassischer Altertümer in Rom. Die Städtischen Sammlungen. Die Staatlichen Sammlungen II, 4. Aufl. (1966)</DAIRichtlinien>
+		<A1Nachname>Helbig</A1Nachname>
+		<id>literaturzitat-6452</id>
+		<Auflage>4</Auflage>
+		<Abkuerzungen>Helbig4 II</Abkuerzungen>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+		<lastModified>2013-01-09 09:08:05.0</lastModified>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<Band>II</Band>
+		<ForeignKey>51</ForeignKey>
+		<ZenonID>000335039</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>51</FS_LiteraturID>
+		<TableName>literatur</TableName>
+	  </literaturzitat>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<Katnummer>14</Katnummer>
+		<ArachneEntityID>24405</ArachneEntityID>
+		<lastModified>2013-04-28 16:13:29.0</lastModified>
+		<StichwortSortierung>Mustilli</StichwortSortierung>
+		<Tafel>7</Tafel>
+		<Seite>8</Seite>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<PS_LiteraturID>491</PS_LiteraturID>
+		<DAIRichtlinien>D. Mustilli, Il Museo Mussolini (Rom 1939)</DAIRichtlinien>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<seriennummer>214163</seriennummer>
+		<id>literaturzitat-214163</id>
+		<ForeignKey>491</ForeignKey>
+		<ZenonID>000924235</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>491</FS_LiteraturID>
+		<FS_LiteraturAktualisierungID>0</FS_LiteraturAktualisierungID>
+		<TableName>literatur</TableName>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+	  </literaturzitat>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<Katnummer>2</Katnummer>
+		<ArachneEntityID>24601</ArachneEntityID>
+		<lastModified>2014-08-27 12:54:53.0</lastModified>
+		<StichwortSortierung>Hermann</StichwortSortierung>
+		<Seite>80</Seite>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<PS_LiteraturID>689</PS_LiteraturID>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<seriennummer>214161</seriennummer>
+		<DAIRichtlinien>W. Hermann, Römische Götteraltäre (1961)</DAIRichtlinien>
+		<id>literaturzitat-214161</id>
+		<ForeignKey>689</ForeignKey>
+		<ZenonID>000175121</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>689</FS_LiteraturID>
+		<FS_LiteraturAktualisierungID>0</FS_LiteraturAktualisierungID>
+		<TableName>literatur</TableName>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+	  </literaturzitat>
+	  <marbilder>
+		<ArachneEntityID>437410</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>364</Dateigroesse>
+		<Scannummer>26160</Scannummer>
+		<seriennummer>2017724</seriennummer>
+		<id>marbilder-2017724</id>
+		<erstellt>2003-10-31 22:42:42</erstellt>
+		<Fotograf>B. Malter</Fotograf>
+		<PfadNeu>objectscans/FADatenbankabb0126/Mal59-02_26160.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0126/Mal59-02_26160.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2013-07-21 17:03:37.0</lastModified>
+		<NegativNr>02</NegativNr>
+		<geaendert>2003-10-31 22:42:42</geaendert>
+		<FilmNr>59</FilmNr>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>Mal59</BestandsnameMarbilder>
+		<ForeignKey>2017724</ForeignKey>
+		<DateinameMarbilder>Mal59-02_26160.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>6ebd036fa12c09a169a6b1a1ba0597ba</md5sum>
+		<ArachneEntityID>141223</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2013-07-21 18:24:06.0</lastModified>
+		<NegativNr>2001.2137</NegativNr>
+		<Visible>Arachne</Visible>
+		<geaendert>2007-09-06 22:57:05</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<Dateigroesse>377</Dateigroesse>
+		<Scannummer>26160,01</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>656809</seriennummer>
+		<id>marbilder-656809</id>
+		<ForeignKey>656809</ForeignKey>
+		<DateinameMarbilder>INR2001.2137_26160,01.jpg</DateinameMarbilder>
+		<erstellt>2005-05-05 08:14:50</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0195/INR2001.2137_26160,01.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0195/INR2001.2137_26160,01.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>36f61662170aa54ed70312b494c21980</md5sum>
+		<ArachneEntityID>141224</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2013-07-21 18:24:06.0</lastModified>
+		<NegativNr>2001.2138</NegativNr>
+		<Visible>Arachne</Visible>
+		<geaendert>2007-09-06 22:57:05</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<Dateigroesse>332</Dateigroesse>
+		<Scannummer>26160,02</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>656810</seriennummer>
+		<id>marbilder-656810</id>
+		<ForeignKey>656810</ForeignKey>
+		<DateinameMarbilder>INR2001.2138_26160,02.jpg</DateinameMarbilder>
+		<erstellt>2005-05-05 08:14:51</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0195/INR2001.2138_26160,02.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0195/INR2001.2138_26160,02.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>921951</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2013-07-21 15:58:22.0</lastModified>
+		<NegativNr>2123</NegativNr>
+		<Visible>Arachne</Visible>
+		<geaendert>2010-09-12 17:06:04</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<Dateigroesse>526</Dateigroesse>
+		<Scannummer>26160,03</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>D-DAI-ROM</BestandsnameMarbilder>
+		<seriennummer>3290497</seriennummer>
+		<id>marbilder-3290497</id>
+		<ForeignKey>3290497</ForeignKey>
+		<DateinameMarbilder>D-DAI-ROM-2123_26160,03.jpg</DateinameMarbilder>
+		<erstellt>2010-09-12 17:06:04</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<PfadNeu>objectscans/FADatenbankabb0464/D-DAI-ROM-2123_26160,03.ptif</PfadNeu>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0464/D-DAI-ROM-2123_26160,03.jpg</Pfad>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206131</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>2457</PS_OrtID>
+		<Aufbewahrungsort>Musei Capitolini, Museo Nuovo Capitolino</Aufbewahrungsort>
+		<seriennummer>142150</seriennummer>
+		<id>ortsbezug-142150</id>
+		<FS_OrtID>2457</FS_OrtID>
+		<Latitude>41.89359</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>26160</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<InvNr>1707</InvNr>
+		<ForeignKey>2457</ForeignKey>
+		<Geonamesid>3169070</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Kapitol</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>12.483172</Longitude>
+		<Gazetteerid>2094155</Gazetteerid>
+	  </ortsbezug>
+	  <sammlungen>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<EntstehungDatum>um 1480</EntstehungDatum>
+		<ArachneEntityID>1241138</ArachneEntityID>
+		<lastModified>2012-05-21 13:12:39.0</lastModified>
+		<GeschichteSammlungen>Der Kapitolsplatz wurde seit dem späteren 15. Jahrhundert  ein Sammelplatz antiker Skulpturen und erhielt nach und nach einen programmatischen und repräsentativen Schmuck mit antiken Statuen.
+Das Museum ist keines, das durch das Wohlwollen eines Adeligen besteht, sondern als öffentliche Einrichtung organisiert ist mit einer Verwaltung , Kuratoren, Katalogen, festen Öffnungszeiten und mit dem Zweck, das künstlerische Erbe in der Stadt zu halten und die Jugend  in den Künsten zu bilden. Zu diesem Zweck wird 1740 auch noch die Accademia delle Romane Antichità auf dem Kapitol gegründet und 1749 die kapitolinische Pinakothek eingerichtet.</GeschichteSammlungen>
+		<set>sammlungen</set>
+		<Herkunftsland>Italien</Herkunftsland>
+		<vollstaendig>nein</vollstaendig>
+		<Aufloesung>Nach 1772 werden Skulpturen aus dem Kapitolinischen Museum in das Museo Pio Clementino gebracht. Am Ende des 18. Jahrhunderts werden die wichtigsten Stücke nach Paris gebracht, aber nach 1815 zurückerstattet.</Aufloesung>
+		<isDeleted>0</isDeleted>
+		<seriennummer>1000358</seriennummer>
+		<ForeignKey>1000358</ForeignKey>
+		<id>sammlungen-1000358</id>
+		<KurzbeschreibungSammlungen>Museo Capitolino / Kapitolinisches Museum Rom</KurzbeschreibungSammlungen>
+		<oaiCategory>sammlungen</oaiCategory>
+		<KorrektorSammlungen>Jörn Lang (20.04.2005); Jörn Lang (05.12.2005); Jörn Lang (21.12.2005); Jörn Lang (29.12.2005); Janine Lehmann (02.01.2006); Jörn Lang (04.01.2006); Jörn Lang (09.01.2006); Jörn Lang (10.01.2006); Jörn Lang (11.01.2006); Janine Lehmann (11.01.2006); Janine Lehmann (16.01.2006); Jörn Lang (16.01.2006); Janine Lehmann (17.01.2006); Janine Lehmann (23.01.2006); Jörn Lang (25.01.2006); Janine Lehmann (30.01.2006); Jörn Lang (31.01.2006); Janine Lehmann (13.02.2006); Jörn Lang (13.02.2006); Janine Lehmann (14.02.2006); Johanna Fuchs (22.01.2008); Johanna Fuchs (23.01.2008)</KorrektorSammlungen>
+		<AufstellungSammlungen>Museo Capitolino. Konservatorenpalast. Kapitolsplatz.</AufstellungSammlungen>
+		<Entstehung>Zu dem von Sixtus IV. gestifteten Kern kommen 1566 Stücke aus dem Belvedere. Viele weitere Stücke gelangen im Laufe der folgenden Jahrhunderte in das Museum.  Durch Clemens XII. kommt die Sammlung des Kardinals Albani in das Kapitolinische Museum (1734). Benedikt XIV. läßt Skulpturen aus der Villa Adriana in das Museum bringen. 
+1876 wird der Konservatorenpalast als neues Museum eröffnet, das durch die vielen Neufunde nötig wurde.</Entstehung>
+		<AufloesungDatum>um 1800</AufloesungDatum>
+		<BearbeiterSammlungen>S.V.</BearbeiterSammlungen>
+		<TableName>sammlungen</TableName>
+		<DatensatzGruppeSammlungen>Arachne</DatensatzGruppeSammlungen>
+		<kategorie>sammlungen</kategorie>
+		<Vasen>Vasen, Münzen</Vasen>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </sammlungen>
+	  <topographie>
+		<creation>2006-03-28 08:06:06.0</creation>
+		<ArachneEntityID>822</ArachneEntityID>
+		<TopographieTypus>Stadt</TopographieTypus>
+		<lastModified>2014-09-05 13:42:10.0</lastModified>
+		<set>topographie</set>
+		<KorrektorTopographie>Barbara Köstner (30.03.2006); Barbara Köstner (31.03.2006); Paul Scheding (02.06.2006); Johanna Fuchs (23.11.2006); Eric Laufer (22.08.2007); Eric Laufer (10.04.2009); Eric Laufer (14.04.2009); Eric Laufer (16.04.2009); Josephin  Szczepanski (20.04.2011); Josephin  Szczepanski (30.05.2011); Marina Unger (11.08.2014); Marina Unger (20.08.2014); Marina Unger (04.09.2014); Marina Unger (05.09.2014)</KorrektorTopographie>
+		<BearbeiterTopographie>Barbara Köstner (28.03.2006)</BearbeiterTopographie>
+		<isDeleted>0</isDeleted>
+		<seriennummer>8002160</seriennummer>
+		<DatensatzGruppeTopographie>Arachne</DatensatzGruppeTopographie>
+		<ForeignKey>8002160</ForeignKey>
+		<id>topographie-8002160</id>
+		<oaiCategory>topographie</oaiCategory>
+		<TopographieArt>anthropogen</TopographieArt>
+		<KurzbeschreibungTopographie>Rom (Stadt gesamt)</KurzbeschreibungTopographie>
+		<TableName>topographie</TableName>
+		<kategorie>topographie</kategorie>
+		<antikeGriechLandschaftTopographie>Latium</antikeGriechLandschaftTopographie>
+		<ArbeitsnotizTopographie>Emagines Emagines2 Emagines3 - kontrolliert; Handzeichnung - VII-67-109, VII-68-197, VII-68-198, VII-75-022, VII-75-027, VII-75-028, VII-75-029, VII-75-030, VII-75-031, VII-76-015, VII-76-021, VII-76-022, VII-76-046</ArbeitsnotizTopographie>
+		<metadataformats>oai_dc;cidoc_crm;origin;carare;claros</metadataformats>
+	  </topographie>
+	</objekt>
+</record>

@@ -1,0 +1,158 @@
+<record>
+	<objekt>
+	  <creation>1997-06-20 08:06:06.0</creation>
+	  <ArachneEntityID>1089793</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:02.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <KurzbeschreibungObjekt>Männlicher Torso</KurzbeschreibungObjekt>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>30585</seriennummer>
+	  <id>objekt-30585</id>
+	  <ForeignKey>30585</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>S.V. (20.06.1997)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Fundort>Barcola</Fundort>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <literaturzitat>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>23954</ArachneEntityID>
+		<Katnummer>589- 591</Katnummer>
+		<Titel>Photographische Einzelaufnahmen Antiker Sculpturen</Titel>
+		<Ort>München</Ort>
+		<StichwortSortierung>Arndt - Amelung</StichwortSortierung>
+		<Jahr>1893-1947</Jahr>
+		<PS_LiteraturID>34</PS_LiteraturID>
+		<seriennummer>3004</seriennummer>
+		<OnlinequelleToDelete>false</OnlinequelleToDelete>
+		<DAIRichtlinien>P. Arndt – W. Amelung (Hrsg.), Photographische Einzelaufnahmen Antiker Sculpturen (München 1893-1947)</DAIRichtlinien>
+		<id>literaturzitat-3004</id>
+		<kategorie>literaturzitat</kategorie>
+		<metadataformats>origin;carare;claros</metadataformats>
+		<H1Nachname>Arndt</H1Nachname>
+		<H2Vorname>Walther</H2Vorname>
+		<lastModified>2013-09-20 11:32:09.0</lastModified>
+		<FS_ObjektID>30585</FS_ObjektID>
+		<oaipmhsetLiteraturzitat>literaturzitat</oaipmhsetLiteraturzitat>
+		<isDeleted>0</isDeleted>
+		<H1Vorname>Paul</H1Vorname>
+		<ForeignKey>34</ForeignKey>
+		<ZenonID>000822883</ZenonID>
+		<oaiCategory>literaturzitat</oaiCategory>
+		<FS_LiteraturID>34</FS_LiteraturID>
+		<TableName>literatur</TableName>
+		<H2Nachname>Amelung</H2Nachname>
+	  </literaturzitat>
+	  <marbilder>
+		<ArachneEntityID>6121355</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2017-04-23 16:26:58.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2017-04-23 16:26:56</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>30585</FS_ObjektID>
+		<Dateigroesse>341</Dateigroesse>
+		<Scannummer>30585</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>7713237</seriennummer>
+		<id>marbilder-7713237</id>
+		<ForeignKey>7713237</ForeignKey>
+		<DateinameMarbilder>oA_30585.jpg</DateinameMarbilder>
+		<erstellt>2017-03-29 10:31:30</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0592/oA_30585.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>6121353</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2017-04-23 16:26:58.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2017-04-23 16:26:56</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>30585</FS_ObjektID>
+		<Dateigroesse>324</Dateigroesse>
+		<Scannummer>30585,01</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>7713235</seriennummer>
+		<id>marbilder-7713235</id>
+		<ForeignKey>7713235</ForeignKey>
+		<DateinameMarbilder>oA_30585,01.jpg</DateinameMarbilder>
+		<erstellt>2017-03-29 10:31:32</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0592/oA_30585,01.jpg</Pfad>
+	  </marbilder>
+	  <marbilder>
+		<ArachneEntityID>6121354</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<lastModified>2017-04-23 16:26:58.0</lastModified>
+		<Visible>Arachne</Visible>
+		<geaendert>2017-04-23 16:26:56</geaendert>
+		<set>marbilder</set>
+		<FS_ObjektID>30585</FS_ObjektID>
+		<Dateigroesse>274</Dateigroesse>
+		<Scannummer>30585,02</Scannummer>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<seriennummer>7713236</seriennummer>
+		<id>marbilder-7713236</id>
+		<ForeignKey>7713236</ForeignKey>
+		<DateinameMarbilder>oA_30585,02.jpg</DateinameMarbilder>
+		<erstellt>2017-03-29 10:31:34</erstellt>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+		<kategorie>marbilder</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0592/oA_30585,02.jpg</Pfad>
+	  </marbilder>
+	  <ortsbezug>
+		<ArtOrtsangabe>Aufbewahrung Automatisch erstellt</ArtOrtsangabe>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1206957</ArachneEntityID>
+		<Countrycode>IT</Countrycode>
+		<Land>Italien</Land>
+		<set>ortsbezug</set>
+		<PS_OrtID>3497</PS_OrtID>
+		<Aufbewahrungsort>Civici Musei di Storia ed Arte di Trieste</Aufbewahrungsort>
+		<seriennummer>146245</seriennummer>
+		<id>ortsbezug-146245</id>
+		<FS_OrtID>3497</FS_OrtID>
+		<Latitude>45.646719</Latitude>
+		<kategorie>ortsbezug</kategorie>
+		<Genauigkeit>exakt</Genauigkeit>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<FS_ObjektID>30585</FS_ObjektID>
+		<isDeleted>1</isDeleted>
+		<ForeignKey>3497</ForeignKey>
+		<Geonamesid>3165185</Geonamesid>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>Triest</Stadt>
+		<continentCode>EU</continentCode>
+		<continent>Europa</continent>
+		<TableName>ort</TableName>
+		<Longitude>13.772349</Longitude>
+		<Gazetteerid>2347816</Gazetteerid>
+	  </ortsbezug>
+	</objekt>
+</record>

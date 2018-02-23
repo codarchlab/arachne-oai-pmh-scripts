@@ -1,0 +1,139 @@
+<record>
+	<objekt>
+	  <creation>2000-07-18 08:06:06.0</creation>
+	  <ArachneEntityID>1087741</ArachneEntityID>
+	  <lastModified>2011-08-04 11:04:01.0</lastModified>
+	  <zuMonument>nein</zuMonument>
+	  <set>objekt</set>
+	  <MedienAG>nein</MedienAG>
+	  <KarteiFittschen>nein</KarteiFittschen>
+	  <InschriftMainzID>0</InschriftMainzID>
+	  <isDeleted>0</isDeleted>
+	  <seriennummer>28355</seriennummer>
+	  <id>objekt-28355</id>
+	  <ForeignKey>28355</ForeignKey>
+	  <DatensatzGruppeObjekt>Arachne</DatensatzGruppeObjekt>
+	  <BearbeiterObjekt>(18.07.2000)</BearbeiterObjekt>
+	  <oaiCategory>objekt</oaiCategory>
+	  <gesperrt>nein</gesperrt>
+	  <Katalognummer>Kurzbeschreibung</Katalognummer>
+	  <TableName>objekt</TableName>
+	  <kategorie>objekt</kategorie>
+	  <FS_Objekt_Siegel_Key>0</FS_Objekt_Siegel_Key>
+	  <metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+	  <marbilder>
+		<md5sum>25c7196b21fb9755cb8932ff2ca054dd</md5sum>
+		<ArachneEntityID>191928</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>383</Dateigroesse>
+		<Scannummer>28355</Scannummer>
+		<seriennummer>797462</seriennummer>
+		<id>marbilder-797462</id>
+		<erstellt>2007-11-03 17:48:54</erstellt>
+		<Fotograf>FA - Scan</Fotograf>
+		<PfadNeu>objectscans//FADatenbankabb0313/FA-S10013-4_28355.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0313/FA-S10013-4_28355.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2016-12-20 03:25:02.0</lastModified>
+		<NegativNr>4</NegativNr>
+		<geaendert>2007-11-19 12:27:05</geaendert>
+		<FilmNr>10013</FilmNr>
+		<FS_ObjektID>28355</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA-S10013</BestandsnameMarbilder>
+		<ForeignKey>797462</ForeignKey>
+		<DateinameMarbilder>FA-S10013-4_28355.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>f8de5b07163dedede21179f0fa3cd394</md5sum>
+		<ArachneEntityID>191929</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>370</Dateigroesse>
+		<Scannummer>28355,01</Scannummer>
+		<seriennummer>797463</seriennummer>
+		<id>marbilder-797463</id>
+		<erstellt>2007-11-03 17:48:56</erstellt>
+		<Fotograf>FA - Scan</Fotograf>
+		<PfadNeu>objectscans/FADatenbankabb0313/FA-S10013-5_28355,01.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0313/FA-S10013-5_28355,01.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2013-07-21 16:25:05.0</lastModified>
+		<NegativNr>5</NegativNr>
+		<geaendert>2007-11-19 12:27:05</geaendert>
+		<FilmNr>10013</FilmNr>
+		<FS_ObjektID>28355</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA-S10013</BestandsnameMarbilder>
+		<ForeignKey>797463</ForeignKey>
+		<DateinameMarbilder>FA-S10013-5_28355,01.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <marbilder>
+		<md5sum>1fb9fb6a25145ce8c94d57b3e04354f3</md5sum>
+		<ArachneEntityID>191930</ArachneEntityID>
+		<Dateiformat>jpg</Dateiformat>
+		<Visible>Arachne</Visible>
+		<set>marbilder</set>
+		<Dateigroesse>334</Dateigroesse>
+		<Scannummer>28355,02</Scannummer>
+		<seriennummer>797464</seriennummer>
+		<id>marbilder-797464</id>
+		<erstellt>2007-11-03 17:48:57</erstellt>
+		<Fotograf>FA - Scan</Fotograf>
+		<PfadNeu>objectscans/FADatenbankabb0313/FA-S10013-6_28355,02.ptif</PfadNeu>
+		<kategorie>marbilder</kategorie>
+		<Pfad>http://arachne.uni-koeln.de/images/Abbildungen/FADatenbankabb0313/FA-S10013-6_28355,02.jpg</Pfad>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;carare;claros</metadataformats>
+		<lastModified>2013-07-21 16:25:05.0</lastModified>
+		<NegativNr>6</NegativNr>
+		<geaendert>2007-11-19 12:27:05</geaendert>
+		<FilmNr>10013</FilmNr>
+		<FS_ObjektID>28355</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<BildrechteGruppe>Arachne</BildrechteGruppe>
+		<BestandsnameMarbilder>FA-S10013</BestandsnameMarbilder>
+		<ForeignKey>797464</ForeignKey>
+		<DateinameMarbilder>FA-S10013-6_28355,02.jpg</DateinameMarbilder>
+		<oaiCategory>marbilder</oaiCategory>
+		<DatensatzGruppeMARBilder>Arachne</DatensatzGruppeMARBilder>
+		<TableName>marbilder</TableName>
+	  </marbilder>
+	  <ortsbezug>
+		<DatensatzGruppeOrt>Arachne</DatensatzGruppeOrt>
+		<oaipmhsetOrt>ort</oaipmhsetOrt>
+		<creation>2006-06-06 08:06:06.0</creation>
+		<ArachneEntityID>1203904</ArachneEntityID>
+		<lastModified>2010-08-04 12:05:38.0</lastModified>
+		<set>ortsbezug</set>
+		<PS_OrtID>1</PS_OrtID>
+		<FS_ObjektID>28355</FS_ObjektID>
+		<isDeleted>0</isDeleted>
+		<seriennummer>181518</seriennummer>
+		<ForeignKey>1</ForeignKey>
+		<id>ortsbezug-181518</id>
+		<Geonamesid>0</Geonamesid>
+		<Stadt_Synonym>verschollen</Stadt_Synonym>
+		<FS_OrtID>1</FS_OrtID>
+		<oaiCategory>ortsbezug</oaiCategory>
+		<Stadt>unbekannt</Stadt>
+		<Latitude>0.0</Latitude>
+		<TableName>ort</TableName>
+		<Longitude>0.0</Longitude>
+		<kategorie>ortsbezug</kategorie>
+		<metadataformats>oai_dc;prometheus;cidoc_crm;origin;geo;carare;claros</metadataformats>
+	  </ortsbezug>
+	</objekt>
+</record>
