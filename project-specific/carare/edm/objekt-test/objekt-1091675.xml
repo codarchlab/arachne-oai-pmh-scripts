@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:edm="http://www.europeana.eu/schemas/edm/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:ore="http://www.openarchives.org/ore/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:svcs="http://rdfs.org/sioc/services#"
+         xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:xalan="http://xml.apache.org/xalan">
+   <edm:ProvidedCHO rdf:about="1091675">
+      <dc:language>de</dc:language>
+      <dc:publisher>Arachne</dc:publisher>
+      <dc:subject rdf:resource="http://vocab.getty.edu/aat/300054328"/>
+      <dc:title xml:lang="de">Fragment einer Gewandstatue einer Frau</dc:title>
+      <dc:type xml:lang="de">objekt</dc:type>
+      <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2086725"/>
+      <edm:type>IMAGE</edm:type>
+   </edm:ProvidedCHO>
+   <edm:Place rdf:about="http://gazetteer.dainst.org/place/2086725">
+      <wgs84_pos:lat>45.767413</wgs84_pos:lat>
+      <wgs84_pos:long>13.367962</wgs84_pos:long>
+      <skos:prefLabel xml:lang="de">Aquileia</skos:prefLabel>
+      <owl:sameAs rdf:resource="http://www.geonames.org/3182943"/>
+   </edm:Place>
+   <ore:Aggregation rdf:about="dai-aggregation: 1091675">
+      <edm:aggregatedCHO rdf:resource="1091675"/>
+      <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>
+      <edm:isShownAt rdf:resource="https://arachne.dainst.org/entity/1091675"/>
+      <edm:provider>CARARE</edm:provider>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-nd/3.0/"/>
+   </ore:Aggregation>
+</rdf:RDF>

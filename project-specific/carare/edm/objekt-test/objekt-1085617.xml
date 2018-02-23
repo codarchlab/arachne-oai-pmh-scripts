@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.0.2_english_label.rdfs#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:edm="http://www.europeana.eu/schemas/edm/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:ore="http://www.openarchives.org/ore/terms/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdaGr2="http://rdvocab.info/ElementsGr2/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:svcs="http://rdfs.org/sioc/services#"
+         xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:xalan="http://xml.apache.org/xalan">
+   <edm:ProvidedCHO rdf:about="1085617">
+      <dc:description xml:lang="de">Erhaltungszustand: Der Körper des Altars ist unten durch eine primitive Hohlkehle und oben durch einen horizontalen Wulst von den rechteckigen Teilen abgesetzt, die Oberfläche und Teile die Inschrift sind beschädigt</dc:description>
+      <dc:language>de</dc:language>
+      <dc:publisher>Arachne</dc:publisher>
+      <dc:subject rdf:resource="http://vocab.getty.edu/aat/300054328"/>
+      <dc:subject xml:lang="de">Inschrift</dc:subject>
+      <dc:title xml:lang="de">Altar etruskischer Form</dc:title>
+      <dc:type xml:lang="de">objekt</dc:type>
+      <dcterms:medium xml:lang="de">anderes Gestein</dcterms:medium>
+      <dcterms:references>W. Helbig, Führer durch die öffentlichen Sammlungen klassischer Altertümer in Rom. Die Städtischen Sammlungen. Die Staatlichen Sammlungen II, 4. Aufl. (1966)D. Mustilli, Il Museo Mussolini (Rom 1939)W. Hermann, Römische Götteraltäre (1961) Kat nr. 1598142 https://zenon.dainst.org/Record/000335039000924235000175121</dcterms:references>
+      <dcterms:spatial>Rom, Via del Macao</dcterms:spatial>
+      <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2094155"/>
+      <dcterms:temporal xml:lang="de"/>
+      <dcterms:temporal xml:lang="de"/>
+      <edm:type>IMAGE</edm:type>
+   </edm:ProvidedCHO>
+   <edm:Place rdf:about="http://gazetteer.dainst.org/place/2094155">
+      <wgs84_pos:lat>41.89359</wgs84_pos:lat>
+      <wgs84_pos:long>12.483172</wgs84_pos:long>
+      <skos:prefLabel xml:lang="de">Kapitol</skos:prefLabel>
+      <owl:sameAs rdf:resource="http://www.geonames.org/3169070"/>
+   </edm:Place>
+   <ore:Aggregation rdf:about="dai-aggregation: 1085617">
+      <edm:aggregatedCHO rdf:resource="1085617"/>
+      <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>
+      <edm:hasView rdf:resource="https://arachne.dainst.org/data/image/437410"/>
+      <edm:isShownAt rdf:resource="https://arachne.dainst.org/entity/1085617"/>
+      <edm:isShownBy rdf:resource="https://arachne.dainst.org/data/image/437410"/>
+      <edm:provider>CARARE</edm:provider>
+      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-nd/3.0/"/>
+   </ore:Aggregation>
+</rdf:RDF>
