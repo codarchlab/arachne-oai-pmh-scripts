@@ -14,7 +14,7 @@
   xmlns:svcs="http://rdfs.org/sioc/services#"
   xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
   xmlns:xalan="http://xml.apache.org/xalan" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  
+
   <!-- ergänzt -->
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   
@@ -37,8 +37,6 @@
               </xsl:for-each>
             </xsl:attribute>
           </xsl:if>
-          <!-- ergänzt -->
-          <dc:subject rdf:resource="http://vocab.getty.edu/aat/300054328"/>
           <!-- dc:description, id: 386 -->
           <xsl:if test="(../BearbeitungenModern)">
             <dc:description>
@@ -71,15 +69,23 @@
           <dc:publisher>
             <xsl:text>Arachne</xsl:text>
           </dc:publisher>
+          <!-- dc:subject, id: 380 -->
+          <dc:subject>
+            <xsl:attribute name="rdf:resource">
+              <xsl:text>http://vocab.getty.edu/aat/300054328</xsl:text>
+            </xsl:attribute>
+          </dc:subject>
           <!-- dc:subject, id: 389 -->
-          <xsl:for-each select="../GattungAllgemein">
-            <dc:subject>
-              <xsl:attribute name="xml:lang">
-                <xsl:text>de</xsl:text>
-              </xsl:attribute>
-              <xsl:value-of select="."/>
-            </dc:subject>
-          </xsl:for-each>
+          <xsl:if test="(../GattungAllgemein)">
+            <xsl:for-each select="../GattungAllgemein[(.)]">
+              <dc:subject>
+                <xsl:attribute name="xml:lang">
+                  <xsl:text>de</xsl:text>
+                </xsl:attribute>
+                <xsl:value-of select="."/>
+              </dc:subject>
+            </xsl:for-each>
+          </xsl:if>
           <!-- dc:subject, id: 37 -->
           <xsl:if test="(../rezeption/GattungAllgemeinRezeption)">
             <xsl:for-each select="../rezeption/GattungAllgemeinRezeption[(.)]">
@@ -130,8 +136,8 @@
             </dcterms:medium>
           </xsl:for-each>
           <!-- dcterms:provenance, id: 89 -->
-          <xsl:if test="(../Herkunft != '?')">
-            <xsl:for-each select="../Herkunft[(. != '?')]">
+          <xsl:if test="(../Herkunft) and (../Herkunft != '?')">
+            <xsl:for-each select="../Herkunft[(.) and (. != '?')]">
               <dcterms:provenance>
                 <xsl:value-of select="."/>
               </dcterms:provenance>
@@ -154,29 +160,57 @@
             </dcterms:references>
           </xsl:if>
           <!-- dcterms:spatial, id: 416 -->
-          <xsl:if test="(../Fundort != 'nein') or (../Fundort[not(contains(., 'nbekannt'))]) or (../Fundort != '?')">
-            <xsl:for-each select="../Fundort[(. != 'nein') or (.[not(contains(., 'nbekannt'))]) or (. != '?')]">
+          <xsl:if test="(../Fundort) and (../Fundort[not(contains(., '?'))]) and (../Fundort[not(contains(., 'unbekannt'))])">
+            <xsl:for-each select="../Fundort[(.) and (.[not(contains(., '?'))]) and (.[not(contains(., 'unbekannt'))])]">
               <dcterms:spatial>
-                <xsl:value-of select="substring-before(.,'P')"/>
+                <xsl:value-of select="."/>
               </dcterms:spatial>
             </xsl:for-each>
           </xsl:if>
           <!-- dcterms:spatial, id: 101 -->
-          <dcterms:spatial>
-            <xsl:text>http://gazetteer.dainst.org/place/</xsl:text>
-            <xsl:for-each select="../ortsbezug/Gazetteerid">
-              <xsl:value-of select="."/>
-            </xsl:for-each>
-          </dcterms:spatial>
+          <xsl:if test="(../ortsbezug/Gazetteerid)">
+            <dcterms:spatial>
+              <xsl:if test="(../ortsbezug/Gazetteerid)">
+                <xsl:attribute name="rdf:resource">
+                  <xsl:text>http://gazetteer.dainst.org/place/</xsl:text>
+                  <xsl:for-each select="../ortsbezug/Gazetteerid">
+                    <xsl:if test="position() = 1">
+                      <xsl:value-of select="."/>
+                    </xsl:if>
+                  </xsl:for-each>
+                </xsl:attribute>
+              </xsl:if>
+              <xsl:text/>
+            </dcterms:spatial>
+          </xsl:if>
           <!-- dcterms:temporal, id: 107 -->
-          <xsl:for-each select="../datierung/derived-date">
-            <dcterms:temporal>
-              <xsl:attribute name="xml:lang">
-                <xsl:text>de</xsl:text>
-              </xsl:attribute>
-              <xsl:value-of select="substring-before(.,'P')"/>
-            </dcterms:temporal>
-          </xsl:for-each>
+          <xsl:if test="(../datierung/derived-date)">
+            <xsl:for-each select="../datierung/derived-date[(.)]">
+              <dcterms:temporal>
+                <xsl:attribute name="xml:lang">
+                  <xsl:text>de</xsl:text>
+                </xsl:attribute>
+                <xsl:value-of select="substring-before(.,'P')"/>
+              </dcterms:temporal>
+            </xsl:for-each>
+          </xsl:if>
+          <!-- Check for mandatory elements on edm:currentLocation -->
+          <xsl:if test="../ortsbezug/Aufbewahrungsort">
+            <!-- edm:currentLocation, id: 110 -->
+            <edm:currentLocation>
+              <xsl:if test="(../ortsbezug/Aufbewahrungsort)">
+                <xsl:if test="../ortsbezug/Aufbewahrungsort">
+                  <xsl:attribute name="rdf:resource">
+                    <xsl:for-each select="../ortsbezug/Aufbewahrungsort">
+                      <xsl:if test="position() = 1">
+                        <xsl:value-of select="."/>
+                      </xsl:if>
+                    </xsl:for-each>
+                  </xsl:attribute>
+                </xsl:if>
+              </xsl:if>
+            </edm:currentLocation>
+          </xsl:if>
           <!-- edm:type, id: 134 -->
           <edm:type>
             <xsl:text>IMAGE</xsl:text>
@@ -319,13 +353,10 @@
           <!-- edm:rights, id: 361 -->
           <edm:rights>
             <xsl:attribute name="rdf:resource">
-              <xsl:text>http://creativecommons.org/licenses/by/3.0/</xsl:text>
+              <xsl:text>http://creativecommons.org/licenses/by-nc-nd/3.0/</xsl:text>
             </xsl:attribute>
+            <xsl:text/>
           </edm:rights>
-          <!-- edm:intermediateProvider, id: 364 -->
-          <edm:intermediateProvider>
-            <xsl:text>EAGLE</xsl:text>
-          </edm:intermediateProvider>
         </ore:Aggregation>
       </xsl:if>
     </rdf:RDF>
