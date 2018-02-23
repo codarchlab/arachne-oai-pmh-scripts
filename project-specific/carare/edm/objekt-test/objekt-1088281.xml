@@ -13,7 +13,7 @@
          xmlns:svcs="http://rdfs.org/sioc/services#"
          xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
          xmlns:xalan="http://xml.apache.org/xalan">
-   <edm:ProvidedCHO rdf:about="1088281">
+   <edm:ProvidedCHO rdf:about="https://arachne.dainst.org/entity/1088281">
       <dc:description xml:lang="de">Erhaltungszustand: Kopf nicht zugehörig</dc:description>
       <dc:language>de</dc:language>
       <dc:publisher>Arachne</dc:publisher>
@@ -32,7 +32,7 @@
       <owl:sameAs rdf:resource="http://www.geonames.org/3169070"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1088281">
-      <edm:aggregatedCHO rdf:resource="1088281"/>
+      <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1088281"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>
       <edm:hasView rdf:resource="https://arachne.dainst.org/data/image/2356258"/>
       <edm:isShownAt rdf:resource="https://arachne.dainst.org/entity/1088281"/>

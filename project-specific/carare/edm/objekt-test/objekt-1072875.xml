@@ -13,7 +13,7 @@
          xmlns:svcs="http://rdfs.org/sioc/services#"
          xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
          xmlns:xalan="http://xml.apache.org/xalan">
-   <edm:ProvidedCHO rdf:about="1072875">
+   <edm:ProvidedCHO rdf:about="https://arachne.dainst.org/entity/1072875">
       <dc:description xml:lang="de">BearbeitungenModern: außer Kleinigkeiten an Gewand und Füßen, die Arme und das Mittelstück des Leibes; Kopf der Panzerstatue ist modern, das Original des Kopfes befindet sich auf moderner Büste in Houghton Hall</dc:description>
       <dc:language>de</dc:language>
       <dc:publisher>Arachne</dc:publisher>
@@ -34,7 +34,7 @@
       <owl:sameAs rdf:resource="http://www.geonames.org/6452756"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1072875">
-      <edm:aggregatedCHO rdf:resource="1072875"/>
+      <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1072875"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>
       <edm:isShownAt rdf:resource="https://arachne.dainst.org/entity/1072875"/>
       <edm:provider>CARARE</edm:provider>

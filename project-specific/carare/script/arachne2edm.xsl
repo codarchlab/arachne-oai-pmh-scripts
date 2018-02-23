@@ -30,6 +30,7 @@
         <edm:ProvidedCHO>
           <xsl:if test=".">
             <xsl:attribute name="rdf:about">
+              <xsl:text>https://arachne.dainst.org/entity/</xsl:text>
               <xsl:for-each select=".">
                 <xsl:if test="position() = 1">
                   <xsl:value-of select="."/>
@@ -271,6 +272,7 @@
             <edm:aggregatedCHO>
               <xsl:if test=".">
                 <xsl:attribute name="rdf:resource">
+                  <xsl:text>https://arachne.dainst.org/entity/</xsl:text>
                   <xsl:for-each select=".">
                     <xsl:if test="position() = 1">
                       <xsl:value-of select="."/>

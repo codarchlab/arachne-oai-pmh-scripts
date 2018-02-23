@@ -13,7 +13,7 @@
          xmlns:svcs="http://rdfs.org/sioc/services#"
          xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
          xmlns:xalan="http://xml.apache.org/xalan">
-   <edm:ProvidedCHO rdf:about="1089792">
+   <edm:ProvidedCHO rdf:about="https://arachne.dainst.org/entity/1089792">
       <dc:language>de</dc:language>
       <dc:publisher>Arachne</dc:publisher>
       <dc:subject rdf:resource="http://vocab.getty.edu/aat/300054328"/>
@@ -30,7 +30,7 @@
       <owl:sameAs rdf:resource="http://www.geonames.org/3165185"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1089792">
-      <edm:aggregatedCHO rdf:resource="1089792"/>
+      <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1089792"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>
       <edm:hasView rdf:resource="https://arachne.dainst.org/data/image/6121352"/>
       <edm:isShownAt rdf:resource="https://arachne.dainst.org/entity/1089792"/>
