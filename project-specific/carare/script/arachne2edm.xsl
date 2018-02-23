@@ -14,9 +14,10 @@
   xmlns:svcs="http://rdfs.org/sioc/services#"
   xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
   xmlns:xalan="http://xml.apache.org/xalan" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-    <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
-
+  
+  <!-- ergänzt -->
+  <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+  
   <xsl:template match="/">
     <xsl:apply-templates select="/record/objekt/ArachneEntityID"/>
   </xsl:template>
@@ -36,16 +37,31 @@
               </xsl:for-each>
             </xsl:attribute>
           </xsl:if>
-          <!-- dc:description, id: 15 -->
+          <!-- ergänzt -->
+          <dc:subject rdf:resource="http://vocab.getty.edu/aat/300054328"/>
+          <!-- dc:description, id: 386 -->
           <xsl:if test="(../BearbeitungenModern)">
-            <xsl:for-each select="../BearbeitungenModern[(.)]">
-              <dc:description>
-                <xsl:attribute name="xml:lang">
-                  <xsl:text>de</xsl:text>
-                </xsl:attribute>
+            <dc:description>
+              <xsl:attribute name="xml:lang">
+                <xsl:text>de</xsl:text>
+              </xsl:attribute>
+              <xsl:text>BearbeitungenModern: </xsl:text>
+              <xsl:for-each select="../BearbeitungenModern[(.)]">
                 <xsl:value-of select="."/>
-              </dc:description>
-            </xsl:for-each>
+              </xsl:for-each>
+            </dc:description>
+          </xsl:if>
+          <!-- dc:description, id: 15 -->
+          <xsl:if test="(../Erhaltungszustand)">
+            <dc:description>
+              <xsl:attribute name="xml:lang">
+                <xsl:text>de</xsl:text>
+              </xsl:attribute>
+              <xsl:text>Erhaltungszustand: </xsl:text>
+              <xsl:for-each select="../Erhaltungszustand[(.)]">
+                <xsl:value-of select="."/>
+              </xsl:for-each>
+            </dc:description>
           </xsl:if>
           <!-- dc:language, id: 23 -->
           <dc:language>
@@ -153,7 +169,7 @@
             </xsl:for-each>
           </dcterms:spatial>
           <!-- dcterms:temporal, id: 107 -->
-          <xsl:for-each select="../datierung/AnfEpoche">
+          <xsl:for-each select="../datierung/derived-date">
             <dcterms:temporal>
               <xsl:attribute name="xml:lang">
                 <xsl:text>de</xsl:text>
