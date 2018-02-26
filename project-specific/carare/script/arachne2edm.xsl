@@ -191,7 +191,7 @@
                 <xsl:attribute name="xml:lang">
                   <xsl:text>de</xsl:text>
                 </xsl:attribute>
-                <xsl:value-of select="substring-before(.,'P')"/>
+                <xsl:value-of select="."/>
               </dcterms:temporal>
             </xsl:for-each>
           </xsl:if>

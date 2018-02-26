@@ -25,8 +25,8 @@
       <dcterms:references>W. Helbig, Führer durch die öffentlichen Sammlungen klassischer Altertümer in Rom. Die Städtischen Sammlungen. Die Staatlichen Sammlungen II, 4. Aufl. (1966)D. Mustilli, Il Museo Mussolini (Rom 1939)W. Hermann, Römische Götteraltäre (1961) Kat nr. 1598142 https://zenon.dainst.org/Record/000335039000924235000175121</dcterms:references>
       <dcterms:spatial>Rom, Via del Macao</dcterms:spatial>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2094155"/>
-      <dcterms:temporal xml:lang="de"/>
-      <dcterms:temporal xml:lang="de"/>
+      <dcterms:temporal xml:lang="de">2017</dcterms:temporal>
+      <dcterms:temporal xml:lang="de">2017</dcterms:temporal>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2094155">
