@@ -73,7 +73,7 @@
           <!-- dc:subject, id: 380 -->
           <dc:subject>
             <xsl:attribute name="rdf:resource">
-              <xsl:text>http://vocab.getty.edu/aat/300054328</xsl:text>
+              <xsl:text>http://vocab.getty.edu/aat/300234110</xsl:text>
             </xsl:attribute>
           </dc:subject>
           <!-- dc:subject, id: 389 -->

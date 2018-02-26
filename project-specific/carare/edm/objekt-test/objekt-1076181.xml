@@ -16,7 +16,7 @@
    <edm:ProvidedCHO rdf:about="https://arachne.dainst.org/entity/1076181">
       <dc:language>de</dc:language>
       <dc:publisher>Arachne</dc:publisher>
-      <dc:subject rdf:resource="http://vocab.getty.edu/aat/300054328"/>
+      <dc:subject rdf:resource="http://vocab.getty.edu/aat/300234110"/>
       <dc:subject xml:lang="de">Inschrift</dc:subject>
       <dc:title xml:lang="de">Weihaltar für Sol Invictus</dc:title>
       <dc:type xml:lang="de">objekt</dc:type>
