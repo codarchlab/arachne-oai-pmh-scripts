@@ -21,7 +21,7 @@
       <dc:type xml:lang="de">objekt</dc:type>
       <dcterms:medium xml:lang="de">Marmor</dcterms:medium>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2093855"/>
-      <dcterms:temporal xml:lang="de">2017</dcterms:temporal>
+      <dcterms:temporal xml:lang="de">tiberisch, 1. Drittel, 1. Jh.n. Chr.</dcterms:temporal>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2093855">

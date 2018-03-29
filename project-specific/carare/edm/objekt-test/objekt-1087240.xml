@@ -20,7 +20,7 @@
       <dc:title xml:lang="de">objekt</dc:title>
       <dc:type xml:lang="de">objekt</dc:type>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2323295"/>
-      <dcterms:temporal xml:lang="de">2017</dcterms:temporal>
+      <dcterms:temporal xml:lang="de">nachantik</dcterms:temporal>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2323295">

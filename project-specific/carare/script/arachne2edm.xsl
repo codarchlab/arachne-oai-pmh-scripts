@@ -18,6 +18,50 @@
   <!-- ergänzt -->
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   
+  <xsl:template name="datierung">
+    <xsl:if test="TypDatierung">
+      <xsl:value-of select="TypDatierung"/>
+      <xsl:text>: </xsl:text>
+    </xsl:if>
+    <xsl:value-of select="nachantik"/>
+    <xsl:if test="FestDat">
+      <xsl:text>(fest datiert: </xsl:text>
+      <xsl:value-of select="FestDat"/>
+      <xsl:text>)</xsl:text>
+    </xsl:if>
+    <xsl:if test="AnfEpoche">
+      <xsl:value-of select="AnfEpoche"/>
+      <xsl:text>, </xsl:text>
+    </xsl:if>
+    <xsl:if test="AnfKultur">
+      <xsl:value-of select="AnfKultur"/>
+      <xsl:text>, </xsl:text>
+    </xsl:if>
+    <xsl:if test="AnfDatZeitraum">
+      <xsl:value-of select="AnfDatZeitraum"/>
+      <xsl:text>, </xsl:text>
+    </xsl:if>
+    <xsl:if test="AnfDatJt">
+      <xsl:value-of select="AnfDatJt"/>
+      <xsl:text>. Jt.</xsl:text>
+    </xsl:if>
+    <xsl:if test="AnfDatJh">
+      <xsl:value-of select="AnfDatJh"/>
+      <xsl:text>. Jh.</xsl:text>
+    </xsl:if>
+    <xsl:value-of select="AnfDatvn"/>
+    <xsl:if test="AnfPraezise">
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="AnfPraezise"/>
+      <xsl:text>)</xsl:text>
+    </xsl:if>
+    <xsl:if test="AnfTerminus">
+      <xsl:text>, </xsl:text>
+      <xsl:value-of select="AnfTerminus"/>
+      <xsl:text>. </xsl:text>
+    </xsl:if>
+  </xsl:template>
+  
   <xsl:template match="/">
     <xsl:apply-templates select="/record/objekt/ArachneEntityID"/>
   </xsl:template>
@@ -185,6 +229,7 @@
             </dcterms:spatial>
           </xsl:if>
           <!-- dcterms:temporal, id: 107 -->
+<!--
           <xsl:if test="(../datierung/derived-date)">
             <xsl:for-each select="../datierung/derived-date[(.)]">
               <dcterms:temporal>
@@ -192,6 +237,17 @@
                   <xsl:text>de</xsl:text>
                 </xsl:attribute>
                 <xsl:value-of select="."/>
+              </dcterms:temporal>
+            </xsl:for-each>
+          </xsl:if>
+-->
+          <xsl:if test="(../datierung)">
+            <xsl:for-each select="../datierung">
+              <dcterms:temporal>
+                <xsl:attribute name="xml:lang">
+                  <xsl:text>de</xsl:text>
+                </xsl:attribute>
+                <xsl:call-template name="datierung"/>
               </dcterms:temporal>
             </xsl:for-each>
           </xsl:if>
