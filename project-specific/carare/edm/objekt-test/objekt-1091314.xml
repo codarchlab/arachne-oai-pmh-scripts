@@ -21,12 +21,7 @@
       <dc:type xml:lang="de">objekt</dc:type>
       <dcterms:medium xml:lang="de">Bronze</dcterms:medium>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2090501"/>
-      <edm:TimeSpan>
-         <skos:prefLabel>frühkaiserzeitlich, 1. Jh.n. Chr.</skos:prefLabel>
-         <edm:begin>0</edm:begin>
-         <edm:end>100</edm:end>
-         <dcterms:isPartOf>frühkaiserzeitlich</dcterms:isPartOf>
-      </edm:TimeSpan>
+      <dcterms:temporal rdf:resource="http://arachne.dainst.org/datierung/21975"/>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2090501">
@@ -34,6 +29,12 @@
       <wgs84_pos:long>8.55</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Zürich</skos:prefLabel>
    </edm:Place>
+   <edm:TimeSpan rdf:about="http://arachne.dainst.org/datierung/21975">
+      <skos:prefLabel>frühkaiserzeitlich, 1. Jh.n. Chr.</skos:prefLabel>
+      <dcterms:isPartOf>frühkaiserzeitlich</dcterms:isPartOf>
+      <edm:begin>0</edm:begin>
+      <edm:end>100</edm:end>
+   </edm:TimeSpan>
    <ore:Aggregation rdf:about="dai-aggregation: 1091314">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1091314"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>

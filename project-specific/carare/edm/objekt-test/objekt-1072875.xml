@@ -24,11 +24,7 @@
       <dcterms:medium xml:lang="de">Marmor</dcterms:medium>
       <dcterms:references>P. Arndt – W. Amelung (Hrsg.), Photographische Einzelaufnahmen Antiker Sculpturen (München 1893-1947) Kat nr. 1606 https://zenon.dainst.org/Record/000822883</dcterms:references>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2091217"/>
-      <edm:TimeSpan>
-         <skos:prefLabel>Ende, 1. Jh.n. Chr.</skos:prefLabel>
-         <edm:begin>75</edm:begin>
-         <edm:end>100</edm:end>
-      </edm:TimeSpan>
+      <dcterms:temporal rdf:resource="http://arachne.dainst.org/datierung/16277"/>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2091217">
@@ -36,6 +32,11 @@
       <wgs84_pos:long>-3.69241</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Madrid</skos:prefLabel>
    </edm:Place>
+   <edm:TimeSpan rdf:about="http://arachne.dainst.org/datierung/16277">
+      <skos:prefLabel>Ende, 1. Jh.n. Chr.</skos:prefLabel>
+      <edm:begin>75</edm:begin>
+      <edm:end>100</edm:end>
+   </edm:TimeSpan>
    <ore:Aggregation rdf:about="dai-aggregation: 1072875">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1072875"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>

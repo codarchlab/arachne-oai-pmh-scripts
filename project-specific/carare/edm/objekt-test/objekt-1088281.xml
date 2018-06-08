@@ -22,12 +22,7 @@
       <dc:type xml:lang="de">objekt</dc:type>
       <dcterms:medium xml:lang="de">Marmor</dcterms:medium>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2093855"/>
-      <edm:TimeSpan>
-         <skos:prefLabel>antoninisch, 2. Hälfte, 2. Jh.n. Chr.</skos:prefLabel>
-         <edm:begin>150</edm:begin>
-         <edm:end>200</edm:end>
-         <dcterms:isPartOf>antoninisch</dcterms:isPartOf>
-      </edm:TimeSpan>
+      <dcterms:temporal rdf:resource="http://arachne.dainst.org/datierung/20957"/>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2093855">
@@ -35,6 +30,12 @@
       <wgs84_pos:long>12.4839</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Rom</skos:prefLabel>
    </edm:Place>
+   <edm:TimeSpan rdf:about="http://arachne.dainst.org/datierung/20957">
+      <skos:prefLabel>antoninisch, 2. Hälfte, 2. Jh.n. Chr.</skos:prefLabel>
+      <dcterms:isPartOf>antoninisch</dcterms:isPartOf>
+      <edm:begin>150</edm:begin>
+      <edm:end>200</edm:end>
+   </edm:TimeSpan>
    <ore:Aggregation rdf:about="dai-aggregation: 1088281">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1088281"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>

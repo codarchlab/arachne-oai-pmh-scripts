@@ -20,10 +20,7 @@
       <dc:title xml:lang="de">hellenist. Grabrelief mit Kerykeion-Träger</dc:title>
       <dc:type xml:lang="de">objekt</dc:type>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2096729"/>
-      <edm:TimeSpan>
-         <skos:prefLabel>hellenistisch, </skos:prefLabel>
-         <dcterms:isPartOf>hellenistisch</dcterms:isPartOf>
-      </edm:TimeSpan>
+      <dcterms:temporal rdf:resource="http://arachne.dainst.org/datierung/20833"/>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2096729">
@@ -31,6 +28,10 @@
       <wgs84_pos:long>23.53333</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Tanagra</skos:prefLabel>
    </edm:Place>
+   <edm:TimeSpan rdf:about="http://arachne.dainst.org/datierung/20833">
+      <skos:prefLabel>hellenistisch, </skos:prefLabel>
+      <dcterms:isPartOf>hellenistisch</dcterms:isPartOf>
+   </edm:TimeSpan>
    <ore:Aggregation rdf:about="dai-aggregation: 1087783">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1087783"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>

@@ -25,16 +25,8 @@
       <dcterms:references>W. Helbig, Führer durch die öffentlichen Sammlungen klassischer Altertümer in Rom. Die Städtischen Sammlungen. Die Staatlichen Sammlungen II, 4. Aufl. (1966)D. Mustilli, Il Museo Mussolini (Rom 1939)W. Hermann, Römische Götteraltäre (1961) Kat nr. 1598142 https://zenon.dainst.org/Record/000335039000924235000175121</dcterms:references>
       <dcterms:spatial>Rom, Via del Macao</dcterms:spatial>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2094155"/>
-      <edm:TimeSpan>
-         <skos:prefLabel>v. Chr. (175)</skos:prefLabel>
-         <edm:begin>-175</edm:begin>
-         <edm:end>-175</edm:end>
-      </edm:TimeSpan>
-      <edm:TimeSpan>
-         <skos:prefLabel>2. Jh.v. Chr.</skos:prefLabel>
-         <edm:begin>-200</edm:begin>
-         <edm:end>-100</edm:end>
-      </edm:TimeSpan>
+      <dcterms:temporal rdf:resource="http://arachne.dainst.org/datierung/19993"/>
+      <dcterms:temporal rdf:resource="http://arachne.dainst.org/datierung/98924"/>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2094155">
@@ -42,6 +34,16 @@
       <wgs84_pos:long>12.483172</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Kapitol</skos:prefLabel>
    </edm:Place>
+   <edm:TimeSpan rdf:about="http://arachne.dainst.org/datierung/19993">
+      <skos:prefLabel>v. Chr. (175)</skos:prefLabel>
+      <edm:begin>-175</edm:begin>
+      <edm:end>-175</edm:end>
+   </edm:TimeSpan>
+   <edm:TimeSpan rdf:about="http://arachne.dainst.org/datierung/98924">
+      <skos:prefLabel>2. Jh.v. Chr.</skos:prefLabel>
+      <edm:begin>-200</edm:begin>
+      <edm:end>-100</edm:end>
+   </edm:TimeSpan>
    <ore:Aggregation rdf:about="dai-aggregation: 1085617">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1085617"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>

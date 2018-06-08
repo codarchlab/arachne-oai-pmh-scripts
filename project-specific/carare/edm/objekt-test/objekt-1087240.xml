@@ -20,9 +20,7 @@
       <dc:title xml:lang="de">objekt</dc:title>
       <dc:type xml:lang="de">objekt</dc:type>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2323295"/>
-      <edm:TimeSpan>
-         <skos:prefLabel>nachantik</skos:prefLabel>
-      </edm:TimeSpan>
+      <dcterms:temporal rdf:resource="http://arachne.dainst.org/datierung/20625"/>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2323295">
@@ -30,6 +28,9 @@
       <wgs84_pos:long>12.49362</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">ehemalige Provinz Rom</skos:prefLabel>
    </edm:Place>
+   <edm:TimeSpan rdf:about="http://arachne.dainst.org/datierung/20625">
+      <skos:prefLabel>nachantik</skos:prefLabel>
+   </edm:TimeSpan>
    <ore:Aggregation rdf:about="dai-aggregation: 1087240">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1087240"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>

@@ -21,12 +21,7 @@
       <dc:type xml:lang="de">objekt</dc:type>
       <dcterms:provenance>Ince Blundell Hall</dcterms:provenance>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2089923"/>
-      <edm:TimeSpan>
-         <skos:prefLabel>antoninisch, 2. Hälfte, 2. Jh.n. Chr.</skos:prefLabel>
-         <edm:begin>150</edm:begin>
-         <edm:end>200</edm:end>
-         <dcterms:isPartOf>antoninisch</dcterms:isPartOf>
-      </edm:TimeSpan>
+      <dcterms:temporal rdf:resource="http://arachne.dainst.org/datierung/15543"/>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2089923">
@@ -34,6 +29,12 @@
       <wgs84_pos:long>-2.97794</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Liverpool</skos:prefLabel>
    </edm:Place>
+   <edm:TimeSpan rdf:about="http://arachne.dainst.org/datierung/15543">
+      <skos:prefLabel>antoninisch, 2. Hälfte, 2. Jh.n. Chr.</skos:prefLabel>
+      <dcterms:isPartOf>antoninisch</dcterms:isPartOf>
+      <edm:begin>150</edm:begin>
+      <edm:end>200</edm:end>
+   </edm:TimeSpan>
    <ore:Aggregation rdf:about="dai-aggregation: 1070217">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1070217"/>
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>
