@@ -22,7 +22,12 @@
       <dc:type xml:lang="de">objekt</dc:type>
       <dcterms:medium xml:lang="de">Marmor</dcterms:medium>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2093855"/>
-      <dcterms:temporal xml:lang="de">antoninisch, 2. Hälfte, 2. Jh.n. Chr.</dcterms:temporal>
+      <edm:TimeSpan>
+         <skos:prefLabel>antoninisch, 2. Hälfte, 2. Jh.n. Chr.</skos:prefLabel>
+         <edm:begin>150</edm:begin>
+         <edm:end>200</edm:end>
+         <dcterms:isPartOf>antoninisch</dcterms:isPartOf>
+      </edm:TimeSpan>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2093855">

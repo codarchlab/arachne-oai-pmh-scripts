@@ -24,7 +24,11 @@
       <dcterms:medium xml:lang="de">Marmor</dcterms:medium>
       <dcterms:references>P. Arndt – W. Amelung (Hrsg.), Photographische Einzelaufnahmen Antiker Sculpturen (München 1893-1947) Kat nr. 1606 https://zenon.dainst.org/Record/000822883</dcterms:references>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2091217"/>
-      <dcterms:temporal xml:lang="de">Ende, 1. Jh.n. Chr.</dcterms:temporal>
+      <edm:TimeSpan>
+         <skos:prefLabel>Ende, 1. Jh.n. Chr.</skos:prefLabel>
+         <edm:begin>75</edm:begin>
+         <edm:end>100</edm:end>
+      </edm:TimeSpan>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2091217">

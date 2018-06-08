@@ -25,7 +25,12 @@
       <dcterms:provenance>Palazzo dei Conservatori, Braccio Nuovo, zuvor Rom, Villa Casali</dcterms:provenance>
       <dcterms:references>F. Matz, Antike Bildwerke in Rom mit Ausschluss der grösseren Sammlungen III. Reliefs und Sonstiges. Fortgeführt und hrsg. von F. v. Duhn (Rom 1882)V. Kockel, Porträtreliefs stadtrömischer Grabbauten, Beiträge zur Erschließung hellenistischer und kaiserzeitlicher Skulptur und Architektur 12 (Mainz 1993) Kat nr. 3812M10 https://zenon.dainst.org/Record/000972060000923599</dcterms:references>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2094151"/>
-      <dcterms:temporal xml:lang="de">flavisch, letztes Drittel, 1. Jh.n. Chr.</dcterms:temporal>
+      <edm:TimeSpan>
+         <skos:prefLabel>flavisch, letztes Drittel, 1. Jh.n. Chr.</skos:prefLabel>
+         <edm:begin>66</edm:begin>
+         <edm:end>100</edm:end>
+         <dcterms:isPartOf>flavisch</dcterms:isPartOf>
+      </edm:TimeSpan>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2094151">

@@ -21,7 +21,12 @@
       <dc:type xml:lang="de">objekt</dc:type>
       <dcterms:medium xml:lang="de">Bronze</dcterms:medium>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2090501"/>
-      <dcterms:temporal xml:lang="de">frühkaiserzeitlich, 1. Jh.n. Chr.</dcterms:temporal>
+      <edm:TimeSpan>
+         <skos:prefLabel>frühkaiserzeitlich, 1. Jh.n. Chr.</skos:prefLabel>
+         <edm:begin>0</edm:begin>
+         <edm:end>100</edm:end>
+         <dcterms:isPartOf>frühkaiserzeitlich</dcterms:isPartOf>
+      </edm:TimeSpan>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2090501">

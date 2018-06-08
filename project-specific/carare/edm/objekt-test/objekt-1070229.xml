@@ -22,7 +22,9 @@
       <dcterms:medium xml:lang="de">Marmor</dcterms:medium>
       <dcterms:spatial>Löwen / Louvain (1910)</dcterms:spatial>
       <dcterms:spatial rdf:resource="http://gazetteer.dainst.org/place/2090915"/>
-      <dcterms:temporal xml:lang="de">nachantik</dcterms:temporal>
+      <edm:TimeSpan>
+         <skos:prefLabel>nachantik</skos:prefLabel>
+      </edm:TimeSpan>
       <edm:type>IMAGE</edm:type>
    </edm:ProvidedCHO>
    <edm:Place rdf:about="http://gazetteer.dainst.org/place/2090915">
