@@ -309,41 +309,17 @@
             </dcterms:spatial>
           </xsl:if>
           <!-- dcterms:temporal, id: 107 -->
-<!--
-          <xsl:if test="(../datierung/derived-date)">
-            <xsl:for-each select="../datierung/derived-date[(.)]">
-              <dcterms:temporal>
-                <xsl:attribute name="xml:lang">
-                  <xsl:text>de</xsl:text>
-                </xsl:attribute>
-                <xsl:value-of select="."/>
-              </dcterms:temporal>
-            </xsl:for-each>
-          </xsl:if>
--->
           <xsl:if test="(../datierung)">
             <xsl:for-each select="../datierung">
-<!--
               <dcterms:temporal>
-                <xsl:attribute name="xml:lang">
-                  <xsl:text>de</xsl:text>
+                <xsl:attribute name="rdf:resource">
+                  <xsl:text>http://arachne.dainst.org/datierung/</xsl:text>
+                  <xsl:value-of select="seriennummer"/>
                 </xsl:attribute>
-                <xsl:call-template name="datierungGesamt"/>
               </dcterms:temporal>
--->
-              <edm:TimeSpan>
-                <skos:prefLabel>
-                  <xsl:call-template name="datierungGesamt"/>
-                </skos:prefLabel>
-                <xsl:call-template name="explicitTimespan"/>
-                <xsl:if test="AnfEpoche">
-                  <dcterms:isPartOf>
-                    <xsl:value-of select="AnfEpoche"/>
-                  </dcterms:isPartOf>
-                </xsl:if>
-              </edm:TimeSpan>
             </xsl:for-each>
           </xsl:if>
+
           <!-- edm:type, id: 134 -->
           <edm:type>
             <xsl:text>IMAGE</xsl:text>
@@ -405,6 +381,27 @@
 -->
         </edm:Place>
       </xsl:if>
+
+      <xsl:if test="(../datierung)">
+        <xsl:for-each select="../datierung">
+          <edm:TimeSpan>
+            <xsl:attribute name="rdf:about">
+              <xsl:text>http://arachne.dainst.org/datierung/</xsl:text>
+              <xsl:value-of select="seriennummer"/>
+            </xsl:attribute>
+            <skos:prefLabel>
+              <xsl:call-template name="datierungGesamt"/>
+            </skos:prefLabel>
+            <xsl:if test="AnfEpoche">
+              <dcterms:isPartOf>
+                <xsl:value-of select="AnfEpoche"/>
+              </dcterms:isPartOf>
+            </xsl:if>
+            <xsl:call-template name="explicitTimespan"/>
+          </edm:TimeSpan>
+        </xsl:for-each>
+      </xsl:if>
+      
       <!-- Check for mandatory elements on ore:Aggregation -->
       <xsl:if test=".">
         <!-- ore:Aggregation, id: 340 -->
