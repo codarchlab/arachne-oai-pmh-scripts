@@ -489,7 +489,7 @@
           <!-- edm:rights, id: 361 -->
           <edm:rights>
             <xsl:attribute name="rdf:resource">
-              <xsl:text>http://creativecommons.org/licenses/by-nc-nd/3.0/</xsl:text>
+              <xsl:text>http://rightsstatements.org/vocab/InC/1.0/</xsl:text>
             </xsl:attribute>
             <xsl:text/>
           </edm:rights>
