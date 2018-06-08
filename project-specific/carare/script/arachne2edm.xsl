@@ -18,7 +18,7 @@
   <!-- ergänzt -->
   <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
   
-  <xsl:template name="datierung">
+  <xsl:template name="datierungGesamt">
     <xsl:if test="TypDatierung">
       <xsl:value-of select="TypDatierung"/>
       <xsl:text>: </xsl:text>
@@ -59,6 +59,86 @@
       <xsl:text>, </xsl:text>
       <xsl:value-of select="AnfTerminus"/>
       <xsl:text>. </xsl:text>
+    </xsl:if>
+  </xsl:template>
+  
+  <xsl:template name="explicitTimespan">
+    <xsl:if test="AnfPraezise">
+      <xsl:variable name="exactDate">
+        <xsl:choose>
+          <xsl:when test="AnfDatvn = 'v. Chr.'">
+            <xsl:value-of select="- AnfPraezise"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="AnfPraezise"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <edm:begin>
+        <xsl:value-of select="$exactDate"/>
+      </edm:begin>
+      <edm:end>
+        <xsl:value-of select="$exactDate"/>
+      </edm:end>
+    </xsl:if>
+    <xsl:if test="AnfDatJh">
+      <xsl:variable name="beginUnsignedUnqualified" select="100 * (AnfDatJh - 1)"/> 
+      <xsl:variable name="endUnsignedUnqualified" select="100 * AnfDatJh"/>
+      <xsl:variable name="beginUnqualified">
+        <xsl:choose>
+          <xsl:when test="AnfDatvn = 'v. Chr.'">
+            <xsl:value-of select="-$endUnsignedUnqualified"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$beginUnsignedUnqualified"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <xsl:variable name="endUnqualified">
+        <xsl:choose>
+          <xsl:when test="AnfDatvn = 'v. Chr.'">
+            <xsl:value-of select="-$beginUnsignedUnqualified"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$endUnsignedUnqualified"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <xsl:variable name="begin">
+        <xsl:choose>
+          <xsl:when test="AnfDatZeitraum = '2. Hälfte'">
+            <xsl:value-of select="$beginUnqualified + 50"/>
+          </xsl:when>
+          <xsl:when test="AnfDatZeitraum = 'Ende'">
+            <xsl:value-of select="$beginUnqualified + 75"/>
+          </xsl:when>
+          <xsl:when test="AnfDatZeitraum = 'letztes Drittel'">
+            <xsl:value-of select="$beginUnqualified + 66"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$beginUnqualified"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <xsl:variable name="end">
+        <xsl:choose>
+          <xsl:when test="AnfDatZeitraum = '1. Hälfte'">
+            <xsl:value-of select="$endUnqualified - 50"/>
+          </xsl:when>
+          <xsl:when test="AnfDatZeitraum = '1. Drittel'">
+            <xsl:value-of select="$endUnqualified - 66"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="$endUnqualified"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+      <edm:begin>
+        <xsl:value-of select="$begin"/>
+      </edm:begin>
+      <edm:end>
+        <xsl:value-of select="$end"/>
+      </edm:end>
     </xsl:if>
   </xsl:template>
   
@@ -243,12 +323,25 @@
 -->
           <xsl:if test="(../datierung)">
             <xsl:for-each select="../datierung">
+<!--
               <dcterms:temporal>
                 <xsl:attribute name="xml:lang">
                   <xsl:text>de</xsl:text>
                 </xsl:attribute>
-                <xsl:call-template name="datierung"/>
+                <xsl:call-template name="datierungGesamt"/>
               </dcterms:temporal>
+-->
+              <edm:TimeSpan>
+                <skos:prefLabel>
+                  <xsl:call-template name="datierungGesamt"/>
+                </skos:prefLabel>
+                <xsl:call-template name="explicitTimespan"/>
+                <xsl:if test="AnfEpoche">
+                  <dcterms:isPartOf>
+                    <xsl:value-of select="AnfEpoche"/>
+                  </dcterms:isPartOf>
+                </xsl:if>
+              </edm:TimeSpan>
             </xsl:for-each>
           </xsl:if>
           <!-- edm:type, id: 134 -->
