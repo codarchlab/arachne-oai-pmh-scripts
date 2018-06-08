@@ -37,6 +37,6 @@
       <edm:dataProvider xml:lang="de">Deutsches Archäologisches Institut</edm:dataProvider>
       <edm:isShownAt rdf:resource="https://arachne.dainst.org/entity/1070229"/>
       <edm:provider>CARARE</edm:provider>
-      <edm:rights rdf:resource="http://creativecommons.org/licenses/by-nc-nd/3.0/"/>
+      <edm:rights rdf:resource="http://rightsstatements.org/vocab/InC/1.0/"/>
    </ore:Aggregation>
 </rdf:RDF>
