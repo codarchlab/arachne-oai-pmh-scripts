@@ -28,7 +28,6 @@
       <wgs84_pos:lat>32.82674</wgs84_pos:lat>
       <wgs84_pos:long>21.86335</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Kyrene</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/8410832"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1089174">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1089174"/>

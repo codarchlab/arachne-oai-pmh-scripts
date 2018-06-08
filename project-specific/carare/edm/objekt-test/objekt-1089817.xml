@@ -27,7 +27,6 @@
       <wgs84_pos:lat>45.43419</wgs84_pos:lat>
       <wgs84_pos:long>10.99779</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Verona</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/3164527"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1089817">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1089817"/>

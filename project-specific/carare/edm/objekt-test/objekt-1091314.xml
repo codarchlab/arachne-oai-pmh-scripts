@@ -33,7 +33,6 @@
       <wgs84_pos:lat>47.36667</wgs84_pos:lat>
       <wgs84_pos:long>8.55</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Zürich</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/2657896"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1091314">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1091314"/>

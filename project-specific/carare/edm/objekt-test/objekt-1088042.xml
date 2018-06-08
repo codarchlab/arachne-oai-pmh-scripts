@@ -27,7 +27,6 @@
       <wgs84_pos:lat>41.89474</wgs84_pos:lat>
       <wgs84_pos:long>12.4839</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Rom</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/3169070"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1088042">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1088042"/>

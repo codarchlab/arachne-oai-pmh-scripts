@@ -27,7 +27,6 @@
       <wgs84_pos:lat>45.41519</wgs84_pos:lat>
       <wgs84_pos:long>11.88181</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Padua</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/3171728"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1091624">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1091624"/>

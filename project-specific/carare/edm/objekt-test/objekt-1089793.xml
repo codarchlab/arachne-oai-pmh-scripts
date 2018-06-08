@@ -28,7 +28,6 @@
       <wgs84_pos:lat>45.646719</wgs84_pos:lat>
       <wgs84_pos:long>13.772349</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Triest</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/3165185"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1089793">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1089793"/>

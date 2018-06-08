@@ -28,7 +28,6 @@
       <wgs84_pos:lat>45.074174</wgs84_pos:lat>
       <wgs84_pos:long>7.686149</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Turin</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/3165524"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1089802">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1089802"/>

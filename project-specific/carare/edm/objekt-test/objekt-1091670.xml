@@ -26,7 +26,6 @@
       <wgs84_pos:lat>45.767413</wgs84_pos:lat>
       <wgs84_pos:long>13.367962</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Aquileia</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/3182943"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1091670">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1091670"/>

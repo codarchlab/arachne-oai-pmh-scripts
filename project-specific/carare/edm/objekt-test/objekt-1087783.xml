@@ -30,7 +30,6 @@
       <wgs84_pos:lat>38.31667</wgs84_pos:lat>
       <wgs84_pos:long>23.53333</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Tanagra</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/253045"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1087783">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1087783"/>

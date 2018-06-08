@@ -27,7 +27,6 @@
       <wgs84_pos:lat>45.46427</wgs84_pos:lat>
       <wgs84_pos:long>9.18951</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Mailand</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/3173435"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1091613">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1091613"/>

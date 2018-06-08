@@ -27,7 +27,6 @@
       <wgs84_pos:lat>53.41058</wgs84_pos:lat>
       <wgs84_pos:long>-2.97794</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Liverpool</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/2644210"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1070215">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1070215"/>

@@ -31,7 +31,6 @@
       <wgs84_pos:lat>50.87959</wgs84_pos:lat>
       <wgs84_pos:long>4.70093</wgs84_pos:long>
       <skos:prefLabel xml:lang="de">Löwen / Louvain</skos:prefLabel>
-      <owl:sameAs rdf:resource="http://www.geonames.org/2792482"/>
    </edm:Place>
    <ore:Aggregation rdf:about="dai-aggregation: 1070229">
       <edm:aggregatedCHO rdf:resource="https://arachne.dainst.org/entity/1070229"/>
