@@ -388,8 +388,9 @@
             </skos:prefLabel>
           </xsl:for-each>
           <!-- Check for mandatory elements on owl:sameAs -->
+<!--          
           <xsl:if test="../ortsbezug/Geonamesid">
-            <!-- owl:sameAs, id: 288 -->
+            <! owl:sameAs, id: 288 > 
             <owl:sameAs>
               <xsl:attribute name="rdf:resource">
                 <xsl:text>http://www.geonames.org/</xsl:text>
@@ -401,6 +402,7 @@
               </xsl:attribute>
             </owl:sameAs>
           </xsl:if>
+-->
         </edm:Place>
       </xsl:if>
       <!-- Check for mandatory elements on ore:Aggregation -->
